@@ -1,0 +1,52 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - GinhoorFramework (2.2.13):
+    - GinhoorFramework/Category (= 2.2.13)
+    - GinhoorFramework/GinSysInfo (= 2.2.13)
+    - GinhoorFramework/Manager (= 2.2.13)
+  - GinhoorFramework/Category (2.2.13):
+    - BlocksKit (~> 2.2.5)
+    - GinhoorFramework/GinSysInfo
+  - GinhoorFramework/GinSysInfo (2.2.13)
+  - GinhoorFramework/Manager (2.2.13):
+    - BlocksKit (~> 2.2.5)
+    - GinhoorFramework/GinSysInfo
+  - Masonry (1.1.0)
+  - TOCropViewController (2.4.0)
+
+DEPENDENCIES:
+  - GinhoorFramework (~> 2.2.13)
+  - Masonry (~> 1.1.0)
+  - TOCropViewController (~> 2.4)
+
+SPEC REPOS:
+  https://github.com/ginhoor/GinhoorSpecs.git:
+    - GinhoorFramework
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - BlocksKit
+    - Masonry
+    - TOCropViewController
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  GinhoorFramework: 550aaad6ec7705f4df6757b84e8407772cb10c70
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  TOCropViewController: 368d8df3ea43b62c3dc5a61f11b9048274d240bd
+
+PODFILE CHECKSUM: 1db1b8b3a49512a6dd1effd5cb6e691f763ef340
+
+COCOAPODS: 1.5.3

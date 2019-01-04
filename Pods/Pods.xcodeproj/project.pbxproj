@@ -1,0 +1,2219 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009FBA063F8B98B486CA8238C9D8FEBC /* MFMessageComposeViewController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBCF68CF7ECD15DA6ACCD0F6E353 /* MFMessageComposeViewController+BlocksKit.m */; };
+		01BAAE67E325FBF104EFF58F7D09800C /* NSObject+BKBlockExecution.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9D4B1AE23016300156706A8376ECBF /* NSObject+BKBlockExecution.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		035EF83B8E1F38C1540BA0CA479010C5 /* Pods-GinCameraCaptureManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDF1BB075F4BA6DA2DA166B78209966 /* Pods-GinCameraCaptureManager-dummy.m */; };
+		037CD891818C31BB919E104FD8D36037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */; };
+		0576FFFA3A9D83B0174B314A73DF918C /* UIViewController+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA666930D20243EF1273A414DAB82235 /* UIViewController+GinBaseClass.m */; };
+		05868AA8956F16B3E49A3FA2EAC9596D /* BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A74360E4580DE987B836B2C8D17A78 /* BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		06817784D5F9394F81EC5A67F4603F73 /* UIControl+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C052C8A21E9E84E219BB293CB47978 /* UIControl+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07C38C0C546D37EF855AAD5F2F1388EC /* NSObject+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = D17881B3D07E80992D4BFE89D4975203 /* NSObject+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		090FE317027AA0ECC82BAA39993B5900 /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D278FEB433A89836FCD3867DC7D005C /* UIGestureRecognizer+BlocksKit.m */; };
+		09859180B161E7124E499DB2FE11157B /* GinSysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C14DCDBA6DB2B211D076F7BF202FB4 /* GinSysInfo.m */; };
+		0A871F4905A00A4C091414CEFA6BDAAD /* UIView+GinCGRect.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F6AB837476F9C6009ECDF22818D17F /* UIView+GinCGRect.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B7788CF1A8345D923F903D0EF2F66A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B7A2E1DEA2EB8B5F757006D27B8845 /* UIKit.framework */; };
+		0BE16521D62E082A9087DBAC756AE72D /* GinPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = C249002EEF2D7BB6A6A4E3A830CAC970 /* GinPopup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D586CAC39FC07BE7DB2AC5FF0963789 /* NSString+GinJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A64D309F162C2F12E5E31D4191A39A /* NSString+GinJSON.m */; };
+		0DA3A704C56CDA32C2D741A1865BF855 /* UIView+GinCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 31662DE91F8542803808E72CB4D3F113 /* UIView+GinCGRect.m */; };
+		0E079073984A1BD14EA6C1766B1868E1 /* NSDate+RCUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FE329D96A0064152A4C23AAF7483F6 /* NSDate+RCUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E442CB264A1C7073E88269054781332 /* NSCache+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD1EB5021B2ECDBD3854F6E96FBBA4 /* NSCache+BlocksKit.m */; };
+		0E457F6F319168D369D1D12B38FEA7D7 /* UIView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 64BDCA8E5EB47E053C33310469662E16 /* UIView+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0EB5A61FC6000E895A0CFF7F7762102F /* GinPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D82C695958C5369E8A3CBD44508432 /* GinPopupViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F2E428D9D8C3E59692A43AB9D5025B3 /* GinPopupGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = DA31772BF33DD4FB320E2A554411BDB4 /* GinPopupGradientView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = C522235B86CAE0431988EDFF07D7CB29 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		113F50D5495246FDAC06D0EA33D0A1B1 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5499E2E5D63ABD307190F33426B830DE /* tr.lproj */; };
+		1158DADEC234061487F1A75352975E6E /* UIImagePickerController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB6CFD290FB2E4559AE989CE70975A /* UIImagePickerController+BlocksKit.m */; };
+		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F641ED139F891BDB4C990603DF9CE40 /* MASViewAttribute.m */; };
+		19E7315DF96BE4B55BEEA074DFA10448 /* NSObject+A2BlockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB4D47D843D08829C1E1DDE3C501661 /* NSObject+A2BlockDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A97384FAB3EAFEB0C10058015778E61 /* NSObject+TYSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B9881CDB50A8675932FF67F31330499 /* NSObject+TYSwizzle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1AF0E91DE5FCA0C4B1F4D4F0808E9BD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DEB0B930AE98FBAAB786357F5E0136 /* CoreGraphics.framework */; };
+		1C4906480B55FEF7EE2B6711685F7436 /* GinOperationQueueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CD4C6921CE83F71FE8450DBA959468 /* GinOperationQueueManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1CFA388A96B5D79851114CE913FABD62 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F6329EF61786E19299718BBC6050DD /* NSString+MD5.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E7CCB013ED3E07F09E594C29F44CF2A /* NSURL+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = DE128B7DD9176D452B63FF987C1F04BA /* NSURL+GinUnit.m */; };
+		1EDBD04A84685D5AF488EF006C926DBF /* UIGestureRecognizer+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6758C507C9E773AE22E029ED2F6AD493 /* UIGestureRecognizer+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1F047BB3725080F8B0C63A1FAC114AD0 /* UIBarButtonItem+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC72A48DFC67484312FF32185352D64 /* UIBarButtonItem+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDF8A30E38E256BB3DA3150D593369D /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2267B1EDFF9DB204DD4DC5A306878C9E /* NSString+GinJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB8C1647D7BCC6DD3FA655045AD70AC /* NSString+GinJSON.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		238731DD65ABDC45546271DBE7EE496F /* UITextField+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C652EEE4DDFB8855D4EBF93EB5B6F1 /* UITextField+BlocksKit.m */; };
+		24402AD75212C9CAB69D5C79F8CD1D57 /* NSObject+A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790FF454254D554D2A14C23552139A /* NSObject+A2DynamicDelegate.m */; };
+		25092106253D7C2FF9EC398455080FD7 /* MFMessageComposeViewController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7979EC6497B0BAADD101DD793CDBE100 /* MFMessageComposeViewController+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		26D1A390F5E9D8281C2938C5A265BEC2 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE985B96F3ED66374287EE532906DC /* TOActivityCroppedImageProvider.m */; };
+		2718010AF064CDDB90A0D0E8F3A5686E /* UIPopoverController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12DB8A1BD5506727C3CF4DA6CF0B35 /* UIPopoverController+BlocksKit.m */; };
+		28D42AEBA19D912452D6ED91DBC54AB4 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F965D1A81E04CEEB2A49427E7C856011 /* NSString+MD5.m */; };
+		2A709566F5EB64187500E1177A7C9F84 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4497430B16DCF0A3F977453D9C2C87B8 /* hu.lproj */; };
+		2B02569D52DDAF90AE135A5ADA376AA0 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D28E584F55C6344602218C158793AA95 /* NSString+Size.m */; };
+		2C7FB0DE4284234C6663F25EE76B9E87 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 513663381D5E9550F1981C62CD84207B /* TOCropViewControllerTransitioning.m */; };
+		2D8DDCBBA43F21871FB1D968D380533B /* UIBarButtonItem+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D67509C383B988F98F850394D4885F /* UIBarButtonItem+BlocksKit.m */; };
+		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6B97AE334F221A2998F1AE2D7DA50 /* MASViewConstraint.m */; };
+		2DE540927732F64917519293039F2C17 /* GinPopupGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A604865EDA85B72F5B1F4ECD9CB62B5 /* GinPopupGradientView.m */; };
+		2FED20770A441116ACAC2939CD530107 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF892C79E4FCD70C9EA1A6FFE8E5BEB /* TOCroppedImageAttributes.m */; };
+		302259D4877C89D056A3DE7FEA1C4458 /* A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E73788BCA3AFED87EC5A9BD6286FBDFA /* A2DynamicDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3086DE16B1101A77527DA1975BD51E7C /* TOCropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C67820DD7B888E893D573787FA59091 /* TOCropViewController-dummy.m */; };
+		325E5E366187F0371063F3FF63A7543A /* UIView+Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BC9B4BD5271341B6A41FB94B71990 /* UIView+Layer.m */; };
+		32A3D318E27CC0F3B5F82493D7D4B6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */; };
+		32EF9F35B290E8C453CAC47F0FC1775F /* NSString+formatContentString.m in Sources */ = {isa = PBXBuildFile; fileRef = 492D06F83448D457E7EC66F39F8E5518 /* NSString+formatContentString.m */; };
+		330840C6EE52BEC31D8DFD488E07F627 /* UIAlertController+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D6335D073956C346140DCA66B625F5 /* UIAlertController+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		334CDBACF359232AAF02147ABAA0163E /* NSObject+GinJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EF4EA663DE3C2FF7A160A68D9814F /* NSObject+GinJSON.m */; };
+		35B39A5C87AA1C1C12D4C7D0769DCEE8 /* NSDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4C2AD77F3C50E2724DEEAC2A73B987 /* NSDictionary+BlocksKit.m */; };
+		3903761D07EF2032300D93C78816868B /* GinCategory_Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD73DB5F78525A6A835E3EE6C227F18 /* GinCategory_Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B0D660A1679978127C2C263164AB3C6 /* TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE967A60F80040F5610C2A892CC00C1 /* TYSwizzle.m */; };
+		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDE6439671FFAE14328D414D9F19882 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		3F9CBF786C694F0330F8AAC6D1FDB2E9 /* NSSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8968D3750169194C5B14C143F1CC3AD8 /* NSSet+BlocksKit.m */; };
+		403D42897E6EEA8A5606BC91E931C70A /* NSTimer+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E13E220213AE4E5EE0852057F46C639 /* NSTimer+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		40641B43EFC2C9097296CAED5F223E97 /* A2BlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8725624444909F6D9305036C40F42B /* A2BlockInvocation.m */; };
+		43BFD244493E3B518C992A17394FD072 /* NSDate+Range.h in Headers */ = {isa = PBXBuildFile; fileRef = B9DF2BBAA5E5ADFFF4647D7450AF5226 /* NSDate+Range.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44333FDC0AC983E6066C45F666E3058E /* UIActionSheet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1815741068B806C707CC030CB9ED5B /* UIActionSheet+BlocksKit.m */; };
+		45D795191560F17E1462AB5357BF491F /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = D10344E27E3272FEDA6E1BC0AC22D03F /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4600E5594347752FB1AC37CD89B57E94 /* Pods-GinCameraCaptureManagerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 382C69C34F07F82CD2E883622D024924 /* Pods-GinCameraCaptureManagerUITests-dummy.m */; };
+		474BA26E5E53CD1827E3290634C7956C /* BKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D183D49C5D76D6FB43665EC745EF32 /* BKMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48D172072BBF93ACC3BF42A893FB175D /* NSObject+A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB4D158937E1537046FD26D59F3BAF /* NSObject+A2BlockDelegate.m */; };
+		4A092CB3E13A60166BC25899A2BCBA6E /* NSMutableOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D1771174C9069C6637050B3746E67E /* NSMutableOrderedSet+BlocksKit.m */; };
+		4A7C5CE977BDFC81825C98EBE9FCA86E /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = E256EC17AC46B31E6B2C04D8116720CF /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4ABBA5699DFDEE780E6DF5D211FAC678 /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1D5B6699CBF3E569227802D4A1452F /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B5C489E790D66500A7B5CDCE1C36198 /* NSString+RegEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 7914530D5A7F24665839DFE0F3529967 /* NSString+RegEx.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BDA4D4DBF0D31670BFDFD5F4AE008BA /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B5C51F1C086D12128E174DCEAD56813C /* pt.lproj */; };
+		4CAD6CD9C513D0CD44AE9FC169C138C7 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 91971A20A042CE69A7F3046C9F632E14 /* ru.lproj */; };
+		4E7B12283E94E4D644A2AE01F28C82E6 /* NSObject+BKAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A643E814511268535D72A8AD0C61ED /* NSObject+BKAssociatedObjects.m */; };
+		523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = F53D106DF9BBF84E16C13B0A46975B81 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5361BE75B2DBEF399D7D1E60C7055DC5 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D70F829A6A8A017AB0D87BFC5C9E80E1 /* zh-Hant.lproj */; };
+		53BFA9210B6EDD2C8978CE7BDD961120 /* GinOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BF4BFAD57495B5FB4858B5BC2E3A19 /* GinOperationQueueManager.m */; };
+		54FFA88105CF7629DFCC3D5171E072A4 /* NSObject+BKAssociatedObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C9592C91B8C4E938E77222960B74D99 /* NSObject+BKAssociatedObjects.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		550EA37D2A0BCF2CE64963288D4DADF2 /* NSMutableSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8137A7241D676C115745DEA2BEB5A1EC /* NSMutableSet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55354C27A2BF63143DBF36F5208AB0E9 /* NSString+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC2CB4B36205E47774B2793610C59FD /* NSString+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55A2F88F3E31F6F817C218102D42BD3D /* NSDictionary+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E20BC9076A8751BEBCF5C2AEC6B3DA /* NSDictionary+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55F76425E00A41A45317375EE960CE0D /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6494241E465ABF1035A56BD44B683 /* TOCropViewController.m */; };
+		57D9ACE3CDA993D298A72A4AE83321EE /* NSMutableSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B737BE4A64D90ECEDF71F80798361 /* NSMutableSet+BlocksKit.m */; };
+		5B2AADBA38F9F4D0DB984FFC33D4C3F6 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E2CF6C172ABA695E93AA6231E49552D5 /* ja.lproj */; };
+		5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBBC23478AD3816FF4CAC91DADCD874 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A9191FEB76CCCC9FAABD5AC4BE41BBE2 /* MASCompositeConstraint.m */; };
+		61DCF9E92B5E02E4C626A543646B4E1C /* GinDateFormatterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A28005135C3DC31EC355BB315A8A52 /* GinDateFormatterManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B7A2E1DEA2EB8B5F757006D27B8845 /* UIKit.framework */; };
+		6464DDC94DDC212BB9D0BBE166E20D89 /* UIAlertView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5241EDE93978A2F676ADD8E455E77B /* UIAlertView+BlocksKit.m */; };
+		66EDD9DF20E4ACD4FAC796E0500ADE36 /* NSInvocation+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F82E49AE6842D9A902C487A49B328946 /* NSInvocation+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 620B6D2374D005F68E13E364D8C6135E /* Masonry-dummy.m */; };
+		69098C968B4B3ACF7A4CAB8A649534B2 /* BlocksKit+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CF7E0005F3D1775F39177AA597C968 /* BlocksKit+UIKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		692D66809F37E21E9CBF3B1514705C25 /* da-DK.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E7C8750EC52BDD4317336D8C9945CF6F /* da-DK.lproj */; };
+		6CF4698CC02A91F9BD2D13D037E7B1DA /* UIImage+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = F99EA1B75C043A239A9A0D10EE92C070 /* UIImage+GinUnit.m */; };
+		6DC5B9892798C22C31A69B33DD3FD5B7 /* NSObject+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BA9D0E3385AAB8170BB0DC80E5D470 /* NSObject+GinUnit.m */; };
+		6FBABEBBC2EB7500D1607BE8F92FAE8F /* GinPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1EEBAF4C1F0954B4B540D44D03533 /* GinPopup.m */; };
+		6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E382E784E66789CC810BDF0E28A9D93 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		710138E3D9B97EA029A85E3D58DDF68E /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DBC2D02AD6F21FD5F463C6B38C9CCEE6 /* Base.lproj */; };
+		714D252231EFF39CBBE8CEA1A763EEA5 /* GinhoorFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 300D725931298428456A276060F70EAD /* GinhoorFramework-dummy.m */; };
+		71BF8636C9F2A1D6B5039534EC7F4F0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */; };
+		7272C86A06EEFFE5AC8A1160C62F796A /* NSSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AFB16A37F8E030986E8E4588DD83D786 /* NSSet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73B1222C292B8559FEACBAC5C701A43B /* NSObject+CoreGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B41C10C2399107511AE770811FFF /* NSObject+CoreGraphic.m */; };
+		7451AD5D7B51A0809D32E0D8F66657E7 /* GinSysInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 869A63E54D3020D8E082EDA5DB8C4009 /* GinSysInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74E23CC45BA239A5F009E4B49BBCB51A /* NSObject+A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 467DF80E59681652851FC939D24AC661 /* NSObject+A2DynamicDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75B15B0CE3322749FF70B0CD914214C0 /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A1135525348D65104597229F36616C97 /* NSArray+BlocksKit.m */; };
+		760E9AAE804D44989F27F35F8631964B /* NSIndexSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E7536FE5772DD497822165C911187AEF /* NSIndexSet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76EFE8B60B56D6E07D37C46A36ECCCE3 /* NSURLConnection+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C8420463CDA405990EF3F8285A170A /* NSURLConnection+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76F21F78D6A45CCC8E24963BC8ADAD06 /* UIWindow+fullScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AD14A6FA8259D08FAC8DCDE1E740B5 /* UIWindow+fullScreenshots.m */; };
+		77FE6F824EFD078D86EDF1F0084D437C /* NSObject+GinSetterAndGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DD86D8E9EB073A866C5F0A4AEB3CD0 /* NSObject+GinSetterAndGetter.m */; };
+		79BE12B2FD34D7E548A037986F0CA91A /* MFMailComposeViewController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F263A54CFA32C96FE708EB9B7EE61B3 /* MFMailComposeViewController+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A2982CAFE0B37232493E1AF4C6A460D /* UIActionSheet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 648AE29A41F52065DC57D94B35C8E569 /* UIActionSheet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A632870FBAA8B5DE8659EF0DF1B7A60 /* UIWebView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCD6278EE68881DE311BF61380BC249 /* UIWebView+BlocksKit.m */; };
+		7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B8569122EFD99E039117AC6F5C32CE /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE54932B9DB0FDE9EB815E82FFA1158 /* NSArray+MASAdditions.m */; };
+		7D77E27D68B626E21C9BEFE965542B6C /* UIPopoverController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A152D84B608C4332E55ECF9CE0BBEB34 /* UIPopoverController+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DA0412521B9AB16E7106F25C1A0464D /* NSMutableDictionary+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7973046F040ECF57454392CF1665D72E /* NSMutableDictionary+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80EC07637E2FAA01DFB9962C72C03448 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6F9C01F7002033B7819C4CD3946B25 /* TOCropView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C8A419EDA4D1409FA3D26154782599 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81E9560045EC1E7E82812AD48E4CEA5F /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2115AF5B956636FC459AF37A2E4A6B5C /* de.lproj */; };
+		81ED0E2D7FFC9753EBAF5AF9F95E9BEB /* NSObject+BKBlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14271F0280FEC7F54482908ACDBFDD44 /* NSObject+BKBlockObservation.m */; };
+		85C26D267A7FF55303376323A611374A /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB154C9F648BF931F5EA9AB63FB7A1A /* TOCropView.m */; };
+		85D465E1A2CF399226845FDEC97331AE /* NSData+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0559F043039685DD73904C58E1C049 /* NSData+NSString.m */; };
+		86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E4880476DA287C60041BBC91C5BEFB /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		873DCD156FEBA9A88D23964E0C442983 /* A2BlockInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = D48B5372E891A1E4102BF2E375B38755 /* A2BlockInvocation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87AEDA4D5938436BC4B256FA80CC4EA4 /* NSAttributedString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2F786440C2068E0E552BF1F6A021BF /* NSAttributedString+GinUnit.m */; };
+		88255C4754E418C31C48F70E4A963C55 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 025979C5924F324334518DEFC7BAE4F3 /* nl.lproj */; };
+		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FABC3E8C49DFEBFCFB614D3156EF9AE1 /* MASConstraint.m */; };
+		8B5DD59D3B434D85C109E8C2B11EE927 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4EEC3D6DF5605E9665D710A207F977 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8EEF848227C0DF6638A6A3AF67E37993 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 666DE58C99089BB684BA84265AF5088E /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		908E4C7F0895F612E5BD31784B870699 /* NSCache+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 084AB8B14CEF46E2ABD79EA3986DE890 /* NSCache+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90B6609B2596A88E836897BECCCE0FB0 /* A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB05657775A9381C2BB2DEB8E5EEE93F /* A2DynamicDelegate.m */; };
+		90DDBB5857042592F483B7B6181BE089 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 238CAB8F8BA2A90106274702B2506927 /* TOCropOverlayView.m */; };
+		92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E04597930D07E56207EFE9BC269FE921 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9296A695231C359EF59059369284DA82 /* UITextField+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F1EEF4076959977217E1A17392E78D29 /* UITextField+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93B489ED290DE6831803C432D2A43391 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF267EAFF73E71DB969191F9B74CCAE /* UIImage+CropRotate.m */; };
+		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F15BB964BDBA437F2F417ABF8E7DE28 /* MASLayoutConstraint.m */; };
+		95899967BB1DEFA7C623D1020F6CD5CB /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E5DC7690431A1B5CBB2C39738728C7F2 /* ms.lproj */; };
+		96C347869A461AE3D5DE9AA8857AADEE /* NSDictionary+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AFE0EEAAAE3FA7F957A835AF1F425 /* NSDictionary+GinUnit.m */; };
+		982FA59F7D93DFF497264C78E591B275 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 019B7E5E7D05A6E92C767D0EDA55C2F1 /* ar.lproj */; };
+		993A3BDEBBB5BBAAEDD8B9ACD3BD0B40 /* NSData+NSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E125B066439F39134D6E292A78D1A42 /* NSData+NSString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		998FCDEAC107F0F4BA416A32E124ED72 /* NSURL+Videos.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA6DDCF08809ECD074A62210B5E898A /* NSURL+Videos.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99B868FC01BDB4CB28D25FAE07845446 /* UIImagePickerController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 60BBE19967E146682C16CE86B131D4BC /* UIImagePickerController+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7CC9F3E1428E27296FA06FE93D192F /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B787507A587B47DFFBC12D23D23D07E /* UIWindow+fullScreenshots.h in Headers */ = {isa = PBXBuildFile; fileRef = A695BD5AD52316BD99960B5347686616 /* UIWindow+fullScreenshots.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B792B52C113BA197DC77DFC9CEFBB70 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC4575CC865564E44ED215D7F7FB787 /* MessageUI.framework */; };
+		9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8EFC055029DC4253AEB427D9E13B37 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E05B5B242ED76AF56F2F6E8F5F4C3B9 /* NSObject+BKBlockExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D76F90A165BA960215A10AA1F31EC /* NSObject+BKBlockExecution.m */; };
+		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58283D940D8EC7F3131FB93C54CD3E /* View+MASAdditions.m */; };
+		A24AF4D754FBCCCA897FE5E4E0A1F965 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 32AC93E088B7A69AD395F4FED921E852 /* vi.lproj */; };
+		A283719B44CB0E3F1E0FB90B4D37FD13 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99352E06EED2F662C2BDD6D533864202 /* TOCropScrollView.m */; };
+		A2882CACEB41B995D066D98989CACDE2 /* NSMutableIndexSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B3052ECD2B7783A6E3826BB4971F9 /* NSMutableIndexSet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2A01437D075511A3615266DBFA8C5C5 /* GinPopupContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E5A05C2A90611B3318F38554507BC7 /* GinPopupContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A31178C9271A35F3E73117F9E3BEC9F7 /* Gin_Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = E20ECB181DD86702594EEAF25FA281E1 /* Gin_Macro.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A373DFD3BB5132F9A8932ED4A3971BD9 /* UIWebView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ABD2E7B1740DB32269A2FABF35C6B06 /* UIWebView+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A453241592DEA8D2C25682AE85C109E1 /* NSMutableArray+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B4C2B581F28D6AA670F3721086EE7C3 /* NSMutableArray+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5707B0A70C758CACE7E77C98D1AA5AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */; };
+		A763089FC6F5F8FF26987D1694D7B4EA /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C41D9485C6A8DA227112CCF18BA871 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A91C2CAD2CD8438D032CA36D93E79F10 /* NSMutableOrderedSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C9C5A81585F8B8229CA2B0E1F3464A /* NSMutableOrderedSet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ABD93CB0D85DAC10CE64E050706A6298 /* TYSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8392C34EDBAB1DC8710944C171CBC0 /* TYSwizzle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC85337AC01FAD43C053CA86F01A6F7F /* UIAlertView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 107F53FDBDAE9CDD5802DC289B8F1547 /* UIAlertView+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADB09F06A81E866B3643F191C50185DA /* GinPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CB58ABDCA02222C346D45700C561A4 /* GinPopupViewController.m */; };
+		AEDA50642F61CED8CD130264EEB2A469 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 44906E2CB3C9D5CDD37D027CBA6F9145 /* id.lproj */; };
+		AF94EA3101599CD3841ADCD30C50D9E8 /* UIControl+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F8D920FF4AB7E8903A103749AD7616 /* UIControl+BlocksKit.m */; };
+		B0A276C5923E781999C5B1782EEC591C /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = C297AC3C0FFD66295A79D93AE054FF43 /* NSString+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B12FD472215FC0249EB7B5B8A8231F65 /* GinDateFormatterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB31B7A80FCFBB04E99D8153EF988EA /* GinDateFormatterManager.m */; };
+		B210871EBF75A9ACA56EE76252346F5E /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E9DECEDFF3DD63444C4EFD502F9B /* NSDate+Range.m */; };
+		B38AAE5C244B64D0C5BBEAAC90A9A325 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B4204015E7EEE2527F9D8125994F95D /* es.lproj */; };
+		B39195221539B8372F5F99521423E00E /* NSAttributedString+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6909DFDFB70D1016859F0904F4E9828 /* NSAttributedString+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B56D679C483DFBE4C6084EF6FEE84EA9 /* NSObject+GinJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 01085E67AEDBA257C7B4815496A115D4 /* NSObject+GinJSON.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5CB8DE637250FFB384EB14F40BD736C /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0AD633D05B79AFD415CABDE76AFA0F72 /* fr.lproj */; };
+		B5E236944F7A3EBFE972F62AF2DE44A9 /* NSOrderedSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 819D8154FD12D48966C068D33224ADBB /* NSOrderedSet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD03C7F98751BE836063294CAF3D963 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5F70D91FD92C7E007EB71C9C361E0E8 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 495107506D7C9ECB2747BA828B2E1C52 /* ro.lproj */; };
+		B705284BFE51712231AD80A7D9EDBD38 /* NSOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A9C0C9BB50D9D9F6D713843F32D296 /* NSOrderedSet+BlocksKit.m */; };
+		B9BB3F1C71EBDD2333DDFC4B1CA8492F /* NSString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFE6C2E0696F5A0AEFABDE5072852A3 /* NSString+GinUnit.m */; };
+		BB68BFCC110B44812E5D8A2BABF363C8 /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 5073FE4B22AF0EEC62562687A5F2FE34 /* UIColor+Hex.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD89FCADB69EDFC889EC0D89CFB1AB19 /* NSObject+TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D412EF698D5AB12C08DC64D6E12C71 /* NSObject+TYSwizzle.m */; };
+		BE74C0CF57BCF8337767DF2E6231A06C /* NSURL+Videos.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F98E529468E0173641710E5C7E1D5FB /* NSURL+Videos.m */; };
+		C06441B3BBA8EA39F5C23BD49FEC61BC /* UIViewController+GinBaseClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F149C7B6C059983A81A806AF4192D693 /* UIViewController+GinBaseClass.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3AEFEFFF9A65566A05B7E871AEF2795 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C1060609B6B0B29A40F59E030F73267A /* pl.lproj */; };
+		C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8CE99334F17050229C999AA6A7DD64 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7F339C252FEB6A79CAF1309E91CA9CE /* NSURL+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 47E5EFE6DABABD44AD0E740FCFF21433 /* NSURL+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C820261DA24518214E53A911CDFDC3C7 /* UIView+Layer.h in Headers */ = {isa = PBXBuildFile; fileRef = 71990F80735270EC9BB650141E5665C5 /* UIView+Layer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8380B9D42ADAE706CC2479E53B6E6FA /* NSObject+BKBlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 351AAAB5E645CEC19DB26AEB03AB012D /* NSObject+BKBlockObservation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8960E1E92CF8B736801F60034A7F22E /* NSDictionary+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E162C7E27CF596D7831924BB858D2CBB /* NSDictionary+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C978FDD859F98FA10A41C3B099486453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */; };
+		C9D3CEFF4AAB2678493E5398A4DBD0C6 /* NSIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDD0DD54EBC81DBB00C97F071CB2F42 /* NSIndexSet+BlocksKit.m */; };
+		CA97226E068C13F6880FE7A81584DBAC /* UIImage+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F69B1923D379EE006AB26E688ED6F2A /* UIImage+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE40BFC1AA8AD114119494D24223B4B9 /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E7A4345454F02BF256B425D79980E9 /* NSTimer+BlocksKit.m */; };
+		CEAEAEB843982881783614DD268E577E /* MFMailComposeViewController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A8821175523FAE27ED513D0BDF8378BD /* MFMailComposeViewController+BlocksKit.m */; };
+		CEBA89B6A48190DBA980DEC80B736D9A /* BlocksKit+MessageUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D3054DFFCE149432EC59D50541D5F35C /* BlocksKit+MessageUI.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF1CEA9E1466ACEAF41D36F4E8832769 /* NSObject+CoreGraphic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8832349FE38A4E15E947C62C87572DC4 /* NSObject+CoreGraphic.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF7921B7E0AFACE32A9DC100D4074BA8 /* NSArray+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = F993C40A052847C005C93BAA4FF72264 /* NSArray+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFFFB84AD257A72667B5793935BC2A26 /* UIResponder+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EAF27EA62DE163A489767000A7126 /* UIResponder+GinUnit.m */; };
+		D1D407108ECF874824B4F2F4A81D682E /* NSString+RegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = B36BFAB6D1C004D8DE03A118667E39D7 /* NSString+RegEx.m */; };
+		D1F21A6E6F8A9FFE28638453F81671DD /* NSMutableArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0F32683AE0B691CD08C28D7BA146B /* NSMutableArray+BlocksKit.m */; };
+		D3A757E9E8F6645286525FF9B600E4AE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 473882A707C1823DD1C42B079EAA46BB /* NSString+Base64.m */; };
+		D54FD2EB0A4CD09DDF26DD5640A7A95D /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B85155B9648F96FE4F50EF7FBF1F4E3A /* en.lproj */; };
+		D6BAC6B4DA3C771E8B82D2B9E499B021 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AA6FDC4BF76F53B140A6B51F969E5476 /* ko.lproj */; };
+		D78DF69B60D3FC7D053210AAAE3397A8 /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C25C1DBB71CD6C25054B3C1088D25844 /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7B4D8B965A85E0EFF012903B042D634 /* NSMutableIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A463CAB90161980A496A79D06313B /* NSMutableIndexSet+BlocksKit.m */; };
+		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEFF5386B22B29F7AB72DB873A7CA5 /* ViewController+MASAdditions.m */; };
+		D8CEE3B2B0A210EEFAED4D37BA88AC0D /* NSInvocation+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3081EF87651552DFBDF5258A9B4F76 /* NSInvocation+BlocksKit.m */; };
+		D9D206C73022C3025A93B9CFD1F85919 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 60334B989955282C79245770F7CBF1E5 /* UIColor+Hex.m */; };
+		DA5AC5B92EF1F9FACF26ECE110B80FF9 /* UIAlertController+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = E889646AA1786E6DD64BBB1E79B656C7 /* UIAlertController+GinUnit.m */; };
+		DD09685CBCE69DAC451618533F299A31 /* NSDate+RCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC567C8C66C6D75587B087FF55843815 /* NSDate+RCUtility.m */; };
+		DD80096598DC05A0E01B3A792181722E /* GinPopupContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FACA4F9827BDB6DD1C91B74B53B96DFE /* GinPopupContentView.m */; };
+		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF693A0E1FFBA70EA85BA1B8E789A78 /* MASConstraintMaker.m */; };
+		DF95E50968DE10B188771AADCC516485 /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 717FB81B2E5EA5CFB30848852DD48837 /* UIImage+Base64.m */; };
+		E09A8787D344F2C2C44DDD4877241EA4 /* GinhoorFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1DA1CEA314C62F1A74FA7D343009F8 /* GinhoorFramework.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E13CF4DFF242D0909E592324FB146C34 /* NSMutableDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0511D88148A0A554A86D9B6A0620C /* NSMutableDictionary+BlocksKit.m */; };
+		E1D4C2C0A1DB1FEA9156EA8D069CF578 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8E63E9E502FB8C324CC29E1E9BA19182 /* zh-Hans.lproj */; };
+		E1ED6DEAEA46B6BB0BC5108873589CD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */; };
+		E431869A34BA39E56B608ED19A9CB95F /* NSArray+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5176D2C822B10A2CF426AADD9B0CF28C /* NSArray+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E44EA1635858586E749AF050E61BD1D5 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5F36688241E24977ABF61379C05F02 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6BC6617FCC68EC99478BBE069A8C4A5 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CF8D64038E1A93AEABDBF8C555EA181D /* it.lproj */; };
+		E9EF69F1416B7683844A12DDB2E05FBC /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD95CDEDA8107E5576B62FE98607AAD /* TOCropToolbar.m */; };
+		ED345C4C5530AAFB30DA7AC704DB9932 /* UIResponder+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = F39E7935B6C2A75DE7054A5E07B4CF7A /* UIResponder+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED63A7E24BAA966FD126F2278EBF46DF /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F499A686191BA55CAF421C40B4956577 /* TOCropViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFCFF5BD4FEA3406520B45212E4D549D /* NSArray+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 97814B0E83BB08D1A421F3F00E009A02 /* NSArray+GinUnit.m */; };
+		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */; };
+		F5FA806C85743326A1D48EA71E10D245 /* NSURLConnection+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6194126568CA5DEC1D1FB94B609F703E /* NSURLConnection+BlocksKit.m */; };
+		F649B42DBD2161AA5F7B8DB303B61BEB /* NSObject+GinSetterAndGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B41E5C767B8D85F966272930639E20 /* NSObject+GinSetterAndGetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7A33552FEBB5751AB7CEBBD442C4062 /* NSString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A344C9A74B1A22DEB551A744399C0C /* NSString+Size.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B065836B1EB3ED293DBC7E1635223688 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D1338CC6C12DF14ECBE437972FDB2F /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB8DA367458A9BF0158B63428270AA3A /* Pods-GinCameraCaptureManagerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B8E64CBB8C4B6AFD11591264A84468 /* Pods-GinCameraCaptureManagerTests-dummy.m */; };
+		FDCE8C4C81D949EC8E36F7098924FE67 /* NSString+formatContentString.h in Headers */ = {isa = PBXBuildFile; fileRef = 741815DFD14A08032764C6A596CDCD30 /* NSString+formatContentString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE03293488E60604B3F018D1834FCAB6 /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3563F81E315759AFF83EDEE60ACF7 /* UIView+BlocksKit.m */; };
+		FE47D7E7B3D4768BCF59B119100EB4B6 /* BlocksKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6630E7521B678371C82AB4F7DCD540 /* BlocksKit-dummy.m */; };
+		FF571962AF75E19A6F817826BE7BAACE /* UIImage+GinUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = B722DAD64ED3B10C0FEC12F7F202B744 /* UIImage+GinUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		164374103FA21306950A5E3DB534A650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E6315B596D59CC6CAEFD68327E75BB;
+			remoteInfo = "Pods-GinCameraCaptureManager";
+		};
+		5B6B33071407BDF5677A2318FB15EAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
+		5D3014BB951DBDEEC4E000122473F2D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AC55E754182E1FCF070AC7F74379523;
+			remoteInfo = BlocksKit;
+		};
+		6D2386A8A08D933A388875BC64BBB762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AC359A807C4B61F765F19F9E7F1797D;
+			remoteInfo = GinhoorFramework;
+		};
+		77CEEA08CF4ED6E385235C2C66230C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55ADD626396F81DCE4AE450BFDAA372D;
+			remoteInfo = TOCropViewController;
+		};
+		96BEE71023432239D2D76307B7691191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC34609135E2A423070FA4F526FB93F;
+			remoteInfo = "TOCropViewController-TOCropViewControllerBundle";
+		};
+		C0AF96254D7810F1E036ACE8D8EF53C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AC55E754182E1FCF070AC7F74379523;
+			remoteInfo = BlocksKit;
+		};
+		E6F6AEEE6700A8B052BBAC9A09FAAD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E6315B596D59CC6CAEFD68327E75BB;
+			remoteInfo = "Pods-GinCameraCaptureManager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01085E67AEDBA257C7B4815496A115D4 /* NSObject+GinJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+GinJSON.h"; path = "GinhoorFramework/Category/NSObject/NSObject+GinJSON.h"; sourceTree = "<group>"; };
+		019B7E5E7D05A6E92C767D0EDA55C2F1 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
+		0224B41C10C2399107511AE770811FFF /* NSObject+CoreGraphic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CoreGraphic.m"; path = "GinhoorFramework/Category/Draw/NSObject+CoreGraphic.m"; sourceTree = "<group>"; };
+		025979C5924F324334518DEFC7BAE4F3 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
+		02FE329D96A0064152A4C23AAF7483F6 /* NSDate+RCUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+RCUtility.h"; path = "GinhoorFramework/Category/NSDate/NSDate+RCUtility.h"; sourceTree = "<group>"; };
+		042D76F90A165BA960215A10AA1F31EC /* NSObject+BKBlockExecution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKBlockExecution.m"; path = "BlocksKit/Core/NSObject+BKBlockExecution.m"; sourceTree = "<group>"; };
+		04801D6A4D1B898129DF4FD8D3456E44 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		04AD14A6FA8259D08FAC8DCDE1E740B5 /* UIWindow+fullScreenshots.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+fullScreenshots.m"; path = "GinhoorFramework/Category/UIWindow/UIWindow+fullScreenshots.m"; sourceTree = "<group>"; };
+		05CF7E0005F3D1775F39177AA597C968 /* BlocksKit+UIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BlocksKit+UIKit.h"; path = "BlocksKit/BlocksKit+UIKit.h"; sourceTree = "<group>"; };
+		05F8DBCF68CF7ECD15DA6ACCD0F6E353 /* MFMessageComposeViewController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MFMessageComposeViewController+BlocksKit.m"; path = "BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.m"; sourceTree = "<group>"; };
+		06D1338CC6C12DF14ECBE437972FDB2F /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		084AB8B14CEF46E2ABD79EA3986DE890 /* NSCache+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCache+BlocksKit.h"; path = "BlocksKit/DynamicDelegate/Foundation/NSCache+BlocksKit.h"; sourceTree = "<group>"; };
+		0ABD2E7B1740DB32269A2FABF35C6B06 /* UIWebView+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+BlocksKit.h"; path = "BlocksKit/UIKit/UIWebView+BlocksKit.h"; sourceTree = "<group>"; };
+		0AD633D05B79AFD415CABDE76AFA0F72 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
+		0B3AFE0EEAAAE3FA7F957A835AF1F425 /* NSDictionary+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+GinUnit.m"; path = "GinhoorFramework/Category/NSDictionary/NSDictionary+GinUnit.m"; sourceTree = "<group>"; };
+		0BAAEB64945D71A252174A77BF9A5250 /* Pods-GinCameraCaptureManagerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GinCameraCaptureManagerTests-frameworks.sh"; sourceTree = "<group>"; };
+		0DDB4D158937E1537046FD26D59F3BAF /* NSObject+A2BlockDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+A2BlockDelegate.m"; path = "BlocksKit/DynamicDelegate/NSObject+A2BlockDelegate.m"; sourceTree = "<group>"; };
+		0E02E3CE8C9246E0FF3172929C46B9BD /* Pods-GinCameraCaptureManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GinCameraCaptureManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E0EF4EA663DE3C2FF7A160A68D9814F /* NSObject+GinJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GinJSON.m"; path = "GinhoorFramework/Category/NSObject/NSObject+GinJSON.m"; sourceTree = "<group>"; };
+		0E543214C82AABC710C3B69790CE29D8 /* libTOCropViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTOCropViewController.a; path = libTOCropViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF693A0E1FFBA70EA85BA1B8E789A78 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		0FB8C1647D7BCC6DD3FA655045AD70AC /* NSString+GinJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+GinJSON.h"; path = "GinhoorFramework/Category/NSString/NSString+GinJSON.h"; sourceTree = "<group>"; };
+		0FD6494241E465ABF1035A56BD44B683 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = "Objective-C/TOCropViewController/TOCropViewController.m"; sourceTree = "<group>"; };
+		107F53FDBDAE9CDD5802DC289B8F1547 /* UIAlertView+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+BlocksKit.h"; path = "BlocksKit/UIKit/UIAlertView+BlocksKit.h"; sourceTree = "<group>"; };
+		11A344C9A74B1A22DEB551A744399C0C /* NSString+Size.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Size.h"; path = "GinhoorFramework/Category/NSString/NSString+Size.h"; sourceTree = "<group>"; };
+		14271F0280FEC7F54482908ACDBFDD44 /* NSObject+BKBlockObservation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKBlockObservation.m"; path = "BlocksKit/Core/NSObject+BKBlockObservation.m"; sourceTree = "<group>"; };
+		14DD86D8E9EB073A866C5F0A4AEB3CD0 /* NSObject+GinSetterAndGetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GinSetterAndGetter.m"; path = "GinhoorFramework/Category/NSObject/NSObject+GinSetterAndGetter.m"; sourceTree = "<group>"; };
+		15C3563F81E315759AFF83EDEE60ACF7 /* UIView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+BlocksKit.m"; path = "BlocksKit/UIKit/UIView+BlocksKit.m"; sourceTree = "<group>"; };
+		16B7A2E1DEA2EB8B5F757006D27B8845 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		183F5D980F890E855F4FDCCD80C20492 /* Pods-GinCameraCaptureManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GinCameraCaptureManager-resources.sh"; sourceTree = "<group>"; };
+		1B4C2B581F28D6AA670F3721086EE7C3 /* NSMutableArray+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+BlocksKit.h"; path = "BlocksKit/Core/NSMutableArray+BlocksKit.h"; sourceTree = "<group>"; };
+		1D58283D940D8EC7F3131FB93C54CD3E /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		1DDE6439671FFAE14328D414D9F19882 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		1DFE6C2E0696F5A0AEFABDE5072852A3 /* NSString+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+GinUnit.m"; path = "GinhoorFramework/Category/NSString/NSString+GinUnit.m"; sourceTree = "<group>"; };
+		1F4EEC3D6DF5605E9665D710A207F977 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.h"; sourceTree = "<group>"; };
+		1FD73DB5F78525A6A835E3EE6C227F18 /* GinCategory_Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinCategory_Base64.h; path = GinhoorFramework/Category/Base64/GinCategory_Base64.h; sourceTree = "<group>"; };
+		2115AF5B956636FC459AF37A2E4A6B5C /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
+		2318B3A3A5345B7C7C49824C6285559C /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TOCropViewControllerBundle.bundle; path = "TOCropViewController-TOCropViewControllerBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		238CAB8F8BA2A90106274702B2506927 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.m"; sourceTree = "<group>"; };
+		256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		26C8A419EDA4D1409FA3D26154782599 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		27BA9D0E3385AAB8170BB0DC80E5D470 /* NSObject+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GinUnit.m"; path = "GinhoorFramework/Category/NSObject/NSObject+GinUnit.m"; sourceTree = "<group>"; };
+		2A47B447A107F655E7097B50A6710FD5 /* Pods-GinCameraCaptureManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GinCameraCaptureManager.debug.xcconfig"; sourceTree = "<group>"; };
+		2AE54932B9DB0FDE9EB815E82FFA1158 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		2B9881CDB50A8675932FF67F31330499 /* NSObject+TYSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TYSwizzle.h"; path = "GinhoorFramework/Category/NSObject/TYSwizzle/NSObject+TYSwizzle.h"; sourceTree = "<group>"; };
+		2D8392C34EDBAB1DC8710944C171CBC0 /* TYSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYSwizzle.h; path = GinhoorFramework/Category/NSObject/TYSwizzle/TYSwizzle.h; sourceTree = "<group>"; };
+		2DC72A48DFC67484312FF32185352D64 /* UIBarButtonItem+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+BlocksKit.h"; path = "BlocksKit/UIKit/UIBarButtonItem+BlocksKit.h"; sourceTree = "<group>"; };
+		2E8725624444909F6D9305036C40F42B /* A2BlockInvocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A2BlockInvocation.m; path = BlocksKit/DynamicDelegate/A2BlockInvocation.m; sourceTree = "<group>"; };
+		2F1DA1CEA314C62F1A74FA7D343009F8 /* GinhoorFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinhoorFramework.h; path = GinhoorFramework/GinhoorFramework.h; sourceTree = "<group>"; };
+		2F263A54CFA32C96FE708EB9B7EE61B3 /* MFMailComposeViewController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MFMailComposeViewController+BlocksKit.h"; path = "BlocksKit/MessageUI/MFMailComposeViewController+BlocksKit.h"; sourceTree = "<group>"; };
+		2F8309958A3CFA8180084E4D3C48FB73 /* Pods-GinCameraCaptureManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GinCameraCaptureManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		300D725931298428456A276060F70EAD /* GinhoorFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GinhoorFramework-dummy.m"; sourceTree = "<group>"; };
+		310B3052ECD2B7783A6E3826BB4971F9 /* NSMutableIndexSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableIndexSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		31662DE91F8542803808E72CB4D3F113 /* UIView+GinCGRect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+GinCGRect.m"; path = "GinhoorFramework/Category/BaseClass/View/UIView+GinCGRect.m"; sourceTree = "<group>"; };
+		32AC93E088B7A69AD395F4FED921E852 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
+		32CEEF0698C57932A12CF2D3375D4A53 /* Pods-GinCameraCaptureManagerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GinCameraCaptureManagerUITests-resources.sh"; sourceTree = "<group>"; };
+		351AAAB5E645CEC19DB26AEB03AB012D /* NSObject+BKBlockObservation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BKBlockObservation.h"; path = "BlocksKit/Core/NSObject+BKBlockObservation.h"; sourceTree = "<group>"; };
+		371478601BBF427C371959C17A0AA10C /* Pods-GinCameraCaptureManagerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GinCameraCaptureManagerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		382C69C34F07F82CD2E883622D024924 /* Pods-GinCameraCaptureManagerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GinCameraCaptureManagerUITests-dummy.m"; sourceTree = "<group>"; };
+		38D183D49C5D76D6FB43665EC745EF32 /* BKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BKMacros.h; path = BlocksKit/Core/BKMacros.h; sourceTree = "<group>"; };
+		3B4204015E7EEE2527F9D8125994F95D /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
+		3DC2CB4B36205E47774B2793610C59FD /* NSString+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+GinUnit.h"; path = "GinhoorFramework/Category/NSString/NSString+GinUnit.h"; sourceTree = "<group>"; };
+		3E9D4B1AE23016300156706A8376ECBF /* NSObject+BKBlockExecution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BKBlockExecution.h"; path = "BlocksKit/Core/NSObject+BKBlockExecution.h"; sourceTree = "<group>"; };
+		3F5F36688241E24977ABF61379C05F02 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.h"; sourceTree = "<group>"; };
+		3F641ED139F891BDB4C990603DF9CE40 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		43350D9CBB427D98B6619DA58BC82EA6 /* libPods-GinCameraCaptureManagerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GinCameraCaptureManagerUITests.a"; path = "libPods-GinCameraCaptureManagerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44906E2CB3C9D5CDD37D027CBA6F9145 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
+		4497430B16DCF0A3F977453D9C2C87B8 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
+		4555BD7A624EDC768FB3A0FEAB5DAC71 /* GinhoorFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GinhoorFramework-prefix.pch"; sourceTree = "<group>"; };
+		45C8420463CDA405990EF3F8285A170A /* NSURLConnection+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+BlocksKit.h"; path = "BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.h"; sourceTree = "<group>"; };
+		467DF80E59681652851FC939D24AC661 /* NSObject+A2DynamicDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+A2DynamicDelegate.h"; path = "BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.h"; sourceTree = "<group>"; };
+		46B8E64CBB8C4B6AFD11591264A84468 /* Pods-GinCameraCaptureManagerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GinCameraCaptureManagerTests-dummy.m"; sourceTree = "<group>"; };
+		473882A707C1823DD1C42B079EAA46BB /* NSString+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64.m"; path = "GinhoorFramework/Category/Base64/NSString+Base64.m"; sourceTree = "<group>"; };
+		47CD4C6921CE83F71FE8450DBA959468 /* GinOperationQueueManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinOperationQueueManager.h; path = GinhoorFramework/Manager/OperationQueue/GinOperationQueueManager.h; sourceTree = "<group>"; };
+		47E5EFE6DABABD44AD0E740FCFF21433 /* NSURL+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+GinUnit.h"; path = "GinhoorFramework/Category/NSURL/NSURL+GinUnit.h"; sourceTree = "<group>"; };
+		492D06F83448D457E7EC66F39F8E5518 /* NSString+formatContentString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+formatContentString.m"; path = "GinhoorFramework/Category/NSString/NSString+formatContentString.m"; sourceTree = "<group>"; };
+		4934A5354F4C65BE6697138C429CA286 /* TOCropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TOCropViewController.xcconfig; sourceTree = "<group>"; };
+		495107506D7C9ECB2747BA828B2E1C52 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
+		49B41E5C767B8D85F966272930639E20 /* NSObject+GinSetterAndGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+GinSetterAndGetter.h"; path = "GinhoorFramework/Category/NSObject/NSObject+GinSetterAndGetter.h"; sourceTree = "<group>"; };
+		49F5919D5B2299AD253B37664C9BF26F /* ResourceBundle-TOCropViewControllerBundle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-Info.plist"; sourceTree = "<group>"; };
+		4A1D5B6699CBF3E569227802D4A1452F /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.h"; sourceTree = "<group>"; };
+		4C67820DD7B888E893D573787FA59091 /* TOCropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TOCropViewController-dummy.m"; sourceTree = "<group>"; };
+		4F15BB964BDBA437F2F417ABF8E7DE28 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		4F98E529468E0173641710E5C7E1D5FB /* NSURL+Videos.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Videos.m"; path = "GinhoorFramework/Category/NSURL/NSURL+Videos.m"; sourceTree = "<group>"; };
+		5073FE4B22AF0EEC62562687A5F2FE34 /* UIColor+Hex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "GinhoorFramework/Category/UIColor/UIColor+Hex.h"; sourceTree = "<group>"; };
+		513663381D5E9550F1981C62CD84207B /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.m"; sourceTree = "<group>"; };
+		5176D2C822B10A2CF426AADD9B0CF28C /* NSArray+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+BlocksKit.h"; path = "BlocksKit/Core/NSArray+BlocksKit.h"; sourceTree = "<group>"; };
+		53E7A4345454F02BF256B425D79980E9 /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+BlocksKit.m"; path = "BlocksKit/Core/NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
+		5499E2E5D63ABD307190F33426B830DE /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
+		56C9C5A81585F8B8229CA2B0E1F3464A /* NSMutableOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableOrderedSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		571EAF27EA62DE163A489767000A7126 /* UIResponder+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+GinUnit.m"; path = "GinhoorFramework/Category/UIResponder/UIResponder+GinUnit.m"; sourceTree = "<group>"; };
+		57D9BC8C4550A21EB48C3D00D0FA780A /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		57FD1EB5021B2ECDBD3854F6E96FBBA4 /* NSCache+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCache+BlocksKit.m"; path = "BlocksKit/DynamicDelegate/Foundation/NSCache+BlocksKit.m"; sourceTree = "<group>"; };
+		58A9C0C9BB50D9D9F6D713843F32D296 /* NSOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+BlocksKit.m"; path = "BlocksKit/Core/NSOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		5AF0511D88148A0A554A86D9B6A0620C /* NSMutableDictionary+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+BlocksKit.m"; path = "BlocksKit/Core/NSMutableDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		5C9592C91B8C4E938E77222960B74D99 /* NSObject+BKAssociatedObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BKAssociatedObjects.h"; path = "BlocksKit/Core/NSObject+BKAssociatedObjects.h"; sourceTree = "<group>"; };
+		5D12DB8A1BD5506727C3CF4DA6CF0B35 /* UIPopoverController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPopoverController+BlocksKit.m"; path = "BlocksKit/UIKit/UIPopoverController+BlocksKit.m"; sourceTree = "<group>"; };
+		5DA6DDCF08809ECD074A62210B5E898A /* NSURL+Videos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+Videos.h"; path = "GinhoorFramework/Category/NSURL/NSURL+Videos.h"; sourceTree = "<group>"; };
+		5E125B066439F39134D6E292A78D1A42 /* NSData+NSString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NSString.h"; path = "GinhoorFramework/Category/NSData/NSData+NSString.h"; sourceTree = "<group>"; };
+		5E1815741068B806C707CC030CB9ED5B /* UIActionSheet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+BlocksKit.m"; path = "BlocksKit/UIKit/UIActionSheet+BlocksKit.m"; sourceTree = "<group>"; };
+		60334B989955282C79245770F7CBF1E5 /* UIColor+Hex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "GinhoorFramework/Category/UIColor/UIColor+Hex.m"; sourceTree = "<group>"; };
+		60BBE19967E146682C16CE86B131D4BC /* UIImagePickerController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+BlocksKit.h"; path = "BlocksKit/UIKit/UIImagePickerController+BlocksKit.h"; sourceTree = "<group>"; };
+		6194126568CA5DEC1D1FB94B609F703E /* NSURLConnection+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+BlocksKit.m"; path = "BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.m"; sourceTree = "<group>"; };
+		620B6D2374D005F68E13E364D8C6135E /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		648AE29A41F52065DC57D94B35C8E569 /* UIActionSheet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+BlocksKit.h"; path = "BlocksKit/UIKit/UIActionSheet+BlocksKit.h"; sourceTree = "<group>"; };
+		64BDCA8E5EB47E053C33310469662E16 /* UIView+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+BlocksKit.h"; path = "BlocksKit/UIKit/UIView+BlocksKit.h"; sourceTree = "<group>"; };
+		64F8D920FF4AB7E8903A103749AD7616 /* UIControl+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+BlocksKit.m"; path = "BlocksKit/UIKit/UIControl+BlocksKit.m"; sourceTree = "<group>"; };
+		65D82C695958C5369E8A3CBD44508432 /* GinPopupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinPopupViewController.h; path = GinhoorFramework/Manager/Popup/GinPopupViewController.h; sourceTree = "<group>"; };
+		666DE58C99089BB684BA84265AF5088E /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		66C052C8A21E9E84E219BB293CB47978 /* UIControl+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+BlocksKit.h"; path = "BlocksKit/UIKit/UIControl+BlocksKit.h"; sourceTree = "<group>"; };
+		6758C507C9E773AE22E029ED2F6AD493 /* UIGestureRecognizer+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+BlocksKit.h"; path = "BlocksKit/UIKit/UIGestureRecognizer+BlocksKit.h"; sourceTree = "<group>"; };
+		69FF198169D7DF6D4AA99DD0D21CDDE8 /* Pods-GinCameraCaptureManagerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GinCameraCaptureManagerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A8EFC055029DC4253AEB427D9E13B37 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		6C9A463CAB90161980A496A79D06313B /* NSMutableIndexSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableIndexSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		6D278FEB433A89836FCD3867DC7D005C /* UIGestureRecognizer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+BlocksKit.m"; path = "BlocksKit/UIKit/UIGestureRecognizer+BlocksKit.m"; sourceTree = "<group>"; };
+		6DD03C7F98751BE836063294CAF3D963 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		6E382E784E66789CC810BDF0E28A9D93 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		6EE967A60F80040F5610C2A892CC00C1 /* TYSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYSwizzle.m; path = GinhoorFramework/Category/NSObject/TYSwizzle/TYSwizzle.m; sourceTree = "<group>"; };
+		6F188297EB8E76D7ED17936B8976F96F /* Pods-GinCameraCaptureManager-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GinCameraCaptureManager-frameworks.sh"; sourceTree = "<group>"; };
+		70D412EF698D5AB12C08DC64D6E12C71 /* NSObject+TYSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TYSwizzle.m"; path = "GinhoorFramework/Category/NSObject/TYSwizzle/NSObject+TYSwizzle.m"; sourceTree = "<group>"; };
+		717FB81B2E5EA5CFB30848852DD48837 /* UIImage+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Base64.m"; path = "GinhoorFramework/Category/Base64/UIImage+Base64.m"; sourceTree = "<group>"; };
+		71990F80735270EC9BB650141E5665C5 /* UIView+Layer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Layer.h"; path = "GinhoorFramework/Category/UIView/UIView+Layer.h"; sourceTree = "<group>"; };
+		73D67509C383B988F98F850394D4885F /* UIBarButtonItem+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+BlocksKit.m"; path = "BlocksKit/UIKit/UIBarButtonItem+BlocksKit.m"; sourceTree = "<group>"; };
+		73E20BC9076A8751BEBCF5C2AEC6B3DA /* NSDictionary+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+GinUnit.h"; path = "GinhoorFramework/Category/NSDictionary/NSDictionary+GinUnit.h"; sourceTree = "<group>"; };
+		741815DFD14A08032764C6A596CDCD30 /* NSString+formatContentString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+formatContentString.h"; path = "GinhoorFramework/Category/NSString/NSString+formatContentString.h"; sourceTree = "<group>"; };
+		75DEB0B930AE98FBAAB786357F5E0136 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		77C6C2ED1E2D633ED9B933CE83D3DE55 /* Pods-GinCameraCaptureManagerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GinCameraCaptureManagerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7914530D5A7F24665839DFE0F3529967 /* NSString+RegEx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RegEx.h"; path = "GinhoorFramework/Category/NSString/NSString+RegEx.h"; sourceTree = "<group>"; };
+		7973046F040ECF57454392CF1665D72E /* NSMutableDictionary+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+BlocksKit.h"; path = "BlocksKit/Core/NSMutableDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		7979EC6497B0BAADD101DD793CDBE100 /* MFMessageComposeViewController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MFMessageComposeViewController+BlocksKit.h"; path = "BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.h"; sourceTree = "<group>"; };
+		7A604865EDA85B72F5B1F4ECD9CB62B5 /* GinPopupGradientView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GinPopupGradientView.m; path = GinhoorFramework/Manager/Popup/GinPopupGradientView.m; sourceTree = "<group>"; };
+		7AB31B7A80FCFBB04E99D8153EF988EA /* GinDateFormatterManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GinDateFormatterManager.m; path = GinhoorFramework/Manager/DateFormatter/GinDateFormatterManager.m; sourceTree = "<group>"; };
+		7AB4D47D843D08829C1E1DDE3C501661 /* NSObject+A2BlockDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+A2BlockDelegate.h"; path = "BlocksKit/DynamicDelegate/NSObject+A2BlockDelegate.h"; sourceTree = "<group>"; };
+		7BC22134C69453AC43C8C106CB18D0CF /* Pods-GinCameraCaptureManagerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GinCameraCaptureManagerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EDF8A30E38E256BB3DA3150D593369D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		8137A7241D676C115745DEA2BEB5A1EC /* NSMutableSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableSet+BlocksKit.h"; sourceTree = "<group>"; };
+		819D8154FD12D48966C068D33224ADBB /* NSOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+BlocksKit.h"; path = "BlocksKit/Core/NSOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		81A64D309F162C2F12E5E31D4191A39A /* NSString+GinJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+GinJSON.m"; path = "GinhoorFramework/Category/NSString/NSString+GinJSON.m"; sourceTree = "<group>"; };
+		83A643E814511268535D72A8AD0C61ED /* NSObject+BKAssociatedObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKAssociatedObjects.m"; path = "BlocksKit/Core/NSObject+BKAssociatedObjects.m"; sourceTree = "<group>"; };
+		869A63E54D3020D8E082EDA5DB8C4009 /* GinSysInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinSysInfo.h; path = GinhoorFramework/GinSysInfo/GinSysInfo.h; sourceTree = "<group>"; };
+		86FEFF5386B22B29F7AB72DB873A7CA5 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		8832349FE38A4E15E947C62C87572DC4 /* NSObject+CoreGraphic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CoreGraphic.h"; path = "GinhoorFramework/Category/Draw/NSObject+CoreGraphic.h"; sourceTree = "<group>"; };
+		892B25C7B7D0A48DB9A47E0383D514DC /* BlocksKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlocksKit.xcconfig; sourceTree = "<group>"; };
+		8968D3750169194C5B14C143F1CC3AD8 /* NSSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+BlocksKit.m"; path = "BlocksKit/Core/NSSet+BlocksKit.m"; sourceTree = "<group>"; };
+		8AF892C79E4FCD70C9EA1A6FFE8E5BEB /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.m"; sourceTree = "<group>"; };
+		8C4C2AD77F3C50E2724DEEAC2A73B987 /* NSDictionary+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+BlocksKit.m"; path = "BlocksKit/Core/NSDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		8CB154C9F648BF931F5EA9AB63FB7A1A /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = "Objective-C/TOCropViewController/Views/TOCropView.m"; sourceTree = "<group>"; };
+		8CBB6CFD290FB2E4559AE989CE70975A /* UIImagePickerController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+BlocksKit.m"; path = "BlocksKit/UIKit/UIImagePickerController+BlocksKit.m"; sourceTree = "<group>"; };
+		8D4C9FBE7AEFA5C8D4265B4EA698AD6E /* libPods-GinCameraCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GinCameraCaptureManager.a"; path = "libPods-GinCameraCaptureManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3081EF87651552DFBDF5258A9B4F76 /* NSInvocation+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+BlocksKit.m"; path = "BlocksKit/Core/NSInvocation+BlocksKit.m"; sourceTree = "<group>"; };
+		8E63E9E502FB8C324CC29E1E9BA19182 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		8F69B1923D379EE006AB26E688ED6F2A /* UIImage+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Base64.h"; path = "GinhoorFramework/Category/Base64/UIImage+Base64.h"; sourceTree = "<group>"; };
+		91971A20A042CE69A7F3046C9F632E14 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
+		91B8569122EFD99E039117AC6F5C32CE /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		91D1771174C9069C6637050B3746E67E /* NSMutableOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableOrderedSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9775F452830661B7B9FAF147A383F05A /* Pods-GinCameraCaptureManagerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GinCameraCaptureManagerTests-resources.sh"; sourceTree = "<group>"; };
+		97814B0E83BB08D1A421F3F00E009A02 /* NSArray+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+GinUnit.m"; path = "GinhoorFramework/Category/NSArray/NSArray+GinUnit.m"; sourceTree = "<group>"; };
+		97D1E1F113C924114DC742D3D1229D1A /* libGinhoorFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGinhoorFramework.a; path = libGinhoorFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98287FF9212DBAE07ACF9AFC4ED39F02 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		99352E06EED2F662C2BDD6D533864202 /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.m"; sourceTree = "<group>"; };
+		9957247BB109ED41C81135ABAD9B8AF0 /* Pods-GinCameraCaptureManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GinCameraCaptureManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		99A6B97AE334F221A2998F1AE2D7DA50 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		9BF0F32683AE0B691CD08C28D7BA146B /* NSMutableArray+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+BlocksKit.m"; path = "BlocksKit/Core/NSMutableArray+BlocksKit.m"; sourceTree = "<group>"; };
+		9E13E220213AE4E5EE0852057F46C639 /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+BlocksKit.h"; path = "BlocksKit/Core/NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
+		9EC4575CC865564E44ED215D7F7FB787 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		A0CFEBEA64F18CB5DA87E5E0D6C9C482 /* Pods-GinCameraCaptureManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GinCameraCaptureManager.release.xcconfig"; sourceTree = "<group>"; };
+		A1135525348D65104597229F36616C97 /* NSArray+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+BlocksKit.m"; path = "BlocksKit/Core/NSArray+BlocksKit.m"; sourceTree = "<group>"; };
+		A152D84B608C4332E55ECF9CE0BBEB34 /* UIPopoverController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPopoverController+BlocksKit.h"; path = "BlocksKit/UIKit/UIPopoverController+BlocksKit.h"; sourceTree = "<group>"; };
+		A1BF4BFAD57495B5FB4858B5BC2E3A19 /* GinOperationQueueManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GinOperationQueueManager.m; path = GinhoorFramework/Manager/OperationQueue/GinOperationQueueManager.m; sourceTree = "<group>"; };
+		A5C41D9485C6A8DA227112CCF18BA871 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.h"; sourceTree = "<group>"; };
+		A6909DFDFB70D1016859F0904F4E9828 /* NSAttributedString+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+GinUnit.h"; path = "GinhoorFramework/Category/NSString/NSAttributedString+GinUnit.h"; sourceTree = "<group>"; };
+		A695BD5AD52316BD99960B5347686616 /* UIWindow+fullScreenshots.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+fullScreenshots.h"; path = "GinhoorFramework/Category/UIWindow/UIWindow+fullScreenshots.h"; sourceTree = "<group>"; };
+		A8821175523FAE27ED513D0BDF8378BD /* MFMailComposeViewController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MFMailComposeViewController+BlocksKit.m"; path = "BlocksKit/MessageUI/MFMailComposeViewController+BlocksKit.m"; sourceTree = "<group>"; };
+		A9191FEB76CCCC9FAABD5AC4BE41BBE2 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		AA6FDC4BF76F53B140A6B51F969E5476 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
+		AEF267EAFF73E71DB969191F9B74CCAE /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		AFB16A37F8E030986E8E4588DD83D786 /* NSSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+BlocksKit.h"; path = "BlocksKit/Core/NSSet+BlocksKit.h"; sourceTree = "<group>"; };
+		B065836B1EB3ED293DBC7E1635223688 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B36BFAB6D1C004D8DE03A118667E39D7 /* NSString+RegEx.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RegEx.m"; path = "GinhoorFramework/Category/NSString/NSString+RegEx.m"; sourceTree = "<group>"; };
+		B5C51F1C086D12128E174DCEAD56813C /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
+		B6F19367F250711B0837648808867D56 /* TOCropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-prefix.pch"; sourceTree = "<group>"; };
+		B722DAD64ED3B10C0FEC12F7F202B744 /* UIImage+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GinUnit.h"; path = "GinhoorFramework/Category/UIImage/UIImage+GinUnit.h"; sourceTree = "<group>"; };
+		B85155B9648F96FE4F50EF7FBF1F4E3A /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
+		B9DF2BBAA5E5ADFFF4647D7450AF5226 /* NSDate+Range.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Range.h"; path = "GinhoorFramework/Category/NSDate/NSDate+Range.h"; sourceTree = "<group>"; };
+		BD5241EDE93978A2F676ADD8E455E77B /* UIAlertView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+BlocksKit.m"; path = "BlocksKit/UIKit/UIAlertView+BlocksKit.m"; sourceTree = "<group>"; };
+		BD6F9C01F7002033B7819C4CD3946B25 /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = "Objective-C/TOCropViewController/Views/TOCropView.h"; sourceTree = "<group>"; };
+		BFDD0DD54EBC81DBB00C97F071CB2F42 /* NSIndexSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+BlocksKit.m"; path = "BlocksKit/Core/NSIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		C1060609B6B0B29A40F59E030F73267A /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
+		C249002EEF2D7BB6A6A4E3A830CAC970 /* GinPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinPopup.h; path = GinhoorFramework/Manager/Popup/GinPopup.h; sourceTree = "<group>"; };
+		C25C1DBB71CD6C25054B3C1088D25844 /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewConstants.h; path = "Objective-C/TOCropViewController/Constants/TOCropViewConstants.h"; sourceTree = "<group>"; };
+		C297AC3C0FFD66295A79D93AE054FF43 /* NSString+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64.h"; path = "GinhoorFramework/Category/Base64/NSString+Base64.h"; sourceTree = "<group>"; };
+		C3F5B3A569D253BF8B9EEE2496606D11 /* Pods-GinCameraCaptureManagerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GinCameraCaptureManagerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C522235B86CAE0431988EDFF07D7CB29 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		C5790FF454254D554D2A14C23552139A /* NSObject+A2DynamicDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+A2DynamicDelegate.m"; path = "BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.m"; sourceTree = "<group>"; };
+		C76DF3181A3F733F367FD8CD375065B9 /* Pods-GinCameraCaptureManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GinCameraCaptureManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CCFAA518576984421E5E16279166A50E /* Pods-GinCameraCaptureManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GinCameraCaptureManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEBBC23478AD3816FF4CAC91DADCD874 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		CF8D64038E1A93AEABDBF8C555EA181D /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
+		D10344E27E3272FEDA6E1BC0AC22D03F /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.h"; sourceTree = "<group>"; };
+		D17881B3D07E80992D4BFE89D4975203 /* NSObject+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+GinUnit.h"; path = "GinhoorFramework/Category/NSObject/NSObject+GinUnit.h"; sourceTree = "<group>"; };
+		D28E584F55C6344602218C158793AA95 /* NSString+Size.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Size.m"; path = "GinhoorFramework/Category/NSString/NSString+Size.m"; sourceTree = "<group>"; };
+		D2D6335D073956C346140DCA66B625F5 /* UIAlertController+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+GinUnit.h"; path = "GinhoorFramework/Category/UIAlertController/UIAlertController+GinUnit.h"; sourceTree = "<group>"; };
+		D3054DFFCE149432EC59D50541D5F35C /* BlocksKit+MessageUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BlocksKit+MessageUI.h"; path = "BlocksKit/BlocksKit+MessageUI.h"; sourceTree = "<group>"; };
+		D3A28005135C3DC31EC355BB315A8A52 /* GinDateFormatterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinDateFormatterManager.h; path = GinhoorFramework/Manager/DateFormatter/GinDateFormatterManager.h; sourceTree = "<group>"; };
+		D48B5372E891A1E4102BF2E375B38755 /* A2BlockInvocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A2BlockInvocation.h; path = BlocksKit/DynamicDelegate/A2BlockInvocation.h; sourceTree = "<group>"; };
+		D70F829A6A8A017AB0D87BFC5C9E80E1 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		D855D483420DE6CFBDC3690847C1C4CA /* libPods-GinCameraCaptureManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GinCameraCaptureManagerTests.a"; path = "libPods-GinCameraCaptureManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E5A05C2A90611B3318F38554507BC7 /* GinPopupContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinPopupContentView.h; path = GinhoorFramework/Manager/Popup/GinPopupContentView.h; sourceTree = "<group>"; };
+		DA31772BF33DD4FB320E2A554411BDB4 /* GinPopupGradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GinPopupGradientView.h; path = GinhoorFramework/Manager/Popup/GinPopupGradientView.h; sourceTree = "<group>"; };
+		DA7B737BE4A64D90ECEDF71F80798361 /* NSMutableSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableSet+BlocksKit.m"; sourceTree = "<group>"; };
+		DA7CC9F3E1428E27296FA06FE93D192F /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		DB05657775A9381C2BB2DEB8E5EEE93F /* A2DynamicDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A2DynamicDelegate.m; path = BlocksKit/DynamicDelegate/A2DynamicDelegate.m; sourceTree = "<group>"; };
+		DBC2D02AD6F21FD5F463C6B38C9CCEE6 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
+		DCD1EEBAF4C1F0954B4B540D44D03533 /* GinPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GinPopup.m; path = GinhoorFramework/Manager/Popup/GinPopup.m; sourceTree = "<group>"; };
+		DE128B7DD9176D452B63FF987C1F04BA /* NSURL+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+GinUnit.m"; path = "GinhoorFramework/Category/NSURL/NSURL+GinUnit.m"; sourceTree = "<group>"; };
+		DEDE985B96F3ED66374287EE532906DC /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.m"; sourceTree = "<group>"; };
+		DFD95CDEDA8107E5576B62FE98607AAD /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.m"; sourceTree = "<group>"; };
+		DFDF1BB075F4BA6DA2DA166B78209966 /* Pods-GinCameraCaptureManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GinCameraCaptureManager-dummy.m"; sourceTree = "<group>"; };
+		E04597930D07E56207EFE9BC269FE921 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E0F6AB837476F9C6009ECDF22818D17F /* UIView+GinCGRect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+GinCGRect.h"; path = "GinhoorFramework/Category/BaseClass/View/UIView+GinCGRect.h"; sourceTree = "<group>"; };
+		E162C7E27CF596D7831924BB858D2CBB /* NSDictionary+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+BlocksKit.h"; path = "BlocksKit/Core/NSDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		E20ECB181DD86702594EEAF25FA281E1 /* Gin_Macro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Gin_Macro.h; path = GinhoorFramework/GinSysInfo/Gin_Macro.h; sourceTree = "<group>"; };
+		E256EC17AC46B31E6B2C04D8116720CF /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.h"; sourceTree = "<group>"; };
+		E2C14DCDBA6DB2B211D076F7BF202FB4 /* GinSysInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GinSysInfo.m; path = GinhoorFramework/GinSysInfo/GinSysInfo.m; sourceTree = "<group>"; };
+		E2CF6C172ABA695E93AA6231E49552D5 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
+		E5DC7690431A1B5CBB2C39738728C7F2 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
+		E73788BCA3AFED87EC5A9BD6286FBDFA /* A2DynamicDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A2DynamicDelegate.h; path = BlocksKit/DynamicDelegate/A2DynamicDelegate.h; sourceTree = "<group>"; };
+		E7536FE5772DD497822165C911187AEF /* NSIndexSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+BlocksKit.h"; path = "BlocksKit/Core/NSIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		E7C8750EC52BDD4317336D8C9945CF6F /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
+		E7E4880476DA287C60041BBC91C5BEFB /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		E83195B089872CB1709576E2756CFFDB /* GinhoorFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GinhoorFramework.xcconfig; sourceTree = "<group>"; };
+		E889646AA1786E6DD64BBB1E79B656C7 /* UIAlertController+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+GinUnit.m"; path = "GinhoorFramework/Category/UIAlertController/UIAlertController+GinUnit.m"; sourceTree = "<group>"; };
+		E9E1E9DECEDFF3DD63444C4EFD502F9B /* NSDate+Range.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Range.m"; path = "GinhoorFramework/Category/NSDate/NSDate+Range.m"; sourceTree = "<group>"; };
+		EC28E12DC09656ABAB2FF762466BDCBF /* BlocksKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlocksKit-prefix.pch"; sourceTree = "<group>"; };
+		EC567C8C66C6D75587B087FF55843815 /* NSDate+RCUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+RCUtility.m"; path = "GinhoorFramework/Category/NSDate/NSDate+RCUtility.m"; sourceTree = "<group>"; };
+		ED2F786440C2068E0E552BF1F6A021BF /* NSAttributedString+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+GinUnit.m"; path = "GinhoorFramework/Category/NSString/NSAttributedString+GinUnit.m"; sourceTree = "<group>"; };
+		EFCD6278EE68881DE311BF61380BC249 /* UIWebView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+BlocksKit.m"; path = "BlocksKit/UIKit/UIWebView+BlocksKit.m"; sourceTree = "<group>"; };
+		F0AE459A8CE6E713ED6DD62A86651F1F /* libBlocksKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBlocksKit.a; path = libBlocksKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F149C7B6C059983A81A806AF4192D693 /* UIViewController+GinBaseClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+GinBaseClass.h"; path = "GinhoorFramework/Category/BaseClass/ViewController/UIViewController+GinBaseClass.h"; sourceTree = "<group>"; };
+		F1D2AE9B74E3CED88F4163838E102E94 /* Pods-GinCameraCaptureManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GinCameraCaptureManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1EEF4076959977217E1A17392E78D29 /* UITextField+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+BlocksKit.h"; path = "BlocksKit/UIKit/UITextField+BlocksKit.h"; sourceTree = "<group>"; };
+		F39E7935B6C2A75DE7054A5E07B4CF7A /* UIResponder+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+GinUnit.h"; path = "GinhoorFramework/Category/UIResponder/UIResponder+GinUnit.h"; sourceTree = "<group>"; };
+		F3C652EEE4DDFB8855D4EBF93EB5B6F1 /* UITextField+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+BlocksKit.m"; path = "BlocksKit/UIKit/UITextField+BlocksKit.m"; sourceTree = "<group>"; };
+		F499A686191BA55CAF421C40B4956577 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
+		F52BC9B4BD5271341B6A41FB94B71990 /* UIView+Layer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Layer.m"; path = "GinhoorFramework/Category/UIView/UIView+Layer.m"; sourceTree = "<group>"; };
+		F53D106DF9BBF84E16C13B0A46975B81 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		F82E49AE6842D9A902C487A49B328946 /* NSInvocation+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+BlocksKit.h"; path = "BlocksKit/Core/NSInvocation+BlocksKit.h"; sourceTree = "<group>"; };
+		F8A74360E4580DE987B836B2C8D17A78 /* BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BlocksKit.h; path = BlocksKit/BlocksKit.h; sourceTree = "<group>"; };
+		F8CB58ABDCA02222C346D45700C561A4 /* GinPopupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GinPopupViewController.m; path = GinhoorFramework/Manager/Popup/GinPopupViewController.m; sourceTree = "<group>"; };
+		F8F6329EF61786E19299718BBC6050DD /* NSString+MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "GinhoorFramework/Category/NSString/NSString+MD5.h"; sourceTree = "<group>"; };
+		F965D1A81E04CEEB2A49427E7C856011 /* NSString+MD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "GinhoorFramework/Category/NSString/NSString+MD5.m"; sourceTree = "<group>"; };
+		F993C40A052847C005C93BAA4FF72264 /* NSArray+GinUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+GinUnit.h"; path = "GinhoorFramework/Category/NSArray/NSArray+GinUnit.h"; sourceTree = "<group>"; };
+		F99EA1B75C043A239A9A0D10EE92C070 /* UIImage+GinUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GinUnit.m"; path = "GinhoorFramework/Category/UIImage/UIImage+GinUnit.m"; sourceTree = "<group>"; };
+		FA666930D20243EF1273A414DAB82235 /* UIViewController+GinBaseClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+GinBaseClass.m"; path = "GinhoorFramework/Category/BaseClass/ViewController/UIViewController+GinBaseClass.m"; sourceTree = "<group>"; };
+		FABC3E8C49DFEBFCFB614D3156EF9AE1 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		FACA4F9827BDB6DD1C91B74B53B96DFE /* GinPopupContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GinPopupContentView.m; path = GinhoorFramework/Manager/Popup/GinPopupContentView.m; sourceTree = "<group>"; };
+		FD8CE99334F17050229C999AA6A7DD64 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		FE0559F043039685DD73904C58E1C049 /* NSData+NSString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NSString.m"; path = "GinhoorFramework/Category/NSData/NSData+NSString.m"; sourceTree = "<group>"; };
+		FE6630E7521B678371C82AB4F7DCD540 /* BlocksKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlocksKit-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D366B51622EED0D138BFF3C93E98EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3350D5429F6C13783FDEFB38A8F37FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037CD891818C31BB919E104FD8D36037 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392AB3E38A761A28B431ADF0A429DC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1ED6DEAEA46B6BB0BC5108873589CD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFFF791E82DBDDEC026B6899D9E4A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C978FDD859F98FA10A41C3B099486453 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */,
+				6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E939FC261BDC9A4B327A0399E0F0F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF0E91DE5FCA0C4B1F4D4F0808E9BD0 /* CoreGraphics.framework in Frameworks */,
+				32A3D318E27CC0F3B5F82493D7D4B6F5 /* Foundation.framework in Frameworks */,
+				0B7788CF1A8345D923F903D0EF2F66A1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CFC400189AD2032A6F3B6D390260BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BF8636C9F2A1D6B5039534EC7F4F0D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B891C69B10FBABBFDC69E8CD3919E7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5707B0A70C758CACE7E77C98D1AA5AB /* Foundation.framework in Frameworks */,
+				9B792B52C113BA197DC77DFC9CEFBB70 /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077CDFC26E0434FBFD256C26D0DF0517 /* GinSysInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E20ECB181DD86702594EEAF25FA281E1 /* Gin_Macro.h */,
+				869A63E54D3020D8E082EDA5DB8C4009 /* GinSysInfo.h */,
+				E2C14DCDBA6DB2B211D076F7BF202FB4 /* GinSysInfo.m */,
+			);
+			name = GinSysInfo;
+			sourceTree = "<group>";
+		};
+		13735F48B108228C25E993DB222ACF73 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49F5919D5B2299AD253B37664C9BF26F /* ResourceBundle-TOCropViewControllerBundle-Info.plist */,
+				4934A5354F4C65BE6697138C429CA286 /* TOCropViewController.xcconfig */,
+				4C67820DD7B888E893D573787FA59091 /* TOCropViewController-dummy.m */,
+				B6F19367F250711B0837648808867D56 /* TOCropViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TOCropViewController";
+			sourceTree = "<group>";
+		};
+		143B6D3B1F7CA79BC53034EDEF8072D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3639B2A223EB7CCDF3E2B277828E2BC /* BlocksKit */,
+				C7A9FCECF1A2AD9D692516C73B0171FB /* GinhoorFramework */,
+				8A68B6170C8DEFC71802760B20C02863 /* Masonry */,
+				46801BCA7A660185DB56452438B98DF4 /* TOCropViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58EFA93B2B86280ECF940B1DCDCC0EC1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		150ED2FA711A919DD4CC7470E7C89692 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E83195B089872CB1709576E2756CFFDB /* GinhoorFramework.xcconfig */,
+				300D725931298428456A276060F70EAD /* GinhoorFramework-dummy.m */,
+				4555BD7A624EDC768FB3A0FEAB5DAC71 /* GinhoorFramework-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GinhoorFramework";
+			sourceTree = "<group>";
+		};
+		3398371504F5C0A53682D4B77B1CF0E9 /* DynamicDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D48B5372E891A1E4102BF2E375B38755 /* A2BlockInvocation.h */,
+				2E8725624444909F6D9305036C40F42B /* A2BlockInvocation.m */,
+				E73788BCA3AFED87EC5A9BD6286FBDFA /* A2DynamicDelegate.h */,
+				DB05657775A9381C2BB2DEB8E5EEE93F /* A2DynamicDelegate.m */,
+				084AB8B14CEF46E2ABD79EA3986DE890 /* NSCache+BlocksKit.h */,
+				57FD1EB5021B2ECDBD3854F6E96FBBA4 /* NSCache+BlocksKit.m */,
+				7AB4D47D843D08829C1E1DDE3C501661 /* NSObject+A2BlockDelegate.h */,
+				0DDB4D158937E1537046FD26D59F3BAF /* NSObject+A2BlockDelegate.m */,
+				467DF80E59681652851FC939D24AC661 /* NSObject+A2DynamicDelegate.h */,
+				C5790FF454254D554D2A14C23552139A /* NSObject+A2DynamicDelegate.m */,
+				45C8420463CDA405990EF3F8285A170A /* NSURLConnection+BlocksKit.h */,
+				6194126568CA5DEC1D1FB94B609F703E /* NSURLConnection+BlocksKit.m */,
+			);
+			name = DynamicDelegate;
+			sourceTree = "<group>";
+		};
+		46801BCA7A660185DB56452438B98DF4 /* TOCropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F4EEC3D6DF5605E9665D710A207F977 /* TOActivityCroppedImageProvider.h */,
+				DEDE985B96F3ED66374287EE532906DC /* TOActivityCroppedImageProvider.m */,
+				D10344E27E3272FEDA6E1BC0AC22D03F /* TOCropOverlayView.h */,
+				238CAB8F8BA2A90106274702B2506927 /* TOCropOverlayView.m */,
+				E256EC17AC46B31E6B2C04D8116720CF /* TOCroppedImageAttributes.h */,
+				8AF892C79E4FCD70C9EA1A6FFE8E5BEB /* TOCroppedImageAttributes.m */,
+				3F5F36688241E24977ABF61379C05F02 /* TOCropScrollView.h */,
+				99352E06EED2F662C2BDD6D533864202 /* TOCropScrollView.m */,
+				A5C41D9485C6A8DA227112CCF18BA871 /* TOCropToolbar.h */,
+				DFD95CDEDA8107E5576B62FE98607AAD /* TOCropToolbar.m */,
+				BD6F9C01F7002033B7819C4CD3946B25 /* TOCropView.h */,
+				8CB154C9F648BF931F5EA9AB63FB7A1A /* TOCropView.m */,
+				C25C1DBB71CD6C25054B3C1088D25844 /* TOCropViewConstants.h */,
+				F499A686191BA55CAF421C40B4956577 /* TOCropViewController.h */,
+				0FD6494241E465ABF1035A56BD44B683 /* TOCropViewController.m */,
+				4A1D5B6699CBF3E569227802D4A1452F /* TOCropViewControllerTransitioning.h */,
+				513663381D5E9550F1981C62CD84207B /* TOCropViewControllerTransitioning.m */,
+				666DE58C99089BB684BA84265AF5088E /* UIImage+CropRotate.h */,
+				AEF267EAFF73E71DB969191F9B74CCAE /* UIImage+CropRotate.m */,
+				5DA37590DA0CCB2E89DEB8645D124A64 /* Resources */,
+				13735F48B108228C25E993DB222ACF73 /* Support Files */,
+			);
+			name = TOCropViewController;
+			path = TOCropViewController;
+			sourceTree = "<group>";
+		};
+		4D2A933EAA2B5414E182733D5C291924 /* Pods-GinCameraCaptureManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				77C6C2ED1E2D633ED9B933CE83D3DE55 /* Pods-GinCameraCaptureManagerTests-acknowledgements.markdown */,
+				7BC22134C69453AC43C8C106CB18D0CF /* Pods-GinCameraCaptureManagerTests-acknowledgements.plist */,
+				46B8E64CBB8C4B6AFD11591264A84468 /* Pods-GinCameraCaptureManagerTests-dummy.m */,
+				0BAAEB64945D71A252174A77BF9A5250 /* Pods-GinCameraCaptureManagerTests-frameworks.sh */,
+				9775F452830661B7B9FAF147A383F05A /* Pods-GinCameraCaptureManagerTests-resources.sh */,
+				CCFAA518576984421E5E16279166A50E /* Pods-GinCameraCaptureManagerTests.debug.xcconfig */,
+				2F8309958A3CFA8180084E4D3C48FB73 /* Pods-GinCameraCaptureManagerTests.release.xcconfig */,
+			);
+			name = "Pods-GinCameraCaptureManagerTests";
+			path = "Target Support Files/Pods-GinCameraCaptureManagerTests";
+			sourceTree = "<group>";
+		};
+		58EFA93B2B86280ECF940B1DCDCC0EC1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				75DEB0B930AE98FBAAB786357F5E0136 /* CoreGraphics.framework */,
+				256691CFE5248FA37BF640B4C13FDDF4 /* Foundation.framework */,
+				9EC4575CC865564E44ED215D7F7FB787 /* MessageUI.framework */,
+				16B7A2E1DEA2EB8B5F757006D27B8845 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5DA37590DA0CCB2E89DEB8645D124A64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				019B7E5E7D05A6E92C767D0EDA55C2F1 /* ar.lproj */,
+				DBC2D02AD6F21FD5F463C6B38C9CCEE6 /* Base.lproj */,
+				E7C8750EC52BDD4317336D8C9945CF6F /* da-DK.lproj */,
+				2115AF5B956636FC459AF37A2E4A6B5C /* de.lproj */,
+				B85155B9648F96FE4F50EF7FBF1F4E3A /* en.lproj */,
+				3B4204015E7EEE2527F9D8125994F95D /* es.lproj */,
+				0AD633D05B79AFD415CABDE76AFA0F72 /* fr.lproj */,
+				4497430B16DCF0A3F977453D9C2C87B8 /* hu.lproj */,
+				44906E2CB3C9D5CDD37D027CBA6F9145 /* id.lproj */,
+				CF8D64038E1A93AEABDBF8C555EA181D /* it.lproj */,
+				E2CF6C172ABA695E93AA6231E49552D5 /* ja.lproj */,
+				AA6FDC4BF76F53B140A6B51F969E5476 /* ko.lproj */,
+				E5DC7690431A1B5CBB2C39738728C7F2 /* ms.lproj */,
+				025979C5924F324334518DEFC7BAE4F3 /* nl.lproj */,
+				C1060609B6B0B29A40F59E030F73267A /* pl.lproj */,
+				B5C51F1C086D12128E174DCEAD56813C /* pt.lproj */,
+				495107506D7C9ECB2747BA828B2E1C52 /* ro.lproj */,
+				91971A20A042CE69A7F3046C9F632E14 /* ru.lproj */,
+				5499E2E5D63ABD307190F33426B830DE /* tr.lproj */,
+				32AC93E088B7A69AD395F4FED921E852 /* vi.lproj */,
+				8E63E9E502FB8C324CC29E1E9BA19182 /* zh-Hans.lproj */,
+				D70F829A6A8A017AB0D87BFC5C9E80E1 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7836EBA7A9386FFEE861AAD390E1FABC /* Pods-GinCameraCaptureManager */ = {
+			isa = PBXGroup;
+			children = (
+				9957247BB109ED41C81135ABAD9B8AF0 /* Pods-GinCameraCaptureManager-acknowledgements.markdown */,
+				F1D2AE9B74E3CED88F4163838E102E94 /* Pods-GinCameraCaptureManager-acknowledgements.plist */,
+				DFDF1BB075F4BA6DA2DA166B78209966 /* Pods-GinCameraCaptureManager-dummy.m */,
+				6F188297EB8E76D7ED17936B8976F96F /* Pods-GinCameraCaptureManager-frameworks.sh */,
+				183F5D980F890E855F4FDCCD80C20492 /* Pods-GinCameraCaptureManager-resources.sh */,
+				2A47B447A107F655E7097B50A6710FD5 /* Pods-GinCameraCaptureManager.debug.xcconfig */,
+				A0CFEBEA64F18CB5DA87E5E0D6C9C482 /* Pods-GinCameraCaptureManager.release.xcconfig */,
+			);
+			name = "Pods-GinCameraCaptureManager";
+			path = "Target Support Files/Pods-GinCameraCaptureManager";
+			sourceTree = "<group>";
+		};
+		7B01D8AFEC51105BE5C22A422E9CA436 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7836EBA7A9386FFEE861AAD390E1FABC /* Pods-GinCameraCaptureManager */,
+				4D2A933EAA2B5414E182733D5C291924 /* Pods-GinCameraCaptureManagerTests */,
+				D1E9986366EF4864A08FBE9C77E5D017 /* Pods-GinCameraCaptureManagerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				143B6D3B1F7CA79BC53034EDEF8072D6 /* Pods */,
+				9C67B06C442537CEAEE8D6B7BEBE5EFF /* Products */,
+				7B01D8AFEC51105BE5C22A422E9CA436 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A68B6170C8DEFC71802760B20C02863 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B065836B1EB3ED293DBC7E1635223688 /* MASCompositeConstraint.h */,
+				A9191FEB76CCCC9FAABD5AC4BE41BBE2 /* MASCompositeConstraint.m */,
+				6E382E784E66789CC810BDF0E28A9D93 /* MASConstraint.h */,
+				FABC3E8C49DFEBFCFB614D3156EF9AE1 /* MASConstraint.m */,
+				26C8A419EDA4D1409FA3D26154782599 /* MASConstraint+Private.h */,
+				6DD03C7F98751BE836063294CAF3D963 /* MASConstraintMaker.h */,
+				0EF693A0E1FFBA70EA85BA1B8E789A78 /* MASConstraintMaker.m */,
+				DA7CC9F3E1428E27296FA06FE93D192F /* MASLayoutConstraint.h */,
+				4F15BB964BDBA437F2F417ABF8E7DE28 /* MASLayoutConstraint.m */,
+				F53D106DF9BBF84E16C13B0A46975B81 /* Masonry.h */,
+				91B8569122EFD99E039117AC6F5C32CE /* MASUtilities.h */,
+				C522235B86CAE0431988EDFF07D7CB29 /* MASViewAttribute.h */,
+				3F641ED139F891BDB4C990603DF9CE40 /* MASViewAttribute.m */,
+				CEBBC23478AD3816FF4CAC91DADCD874 /* MASViewConstraint.h */,
+				99A6B97AE334F221A2998F1AE2D7DA50 /* MASViewConstraint.m */,
+				6A8EFC055029DC4253AEB427D9E13B37 /* NSArray+MASAdditions.h */,
+				2AE54932B9DB0FDE9EB815E82FFA1158 /* NSArray+MASAdditions.m */,
+				06D1338CC6C12DF14ECBE437972FDB2F /* NSArray+MASShorthandAdditions.h */,
+				7EDF8A30E38E256BB3DA3150D593369D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				1DDE6439671FFAE14328D414D9F19882 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				FD8CE99334F17050229C999AA6A7DD64 /* View+MASAdditions.h */,
+				1D58283D940D8EC7F3131FB93C54CD3E /* View+MASAdditions.m */,
+				E04597930D07E56207EFE9BC269FE921 /* View+MASShorthandAdditions.h */,
+				E7E4880476DA287C60041BBC91C5BEFB /* ViewController+MASAdditions.h */,
+				86FEFF5386B22B29F7AB72DB873A7CA5 /* ViewController+MASAdditions.m */,
+				DCCDD49445B29421A16F56380EAF0BF6 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		8F0370B7C3D451325B8EAB21A9D0CCEC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				05CF7E0005F3D1775F39177AA597C968 /* BlocksKit+UIKit.h */,
+				648AE29A41F52065DC57D94B35C8E569 /* UIActionSheet+BlocksKit.h */,
+				5E1815741068B806C707CC030CB9ED5B /* UIActionSheet+BlocksKit.m */,
+				107F53FDBDAE9CDD5802DC289B8F1547 /* UIAlertView+BlocksKit.h */,
+				BD5241EDE93978A2F676ADD8E455E77B /* UIAlertView+BlocksKit.m */,
+				2DC72A48DFC67484312FF32185352D64 /* UIBarButtonItem+BlocksKit.h */,
+				73D67509C383B988F98F850394D4885F /* UIBarButtonItem+BlocksKit.m */,
+				66C052C8A21E9E84E219BB293CB47978 /* UIControl+BlocksKit.h */,
+				64F8D920FF4AB7E8903A103749AD7616 /* UIControl+BlocksKit.m */,
+				6758C507C9E773AE22E029ED2F6AD493 /* UIGestureRecognizer+BlocksKit.h */,
+				6D278FEB433A89836FCD3867DC7D005C /* UIGestureRecognizer+BlocksKit.m */,
+				60BBE19967E146682C16CE86B131D4BC /* UIImagePickerController+BlocksKit.h */,
+				8CBB6CFD290FB2E4559AE989CE70975A /* UIImagePickerController+BlocksKit.m */,
+				A152D84B608C4332E55ECF9CE0BBEB34 /* UIPopoverController+BlocksKit.h */,
+				5D12DB8A1BD5506727C3CF4DA6CF0B35 /* UIPopoverController+BlocksKit.m */,
+				F1EEF4076959977217E1A17392E78D29 /* UITextField+BlocksKit.h */,
+				F3C652EEE4DDFB8855D4EBF93EB5B6F1 /* UITextField+BlocksKit.m */,
+				64BDCA8E5EB47E053C33310469662E16 /* UIView+BlocksKit.h */,
+				15C3563F81E315759AFF83EDEE60ACF7 /* UIView+BlocksKit.m */,
+				0ABD2E7B1740DB32269A2FABF35C6B06 /* UIWebView+BlocksKit.h */,
+				EFCD6278EE68881DE311BF61380BC249 /* UIWebView+BlocksKit.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		9C67B06C442537CEAEE8D6B7BEBE5EFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE459A8CE6E713ED6DD62A86651F1F /* libBlocksKit.a */,
+				97D1E1F113C924114DC742D3D1229D1A /* libGinhoorFramework.a */,
+				98287FF9212DBAE07ACF9AFC4ED39F02 /* libMasonry.a */,
+				8D4C9FBE7AEFA5C8D4265B4EA698AD6E /* libPods-GinCameraCaptureManager.a */,
+				D855D483420DE6CFBDC3690847C1C4CA /* libPods-GinCameraCaptureManagerTests.a */,
+				43350D9CBB427D98B6619DA58BC82EA6 /* libPods-GinCameraCaptureManagerUITests.a */,
+				0E543214C82AABC710C3B69790CE29D8 /* libTOCropViewController.a */,
+				2318B3A3A5345B7C7C49824C6285559C /* TOCropViewControllerBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3639B2A223EB7CCDF3E2B277828E2BC /* BlocksKit */ = {
+			isa = PBXGroup;
+			children = (
+				F3A1DE99C752A899A3B67BDC03451207 /* Core */,
+				3398371504F5C0A53682D4B77B1CF0E9 /* DynamicDelegate */,
+				DC6637BE48DE40CAEAC03715D18330DE /* MessageUI */,
+				D5400752AB5FC307002E278824C86DA6 /* Support Files */,
+				8F0370B7C3D451325B8EAB21A9D0CCEC /* UIKit */,
+			);
+			name = BlocksKit;
+			path = BlocksKit;
+			sourceTree = "<group>";
+		};
+		A52A4CBF5E1AE533B20608673582CA59 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1FD73DB5F78525A6A835E3EE6C227F18 /* GinCategory_Base64.h */,
+				F993C40A052847C005C93BAA4FF72264 /* NSArray+GinUnit.h */,
+				97814B0E83BB08D1A421F3F00E009A02 /* NSArray+GinUnit.m */,
+				A6909DFDFB70D1016859F0904F4E9828 /* NSAttributedString+GinUnit.h */,
+				ED2F786440C2068E0E552BF1F6A021BF /* NSAttributedString+GinUnit.m */,
+				5E125B066439F39134D6E292A78D1A42 /* NSData+NSString.h */,
+				FE0559F043039685DD73904C58E1C049 /* NSData+NSString.m */,
+				B9DF2BBAA5E5ADFFF4647D7450AF5226 /* NSDate+Range.h */,
+				E9E1E9DECEDFF3DD63444C4EFD502F9B /* NSDate+Range.m */,
+				02FE329D96A0064152A4C23AAF7483F6 /* NSDate+RCUtility.h */,
+				EC567C8C66C6D75587B087FF55843815 /* NSDate+RCUtility.m */,
+				73E20BC9076A8751BEBCF5C2AEC6B3DA /* NSDictionary+GinUnit.h */,
+				0B3AFE0EEAAAE3FA7F957A835AF1F425 /* NSDictionary+GinUnit.m */,
+				8832349FE38A4E15E947C62C87572DC4 /* NSObject+CoreGraphic.h */,
+				0224B41C10C2399107511AE770811FFF /* NSObject+CoreGraphic.m */,
+				01085E67AEDBA257C7B4815496A115D4 /* NSObject+GinJSON.h */,
+				0E0EF4EA663DE3C2FF7A160A68D9814F /* NSObject+GinJSON.m */,
+				49B41E5C767B8D85F966272930639E20 /* NSObject+GinSetterAndGetter.h */,
+				14DD86D8E9EB073A866C5F0A4AEB3CD0 /* NSObject+GinSetterAndGetter.m */,
+				D17881B3D07E80992D4BFE89D4975203 /* NSObject+GinUnit.h */,
+				27BA9D0E3385AAB8170BB0DC80E5D470 /* NSObject+GinUnit.m */,
+				2B9881CDB50A8675932FF67F31330499 /* NSObject+TYSwizzle.h */,
+				70D412EF698D5AB12C08DC64D6E12C71 /* NSObject+TYSwizzle.m */,
+				C297AC3C0FFD66295A79D93AE054FF43 /* NSString+Base64.h */,
+				473882A707C1823DD1C42B079EAA46BB /* NSString+Base64.m */,
+				741815DFD14A08032764C6A596CDCD30 /* NSString+formatContentString.h */,
+				492D06F83448D457E7EC66F39F8E5518 /* NSString+formatContentString.m */,
+				0FB8C1647D7BCC6DD3FA655045AD70AC /* NSString+GinJSON.h */,
+				81A64D309F162C2F12E5E31D4191A39A /* NSString+GinJSON.m */,
+				3DC2CB4B36205E47774B2793610C59FD /* NSString+GinUnit.h */,
+				1DFE6C2E0696F5A0AEFABDE5072852A3 /* NSString+GinUnit.m */,
+				F8F6329EF61786E19299718BBC6050DD /* NSString+MD5.h */,
+				F965D1A81E04CEEB2A49427E7C856011 /* NSString+MD5.m */,
+				7914530D5A7F24665839DFE0F3529967 /* NSString+RegEx.h */,
+				B36BFAB6D1C004D8DE03A118667E39D7 /* NSString+RegEx.m */,
+				11A344C9A74B1A22DEB551A744399C0C /* NSString+Size.h */,
+				D28E584F55C6344602218C158793AA95 /* NSString+Size.m */,
+				47E5EFE6DABABD44AD0E740FCFF21433 /* NSURL+GinUnit.h */,
+				DE128B7DD9176D452B63FF987C1F04BA /* NSURL+GinUnit.m */,
+				5DA6DDCF08809ECD074A62210B5E898A /* NSURL+Videos.h */,
+				4F98E529468E0173641710E5C7E1D5FB /* NSURL+Videos.m */,
+				2D8392C34EDBAB1DC8710944C171CBC0 /* TYSwizzle.h */,
+				6EE967A60F80040F5610C2A892CC00C1 /* TYSwizzle.m */,
+				D2D6335D073956C346140DCA66B625F5 /* UIAlertController+GinUnit.h */,
+				E889646AA1786E6DD64BBB1E79B656C7 /* UIAlertController+GinUnit.m */,
+				5073FE4B22AF0EEC62562687A5F2FE34 /* UIColor+Hex.h */,
+				60334B989955282C79245770F7CBF1E5 /* UIColor+Hex.m */,
+				8F69B1923D379EE006AB26E688ED6F2A /* UIImage+Base64.h */,
+				717FB81B2E5EA5CFB30848852DD48837 /* UIImage+Base64.m */,
+				B722DAD64ED3B10C0FEC12F7F202B744 /* UIImage+GinUnit.h */,
+				F99EA1B75C043A239A9A0D10EE92C070 /* UIImage+GinUnit.m */,
+				F39E7935B6C2A75DE7054A5E07B4CF7A /* UIResponder+GinUnit.h */,
+				571EAF27EA62DE163A489767000A7126 /* UIResponder+GinUnit.m */,
+				E0F6AB837476F9C6009ECDF22818D17F /* UIView+GinCGRect.h */,
+				31662DE91F8542803808E72CB4D3F113 /* UIView+GinCGRect.m */,
+				71990F80735270EC9BB650141E5665C5 /* UIView+Layer.h */,
+				F52BC9B4BD5271341B6A41FB94B71990 /* UIView+Layer.m */,
+				F149C7B6C059983A81A806AF4192D693 /* UIViewController+GinBaseClass.h */,
+				FA666930D20243EF1273A414DAB82235 /* UIViewController+GinBaseClass.m */,
+				A695BD5AD52316BD99960B5347686616 /* UIWindow+fullScreenshots.h */,
+				04AD14A6FA8259D08FAC8DCDE1E740B5 /* UIWindow+fullScreenshots.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		C58F467DDAA48454E44D1376999749CB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D3A28005135C3DC31EC355BB315A8A52 /* GinDateFormatterManager.h */,
+				7AB31B7A80FCFBB04E99D8153EF988EA /* GinDateFormatterManager.m */,
+				47CD4C6921CE83F71FE8450DBA959468 /* GinOperationQueueManager.h */,
+				A1BF4BFAD57495B5FB4858B5BC2E3A19 /* GinOperationQueueManager.m */,
+				C249002EEF2D7BB6A6A4E3A830CAC970 /* GinPopup.h */,
+				DCD1EEBAF4C1F0954B4B540D44D03533 /* GinPopup.m */,
+				D9E5A05C2A90611B3318F38554507BC7 /* GinPopupContentView.h */,
+				FACA4F9827BDB6DD1C91B74B53B96DFE /* GinPopupContentView.m */,
+				DA31772BF33DD4FB320E2A554411BDB4 /* GinPopupGradientView.h */,
+				7A604865EDA85B72F5B1F4ECD9CB62B5 /* GinPopupGradientView.m */,
+				65D82C695958C5369E8A3CBD44508432 /* GinPopupViewController.h */,
+				F8CB58ABDCA02222C346D45700C561A4 /* GinPopupViewController.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C7A9FCECF1A2AD9D692516C73B0171FB /* GinhoorFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2F1DA1CEA314C62F1A74FA7D343009F8 /* GinhoorFramework.h */,
+				A52A4CBF5E1AE533B20608673582CA59 /* Category */,
+				077CDFC26E0434FBFD256C26D0DF0517 /* GinSysInfo */,
+				C58F467DDAA48454E44D1376999749CB /* Manager */,
+				150ED2FA711A919DD4CC7470E7C89692 /* Support Files */,
+			);
+			name = GinhoorFramework;
+			path = GinhoorFramework;
+			sourceTree = "<group>";
+		};
+		D1E9986366EF4864A08FBE9C77E5D017 /* Pods-GinCameraCaptureManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69FF198169D7DF6D4AA99DD0D21CDDE8 /* Pods-GinCameraCaptureManagerUITests-acknowledgements.markdown */,
+				C3F5B3A569D253BF8B9EEE2496606D11 /* Pods-GinCameraCaptureManagerUITests-acknowledgements.plist */,
+				382C69C34F07F82CD2E883622D024924 /* Pods-GinCameraCaptureManagerUITests-dummy.m */,
+				371478601BBF427C371959C17A0AA10C /* Pods-GinCameraCaptureManagerUITests-frameworks.sh */,
+				32CEEF0698C57932A12CF2D3375D4A53 /* Pods-GinCameraCaptureManagerUITests-resources.sh */,
+				0E02E3CE8C9246E0FF3172929C46B9BD /* Pods-GinCameraCaptureManagerUITests.debug.xcconfig */,
+				C76DF3181A3F733F367FD8CD375065B9 /* Pods-GinCameraCaptureManagerUITests.release.xcconfig */,
+			);
+			name = "Pods-GinCameraCaptureManagerUITests";
+			path = "Target Support Files/Pods-GinCameraCaptureManagerUITests";
+			sourceTree = "<group>";
+		};
+		D5400752AB5FC307002E278824C86DA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				892B25C7B7D0A48DB9A47E0383D514DC /* BlocksKit.xcconfig */,
+				FE6630E7521B678371C82AB4F7DCD540 /* BlocksKit-dummy.m */,
+				EC28E12DC09656ABAB2FF762466BDCBF /* BlocksKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BlocksKit";
+			sourceTree = "<group>";
+		};
+		DC6637BE48DE40CAEAC03715D18330DE /* MessageUI */ = {
+			isa = PBXGroup;
+			children = (
+				D3054DFFCE149432EC59D50541D5F35C /* BlocksKit+MessageUI.h */,
+				2F263A54CFA32C96FE708EB9B7EE61B3 /* MFMailComposeViewController+BlocksKit.h */,
+				A8821175523FAE27ED513D0BDF8378BD /* MFMailComposeViewController+BlocksKit.m */,
+				7979EC6497B0BAADD101DD793CDBE100 /* MFMessageComposeViewController+BlocksKit.h */,
+				05F8DBCF68CF7ECD15DA6ACCD0F6E353 /* MFMessageComposeViewController+BlocksKit.m */,
+			);
+			name = MessageUI;
+			sourceTree = "<group>";
+		};
+		DCCDD49445B29421A16F56380EAF0BF6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57D9BC8C4550A21EB48C3D00D0FA780A /* Masonry.xcconfig */,
+				620B6D2374D005F68E13E364D8C6135E /* Masonry-dummy.m */,
+				04801D6A4D1B898129DF4FD8D3456E44 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		F3A1DE99C752A899A3B67BDC03451207 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				38D183D49C5D76D6FB43665EC745EF32 /* BKMacros.h */,
+				F8A74360E4580DE987B836B2C8D17A78 /* BlocksKit.h */,
+				5176D2C822B10A2CF426AADD9B0CF28C /* NSArray+BlocksKit.h */,
+				A1135525348D65104597229F36616C97 /* NSArray+BlocksKit.m */,
+				E162C7E27CF596D7831924BB858D2CBB /* NSDictionary+BlocksKit.h */,
+				8C4C2AD77F3C50E2724DEEAC2A73B987 /* NSDictionary+BlocksKit.m */,
+				E7536FE5772DD497822165C911187AEF /* NSIndexSet+BlocksKit.h */,
+				BFDD0DD54EBC81DBB00C97F071CB2F42 /* NSIndexSet+BlocksKit.m */,
+				F82E49AE6842D9A902C487A49B328946 /* NSInvocation+BlocksKit.h */,
+				8E3081EF87651552DFBDF5258A9B4F76 /* NSInvocation+BlocksKit.m */,
+				1B4C2B581F28D6AA670F3721086EE7C3 /* NSMutableArray+BlocksKit.h */,
+				9BF0F32683AE0B691CD08C28D7BA146B /* NSMutableArray+BlocksKit.m */,
+				7973046F040ECF57454392CF1665D72E /* NSMutableDictionary+BlocksKit.h */,
+				5AF0511D88148A0A554A86D9B6A0620C /* NSMutableDictionary+BlocksKit.m */,
+				310B3052ECD2B7783A6E3826BB4971F9 /* NSMutableIndexSet+BlocksKit.h */,
+				6C9A463CAB90161980A496A79D06313B /* NSMutableIndexSet+BlocksKit.m */,
+				56C9C5A81585F8B8229CA2B0E1F3464A /* NSMutableOrderedSet+BlocksKit.h */,
+				91D1771174C9069C6637050B3746E67E /* NSMutableOrderedSet+BlocksKit.m */,
+				8137A7241D676C115745DEA2BEB5A1EC /* NSMutableSet+BlocksKit.h */,
+				DA7B737BE4A64D90ECEDF71F80798361 /* NSMutableSet+BlocksKit.m */,
+				5C9592C91B8C4E938E77222960B74D99 /* NSObject+BKAssociatedObjects.h */,
+				83A643E814511268535D72A8AD0C61ED /* NSObject+BKAssociatedObjects.m */,
+				3E9D4B1AE23016300156706A8376ECBF /* NSObject+BKBlockExecution.h */,
+				042D76F90A165BA960215A10AA1F31EC /* NSObject+BKBlockExecution.m */,
+				351AAAB5E645CEC19DB26AEB03AB012D /* NSObject+BKBlockObservation.h */,
+				14271F0280FEC7F54482908ACDBFDD44 /* NSObject+BKBlockObservation.m */,
+				819D8154FD12D48966C068D33224ADBB /* NSOrderedSet+BlocksKit.h */,
+				58A9C0C9BB50D9D9F6D713843F32D296 /* NSOrderedSet+BlocksKit.m */,
+				AFB16A37F8E030986E8E4588DD83D786 /* NSSet+BlocksKit.h */,
+				8968D3750169194C5B14C143F1CC3AD8 /* NSSet+BlocksKit.m */,
+				9E13E220213AE4E5EE0852057F46C639 /* NSTimer+BlocksKit.h */,
+				53E7A4345454F02BF256B425D79980E9 /* NSTimer+BlocksKit.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D43204DC800FE70A1A72F709D1572EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873DCD156FEBA9A88D23964E0C442983 /* A2BlockInvocation.h in Headers */,
+				302259D4877C89D056A3DE7FEA1C4458 /* A2DynamicDelegate.h in Headers */,
+				474BA26E5E53CD1827E3290634C7956C /* BKMacros.h in Headers */,
+				CEBA89B6A48190DBA980DEC80B736D9A /* BlocksKit+MessageUI.h in Headers */,
+				69098C968B4B3ACF7A4CAB8A649534B2 /* BlocksKit+UIKit.h in Headers */,
+				05868AA8956F16B3E49A3FA2EAC9596D /* BlocksKit.h in Headers */,
+				79BE12B2FD34D7E548A037986F0CA91A /* MFMailComposeViewController+BlocksKit.h in Headers */,
+				25092106253D7C2FF9EC398455080FD7 /* MFMessageComposeViewController+BlocksKit.h in Headers */,
+				E431869A34BA39E56B608ED19A9CB95F /* NSArray+BlocksKit.h in Headers */,
+				908E4C7F0895F612E5BD31784B870699 /* NSCache+BlocksKit.h in Headers */,
+				C8960E1E92CF8B736801F60034A7F22E /* NSDictionary+BlocksKit.h in Headers */,
+				760E9AAE804D44989F27F35F8631964B /* NSIndexSet+BlocksKit.h in Headers */,
+				66EDD9DF20E4ACD4FAC796E0500ADE36 /* NSInvocation+BlocksKit.h in Headers */,
+				A453241592DEA8D2C25682AE85C109E1 /* NSMutableArray+BlocksKit.h in Headers */,
+				7DA0412521B9AB16E7106F25C1A0464D /* NSMutableDictionary+BlocksKit.h in Headers */,
+				A2882CACEB41B995D066D98989CACDE2 /* NSMutableIndexSet+BlocksKit.h in Headers */,
+				A91C2CAD2CD8438D032CA36D93E79F10 /* NSMutableOrderedSet+BlocksKit.h in Headers */,
+				550EA37D2A0BCF2CE64963288D4DADF2 /* NSMutableSet+BlocksKit.h in Headers */,
+				19E7315DF96BE4B55BEEA074DFA10448 /* NSObject+A2BlockDelegate.h in Headers */,
+				74E23CC45BA239A5F009E4B49BBCB51A /* NSObject+A2DynamicDelegate.h in Headers */,
+				54FFA88105CF7629DFCC3D5171E072A4 /* NSObject+BKAssociatedObjects.h in Headers */,
+				01BAAE67E325FBF104EFF58F7D09800C /* NSObject+BKBlockExecution.h in Headers */,
+				C8380B9D42ADAE706CC2479E53B6E6FA /* NSObject+BKBlockObservation.h in Headers */,
+				B5E236944F7A3EBFE972F62AF2DE44A9 /* NSOrderedSet+BlocksKit.h in Headers */,
+				7272C86A06EEFFE5AC8A1160C62F796A /* NSSet+BlocksKit.h in Headers */,
+				403D42897E6EEA8A5606BC91E931C70A /* NSTimer+BlocksKit.h in Headers */,
+				76EFE8B60B56D6E07D37C46A36ECCCE3 /* NSURLConnection+BlocksKit.h in Headers */,
+				7A2982CAFE0B37232493E1AF4C6A460D /* UIActionSheet+BlocksKit.h in Headers */,
+				AC85337AC01FAD43C053CA86F01A6F7F /* UIAlertView+BlocksKit.h in Headers */,
+				1F047BB3725080F8B0C63A1FAC114AD0 /* UIBarButtonItem+BlocksKit.h in Headers */,
+				06817784D5F9394F81EC5A67F4603F73 /* UIControl+BlocksKit.h in Headers */,
+				1EDBD04A84685D5AF488EF006C926DBF /* UIGestureRecognizer+BlocksKit.h in Headers */,
+				99B868FC01BDB4CB28D25FAE07845446 /* UIImagePickerController+BlocksKit.h in Headers */,
+				7D77E27D68B626E21C9BEFE965542B6C /* UIPopoverController+BlocksKit.h in Headers */,
+				9296A695231C359EF59059369284DA82 /* UITextField+BlocksKit.h in Headers */,
+				0E457F6F319168D369D1D12B38FEA7D7 /* UIView+BlocksKit.h in Headers */,
+				A373DFD3BB5132F9A8932ED4A3971BD9 /* UIWebView+BlocksKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1202891B97AAFC5840A04E3199BB2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5DD59D3B434D85C109E8C2B11EE927 /* TOActivityCroppedImageProvider.h in Headers */,
+				45D795191560F17E1462AB5357BF491F /* TOCropOverlayView.h in Headers */,
+				4A7C5CE977BDFC81825C98EBE9FCA86E /* TOCroppedImageAttributes.h in Headers */,
+				E44EA1635858586E749AF050E61BD1D5 /* TOCropScrollView.h in Headers */,
+				A763089FC6F5F8FF26987D1694D7B4EA /* TOCropToolbar.h in Headers */,
+				80EC07637E2FAA01DFB9962C72C03448 /* TOCropView.h in Headers */,
+				D78DF69B60D3FC7D053210AAAE3397A8 /* TOCropViewConstants.h in Headers */,
+				ED63A7E24BAA966FD126F2278EBF46DF /* TOCropViewController.h in Headers */,
+				4ABBA5699DFDEE780E6DF5D211FAC678 /* TOCropViewControllerTransitioning.h in Headers */,
+				8EEF848227C0DF6638A6A3AF67E37993 /* UIImage+CropRotate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E67E02DCCE2A3E18A37B9C5F1BE54AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31178C9271A35F3E73117F9E3BEC9F7 /* Gin_Macro.h in Headers */,
+				3903761D07EF2032300D93C78816868B /* GinCategory_Base64.h in Headers */,
+				61DCF9E92B5E02E4C626A543646B4E1C /* GinDateFormatterManager.h in Headers */,
+				E09A8787D344F2C2C44DDD4877241EA4 /* GinhoorFramework.h in Headers */,
+				1C4906480B55FEF7EE2B6711685F7436 /* GinOperationQueueManager.h in Headers */,
+				0BE16521D62E082A9087DBAC756AE72D /* GinPopup.h in Headers */,
+				A2A01437D075511A3615266DBFA8C5C5 /* GinPopupContentView.h in Headers */,
+				0F2E428D9D8C3E59692A43AB9D5025B3 /* GinPopupGradientView.h in Headers */,
+				0EB5A61FC6000E895A0CFF7F7762102F /* GinPopupViewController.h in Headers */,
+				7451AD5D7B51A0809D32E0D8F66657E7 /* GinSysInfo.h in Headers */,
+				CF7921B7E0AFACE32A9DC100D4074BA8 /* NSArray+GinUnit.h in Headers */,
+				B39195221539B8372F5F99521423E00E /* NSAttributedString+GinUnit.h in Headers */,
+				993A3BDEBBB5BBAAEDD8B9ACD3BD0B40 /* NSData+NSString.h in Headers */,
+				43BFD244493E3B518C992A17394FD072 /* NSDate+Range.h in Headers */,
+				0E079073984A1BD14EA6C1766B1868E1 /* NSDate+RCUtility.h in Headers */,
+				55A2F88F3E31F6F817C218102D42BD3D /* NSDictionary+GinUnit.h in Headers */,
+				CF1CEA9E1466ACEAF41D36F4E8832769 /* NSObject+CoreGraphic.h in Headers */,
+				B56D679C483DFBE4C6084EF6FEE84EA9 /* NSObject+GinJSON.h in Headers */,
+				F649B42DBD2161AA5F7B8DB303B61BEB /* NSObject+GinSetterAndGetter.h in Headers */,
+				07C38C0C546D37EF855AAD5F2F1388EC /* NSObject+GinUnit.h in Headers */,
+				1A97384FAB3EAFEB0C10058015778E61 /* NSObject+TYSwizzle.h in Headers */,
+				B0A276C5923E781999C5B1782EEC591C /* NSString+Base64.h in Headers */,
+				FDCE8C4C81D949EC8E36F7098924FE67 /* NSString+formatContentString.h in Headers */,
+				2267B1EDFF9DB204DD4DC5A306878C9E /* NSString+GinJSON.h in Headers */,
+				55354C27A2BF63143DBF36F5208AB0E9 /* NSString+GinUnit.h in Headers */,
+				1CFA388A96B5D79851114CE913FABD62 /* NSString+MD5.h in Headers */,
+				4B5C489E790D66500A7B5CDCE1C36198 /* NSString+RegEx.h in Headers */,
+				F7A33552FEBB5751AB7CEBBD442C4062 /* NSString+Size.h in Headers */,
+				C7F339C252FEB6A79CAF1309E91CA9CE /* NSURL+GinUnit.h in Headers */,
+				998FCDEAC107F0F4BA416A32E124ED72 /* NSURL+Videos.h in Headers */,
+				ABD93CB0D85DAC10CE64E050706A6298 /* TYSwizzle.h in Headers */,
+				330840C6EE52BEC31D8DFD488E07F627 /* UIAlertController+GinUnit.h in Headers */,
+				BB68BFCC110B44812E5D8A2BABF363C8 /* UIColor+Hex.h in Headers */,
+				CA97226E068C13F6880FE7A81584DBAC /* UIImage+Base64.h in Headers */,
+				FF571962AF75E19A6F817826BE7BAACE /* UIImage+GinUnit.h in Headers */,
+				ED345C4C5530AAFB30DA7AC704DB9932 /* UIResponder+GinUnit.h in Headers */,
+				0A871F4905A00A4C091414CEFA6BDAAD /* UIView+GinCGRect.h in Headers */,
+				C820261DA24518214E53A911CDFDC3C7 /* UIView+Layer.h in Headers */,
+				C06441B3BBA8EA39F5C23BD49FEC61BC /* UIViewController+GinBaseClass.h in Headers */,
+				9B787507A587B47DFFBC12D23D23D07E /* UIWindow+fullScreenshots.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF73468622762862D2FB76ED4AC0D8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */,
+				81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */,
+				6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */,
+				B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */,
+				9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */,
+				523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */,
+				7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */,
+				100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */,
+				5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */,
+				9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */,
+				FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */,
+				214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */,
+				92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */,
+				86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		089B472B5CDDE5BB453F8CBCB41CB52D /* Pods-GinCameraCaptureManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50490B11C40421593F37077988F48688 /* Build configuration list for PBXNativeTarget "Pods-GinCameraCaptureManagerTests" */;
+			buildPhases = (
+				F5ECA87A83688CC0A5439C6F406DDA69 /* Sources */,
+				392AB3E38A761A28B431ADF0A429DC57 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4469074583B063660E2D70E3E102FFE /* PBXTargetDependency */,
+			);
+			name = "Pods-GinCameraCaptureManagerTests";
+			productName = "Pods-GinCameraCaptureManagerTests";
+			productReference = D855D483420DE6CFBDC3690847C1C4CA /* libPods-GinCameraCaptureManagerTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0AC55E754182E1FCF070AC7F74379523 /* BlocksKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB6161BE903938AC2E35E7334E3AF36 /* Build configuration list for PBXNativeTarget "BlocksKit" */;
+			buildPhases = (
+				4B462F012D3FA0A5499AE0B3FEC7F7B6 /* Sources */,
+				B891C69B10FBABBFDC69E8CD3919E7C8 /* Frameworks */,
+				1D43204DC800FE70A1A72F709D1572EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlocksKit;
+			productName = BlocksKit;
+			productReference = F0AE459A8CE6E713ED6DD62A86651F1F /* libBlocksKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1DC34609135E2A423070FA4F526FB93F /* TOCropViewController-TOCropViewControllerBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E042D41B7D5C5B6050AF3BDFCE51DCC8 /* Build configuration list for PBXNativeTarget "TOCropViewController-TOCropViewControllerBundle" */;
+			buildPhases = (
+				7D1512E615BFB2733EFAE0BAD0B6B09E /* Sources */,
+				2D366B51622EED0D138BFF3C93E98EAB /* Frameworks */,
+				753E6CC53F75131B098D3C49C941F346 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TOCropViewController-TOCropViewControllerBundle";
+			productName = "TOCropViewController-TOCropViewControllerBundle";
+			productReference = 2318B3A3A5345B7C7C49824C6285559C /* TOCropViewControllerBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3AC359A807C4B61F765F19F9E7F1797D /* GinhoorFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184A76CDD22788D29C59EC61D34DF02E /* Build configuration list for PBXNativeTarget "GinhoorFramework" */;
+			buildPhases = (
+				122CFAB0D552AF4806953367ED7E8B73 /* Sources */,
+				77E939FC261BDC9A4B327A0399E0F0F8 /* Frameworks */,
+				9E67E02DCCE2A3E18A37B9C5F1BE54AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22B0A42C0A56A5A8EAFD67777B67C6F2 /* PBXTargetDependency */,
+			);
+			name = GinhoorFramework;
+			productName = GinhoorFramework;
+			productReference = 97D1E1F113C924114DC742D3D1229D1A /* libGinhoorFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55ADD626396F81DCE4AE450BFDAA372D /* TOCropViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585CA726BC86B549F61A1E6F7C7A925A /* Build configuration list for PBXNativeTarget "TOCropViewController" */;
+			buildPhases = (
+				95A1AEECCB11E379E61FA5DB04B63F26 /* Sources */,
+				83CFC400189AD2032A6F3B6D390260BA /* Frameworks */,
+				5F1202891B97AAFC5840A04E3199BB2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B5AC9EE6696F4C8B79171CD0D36EEA /* PBXTargetDependency */,
+			);
+			name = TOCropViewController;
+			productName = TOCropViewController;
+			productReference = 0E543214C82AABC710C3B69790CE29D8 /* libTOCropViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				C4BE2DC1E815E7367562323223772531 /* Sources */,
+				6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */,
+				BDF73468622762862D2FB76ED4AC0D8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 98287FF9212DBAE07ACF9AFC4ED39F02 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C9E6315B596D59CC6CAEFD68327E75BB /* Pods-GinCameraCaptureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D16F5C0B9BC5678FB80ACA67E1A13FC3 /* Build configuration list for PBXNativeTarget "Pods-GinCameraCaptureManager" */;
+			buildPhases = (
+				9AAE10140D3E2B3265D985412DA6A958 /* Sources */,
+				3350D5429F6C13783FDEFB38A8F37FA8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5752923862D6E37E4A35BC139B176822 /* PBXTargetDependency */,
+				F4263B8ABF5D25ED63956F12BE133B13 /* PBXTargetDependency */,
+				F4C963C05AFF4A18E4FBF036BE51E182 /* PBXTargetDependency */,
+				C1645EE18376E61A9E6DB0D636B5A238 /* PBXTargetDependency */,
+			);
+			name = "Pods-GinCameraCaptureManager";
+			productName = "Pods-GinCameraCaptureManager";
+			productReference = 8D4C9FBE7AEFA5C8D4265B4EA698AD6E /* libPods-GinCameraCaptureManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF2172BC76AB3093C5F27A272F564F77 /* Pods-GinCameraCaptureManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8BA3E9894B5C8652D1DD7E6CC24B331 /* Build configuration list for PBXNativeTarget "Pods-GinCameraCaptureManagerUITests" */;
+			buildPhases = (
+				5CEDD456FA8A1CCBD618D3A9E5502E21 /* Sources */,
+				4DFFF791E82DBDDEC026B6899D9E4A2D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				276BA1F5F556A20B915C8B0F451C6D28 /* PBXTargetDependency */,
+			);
+			name = "Pods-GinCameraCaptureManagerUITests";
+			productName = "Pods-GinCameraCaptureManagerUITests";
+			productReference = 43350D9CBB427D98B6619DA58BC82EA6 /* libPods-GinCameraCaptureManagerUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9C67B06C442537CEAEE8D6B7BEBE5EFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AC55E754182E1FCF070AC7F74379523 /* BlocksKit */,
+				3AC359A807C4B61F765F19F9E7F1797D /* GinhoorFramework */,
+				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
+				C9E6315B596D59CC6CAEFD68327E75BB /* Pods-GinCameraCaptureManager */,
+				089B472B5CDDE5BB453F8CBCB41CB52D /* Pods-GinCameraCaptureManagerTests */,
+				CF2172BC76AB3093C5F27A272F564F77 /* Pods-GinCameraCaptureManagerUITests */,
+				55ADD626396F81DCE4AE450BFDAA372D /* TOCropViewController */,
+				1DC34609135E2A423070FA4F526FB93F /* TOCropViewController-TOCropViewControllerBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		753E6CC53F75131B098D3C49C941F346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982FA59F7D93DFF497264C78E591B275 /* ar.lproj in Resources */,
+				710138E3D9B97EA029A85E3D58DDF68E /* Base.lproj in Resources */,
+				692D66809F37E21E9CBF3B1514705C25 /* da-DK.lproj in Resources */,
+				81E9560045EC1E7E82812AD48E4CEA5F /* de.lproj in Resources */,
+				D54FD2EB0A4CD09DDF26DD5640A7A95D /* en.lproj in Resources */,
+				B38AAE5C244B64D0C5BBEAAC90A9A325 /* es.lproj in Resources */,
+				B5CB8DE637250FFB384EB14F40BD736C /* fr.lproj in Resources */,
+				2A709566F5EB64187500E1177A7C9F84 /* hu.lproj in Resources */,
+				AEDA50642F61CED8CD130264EEB2A469 /* id.lproj in Resources */,
+				E6BC6617FCC68EC99478BBE069A8C4A5 /* it.lproj in Resources */,
+				5B2AADBA38F9F4D0DB984FFC33D4C3F6 /* ja.lproj in Resources */,
+				D6BAC6B4DA3C771E8B82D2B9E499B021 /* ko.lproj in Resources */,
+				95899967BB1DEFA7C623D1020F6CD5CB /* ms.lproj in Resources */,
+				88255C4754E418C31C48F70E4A963C55 /* nl.lproj in Resources */,
+				C3AEFEFFF9A65566A05B7E871AEF2795 /* pl.lproj in Resources */,
+				4BDA4D4DBF0D31670BFDFD5F4AE008BA /* pt.lproj in Resources */,
+				B5F70D91FD92C7E007EB71C9C361E0E8 /* ro.lproj in Resources */,
+				4CAD6CD9C513D0CD44AE9FC169C138C7 /* ru.lproj in Resources */,
+				113F50D5495246FDAC06D0EA33D0A1B1 /* tr.lproj in Resources */,
+				A24AF4D754FBCCCA897FE5E4E0A1F965 /* vi.lproj in Resources */,
+				E1D4C2C0A1DB1FEA9156EA8D069CF578 /* zh-Hans.lproj in Resources */,
+				5361BE75B2DBEF399D7D1E60C7055DC5 /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		122CFAB0D552AF4806953367ED7E8B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12FD472215FC0249EB7B5B8A8231F65 /* GinDateFormatterManager.m in Sources */,
+				714D252231EFF39CBBE8CEA1A763EEA5 /* GinhoorFramework-dummy.m in Sources */,
+				53BFA9210B6EDD2C8978CE7BDD961120 /* GinOperationQueueManager.m in Sources */,
+				6FBABEBBC2EB7500D1607BE8F92FAE8F /* GinPopup.m in Sources */,
+				DD80096598DC05A0E01B3A792181722E /* GinPopupContentView.m in Sources */,
+				2DE540927732F64917519293039F2C17 /* GinPopupGradientView.m in Sources */,
+				ADB09F06A81E866B3643F191C50185DA /* GinPopupViewController.m in Sources */,
+				09859180B161E7124E499DB2FE11157B /* GinSysInfo.m in Sources */,
+				EFCFF5BD4FEA3406520B45212E4D549D /* NSArray+GinUnit.m in Sources */,
+				87AEDA4D5938436BC4B256FA80CC4EA4 /* NSAttributedString+GinUnit.m in Sources */,
+				85D465E1A2CF399226845FDEC97331AE /* NSData+NSString.m in Sources */,
+				B210871EBF75A9ACA56EE76252346F5E /* NSDate+Range.m in Sources */,
+				DD09685CBCE69DAC451618533F299A31 /* NSDate+RCUtility.m in Sources */,
+				96C347869A461AE3D5DE9AA8857AADEE /* NSDictionary+GinUnit.m in Sources */,
+				73B1222C292B8559FEACBAC5C701A43B /* NSObject+CoreGraphic.m in Sources */,
+				334CDBACF359232AAF02147ABAA0163E /* NSObject+GinJSON.m in Sources */,
+				77FE6F824EFD078D86EDF1F0084D437C /* NSObject+GinSetterAndGetter.m in Sources */,
+				6DC5B9892798C22C31A69B33DD3FD5B7 /* NSObject+GinUnit.m in Sources */,
+				BD89FCADB69EDFC889EC0D89CFB1AB19 /* NSObject+TYSwizzle.m in Sources */,
+				D3A757E9E8F6645286525FF9B600E4AE /* NSString+Base64.m in Sources */,
+				32EF9F35B290E8C453CAC47F0FC1775F /* NSString+formatContentString.m in Sources */,
+				0D586CAC39FC07BE7DB2AC5FF0963789 /* NSString+GinJSON.m in Sources */,
+				B9BB3F1C71EBDD2333DDFC4B1CA8492F /* NSString+GinUnit.m in Sources */,
+				28D42AEBA19D912452D6ED91DBC54AB4 /* NSString+MD5.m in Sources */,
+				D1D407108ECF874824B4F2F4A81D682E /* NSString+RegEx.m in Sources */,
+				2B02569D52DDAF90AE135A5ADA376AA0 /* NSString+Size.m in Sources */,
+				1E7CCB013ED3E07F09E594C29F44CF2A /* NSURL+GinUnit.m in Sources */,
+				BE74C0CF57BCF8337767DF2E6231A06C /* NSURL+Videos.m in Sources */,
+				3B0D660A1679978127C2C263164AB3C6 /* TYSwizzle.m in Sources */,
+				DA5AC5B92EF1F9FACF26ECE110B80FF9 /* UIAlertController+GinUnit.m in Sources */,
+				D9D206C73022C3025A93B9CFD1F85919 /* UIColor+Hex.m in Sources */,
+				DF95E50968DE10B188771AADCC516485 /* UIImage+Base64.m in Sources */,
+				6CF4698CC02A91F9BD2D13D037E7B1DA /* UIImage+GinUnit.m in Sources */,
+				CFFFB84AD257A72667B5793935BC2A26 /* UIResponder+GinUnit.m in Sources */,
+				0DA3A704C56CDA32C2D741A1865BF855 /* UIView+GinCGRect.m in Sources */,
+				325E5E366187F0371063F3FF63A7543A /* UIView+Layer.m in Sources */,
+				0576FFFA3A9D83B0174B314A73DF918C /* UIViewController+GinBaseClass.m in Sources */,
+				76F21F78D6A45CCC8E24963BC8ADAD06 /* UIWindow+fullScreenshots.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B462F012D3FA0A5499AE0B3FEC7F7B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40641B43EFC2C9097296CAED5F223E97 /* A2BlockInvocation.m in Sources */,
+				90B6609B2596A88E836897BECCCE0FB0 /* A2DynamicDelegate.m in Sources */,
+				FE47D7E7B3D4768BCF59B119100EB4B6 /* BlocksKit-dummy.m in Sources */,
+				CEAEAEB843982881783614DD268E577E /* MFMailComposeViewController+BlocksKit.m in Sources */,
+				009FBA063F8B98B486CA8238C9D8FEBC /* MFMessageComposeViewController+BlocksKit.m in Sources */,
+				75B15B0CE3322749FF70B0CD914214C0 /* NSArray+BlocksKit.m in Sources */,
+				0E442CB264A1C7073E88269054781332 /* NSCache+BlocksKit.m in Sources */,
+				35B39A5C87AA1C1C12D4C7D0769DCEE8 /* NSDictionary+BlocksKit.m in Sources */,
+				C9D3CEFF4AAB2678493E5398A4DBD0C6 /* NSIndexSet+BlocksKit.m in Sources */,
+				D8CEE3B2B0A210EEFAED4D37BA88AC0D /* NSInvocation+BlocksKit.m in Sources */,
+				D1F21A6E6F8A9FFE28638453F81671DD /* NSMutableArray+BlocksKit.m in Sources */,
+				E13CF4DFF242D0909E592324FB146C34 /* NSMutableDictionary+BlocksKit.m in Sources */,
+				D7B4D8B965A85E0EFF012903B042D634 /* NSMutableIndexSet+BlocksKit.m in Sources */,
+				4A092CB3E13A60166BC25899A2BCBA6E /* NSMutableOrderedSet+BlocksKit.m in Sources */,
+				57D9ACE3CDA993D298A72A4AE83321EE /* NSMutableSet+BlocksKit.m in Sources */,
+				48D172072BBF93ACC3BF42A893FB175D /* NSObject+A2BlockDelegate.m in Sources */,
+				24402AD75212C9CAB69D5C79F8CD1D57 /* NSObject+A2DynamicDelegate.m in Sources */,
+				4E7B12283E94E4D644A2AE01F28C82E6 /* NSObject+BKAssociatedObjects.m in Sources */,
+				9E05B5B242ED76AF56F2F6E8F5F4C3B9 /* NSObject+BKBlockExecution.m in Sources */,
+				81ED0E2D7FFC9753EBAF5AF9F95E9BEB /* NSObject+BKBlockObservation.m in Sources */,
+				B705284BFE51712231AD80A7D9EDBD38 /* NSOrderedSet+BlocksKit.m in Sources */,
+				3F9CBF786C694F0330F8AAC6D1FDB2E9 /* NSSet+BlocksKit.m in Sources */,
+				CE40BFC1AA8AD114119494D24223B4B9 /* NSTimer+BlocksKit.m in Sources */,
+				F5FA806C85743326A1D48EA71E10D245 /* NSURLConnection+BlocksKit.m in Sources */,
+				44333FDC0AC983E6066C45F666E3058E /* UIActionSheet+BlocksKit.m in Sources */,
+				6464DDC94DDC212BB9D0BBE166E20D89 /* UIAlertView+BlocksKit.m in Sources */,
+				2D8DDCBBA43F21871FB1D968D380533B /* UIBarButtonItem+BlocksKit.m in Sources */,
+				AF94EA3101599CD3841ADCD30C50D9E8 /* UIControl+BlocksKit.m in Sources */,
+				090FE317027AA0ECC82BAA39993B5900 /* UIGestureRecognizer+BlocksKit.m in Sources */,
+				1158DADEC234061487F1A75352975E6E /* UIImagePickerController+BlocksKit.m in Sources */,
+				2718010AF064CDDB90A0D0E8F3A5686E /* UIPopoverController+BlocksKit.m in Sources */,
+				238731DD65ABDC45546271DBE7EE496F /* UITextField+BlocksKit.m in Sources */,
+				FE03293488E60604B3F018D1834FCAB6 /* UIView+BlocksKit.m in Sources */,
+				7A632870FBAA8B5DE8659EF0DF1B7A60 /* UIWebView+BlocksKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CEDD456FA8A1CCBD618D3A9E5502E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4600E5594347752FB1AC37CD89B57E94 /* Pods-GinCameraCaptureManagerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1512E615BFB2733EFAE0BAD0B6B09E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95A1AEECCB11E379E61FA5DB04B63F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D1A390F5E9D8281C2938C5A265BEC2 /* TOActivityCroppedImageProvider.m in Sources */,
+				90DDBB5857042592F483B7B6181BE089 /* TOCropOverlayView.m in Sources */,
+				2FED20770A441116ACAC2939CD530107 /* TOCroppedImageAttributes.m in Sources */,
+				A283719B44CB0E3F1E0FB90B4D37FD13 /* TOCropScrollView.m in Sources */,
+				E9EF69F1416B7683844A12DDB2E05FBC /* TOCropToolbar.m in Sources */,
+				85C26D267A7FF55303376323A611374A /* TOCropView.m in Sources */,
+				3086DE16B1101A77527DA1975BD51E7C /* TOCropViewController-dummy.m in Sources */,
+				55F76425E00A41A45317375EE960CE0D /* TOCropViewController.m in Sources */,
+				2C7FB0DE4284234C6663F25EE76B9E87 /* TOCropViewControllerTransitioning.m in Sources */,
+				93B489ED290DE6831803C432D2A43391 /* UIImage+CropRotate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AAE10140D3E2B3265D985412DA6A958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035EF83B8E1F38C1540BA0CA479010C5 /* Pods-GinCameraCaptureManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BE2DC1E815E7367562323223772531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */,
+				89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */,
+				DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */,
+				955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */,
+				68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */,
+				13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */,
+				2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */,
+				7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */,
+				3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */,
+				D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECA87A83688CC0A5439C6F406DDA69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8DA367458A9BF0158B63428270AA3A /* Pods-GinCameraCaptureManagerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22B0A42C0A56A5A8EAFD67777B67C6F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlocksKit;
+			target = 0AC55E754182E1FCF070AC7F74379523 /* BlocksKit */;
+			targetProxy = 5D3014BB951DBDEEC4E000122473F2D8 /* PBXContainerItemProxy */;
+		};
+		276BA1F5F556A20B915C8B0F451C6D28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GinCameraCaptureManager";
+			target = C9E6315B596D59CC6CAEFD68327E75BB /* Pods-GinCameraCaptureManager */;
+			targetProxy = E6F6AEEE6700A8B052BBAC9A09FAAD8D /* PBXContainerItemProxy */;
+		};
+		5752923862D6E37E4A35BC139B176822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlocksKit;
+			target = 0AC55E754182E1FCF070AC7F74379523 /* BlocksKit */;
+			targetProxy = C0AF96254D7810F1E036ACE8D8EF53C8 /* PBXContainerItemProxy */;
+		};
+		B7B5AC9EE6696F4C8B79171CD0D36EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TOCropViewController-TOCropViewControllerBundle";
+			target = 1DC34609135E2A423070FA4F526FB93F /* TOCropViewController-TOCropViewControllerBundle */;
+			targetProxy = 96BEE71023432239D2D76307B7691191 /* PBXContainerItemProxy */;
+		};
+		C1645EE18376E61A9E6DB0D636B5A238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TOCropViewController;
+			target = 55ADD626396F81DCE4AE450BFDAA372D /* TOCropViewController */;
+			targetProxy = 77CEEA08CF4ED6E385235C2C66230C19 /* PBXContainerItemProxy */;
+		};
+		D4469074583B063660E2D70E3E102FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GinCameraCaptureManager";
+			target = C9E6315B596D59CC6CAEFD68327E75BB /* Pods-GinCameraCaptureManager */;
+			targetProxy = 164374103FA21306950A5E3DB534A650 /* PBXContainerItemProxy */;
+		};
+		F4263B8ABF5D25ED63956F12BE133B13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GinhoorFramework;
+			target = 3AC359A807C4B61F765F19F9E7F1797D /* GinhoorFramework */;
+			targetProxy = 6D2386A8A08D933A388875BC64BBB762 /* PBXContainerItemProxy */;
+		};
+		F4C963C05AFF4A18E4FBF036BE51E182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = 5B6B33071407BDF5677A2318FB15EAD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		089E7E121FBCCFEE734E06BDFEE2E06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E02E3CE8C9246E0FF3172929C46B9BD /* Pods-GinCameraCaptureManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F9F0A8FA1DE4608FBEF07CC4C9FA03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CFEBEA64F18CB5DA87E5E0D6C9C482 /* Pods-GinCameraCaptureManager.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BEE5082736ED45F284AFC653BD38E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4934A5354F4C65BE6697138C429CA286 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		411477BCD1433A862CECB1BD1C82C9FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83195B089872CB1709576E2756CFFDB /* GinhoorFramework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GinhoorFramework/GinhoorFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GinhoorFramework;
+				PRODUCT_NAME = GinhoorFramework;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53A3AD04D755E739B5350B0D4B906C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83195B089872CB1709576E2756CFFDB /* GinhoorFramework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GinhoorFramework/GinhoorFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GinhoorFramework;
+				PRODUCT_NAME = GinhoorFramework;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6033A2127E806DD5C86A515742F7445E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D9BC8C4550A21EB48C3D00D0FA780A /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6681B1A324732F8264BB932595DFA69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D9BC8C4550A21EB48C3D00D0FA780A /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A990DB6D67F64692062BB3208B5FC82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4934A5354F4C65BE6697138C429CA286 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TOCropViewController;
+				PRODUCT_NAME = TOCropViewController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		88622BAC3E8DF822F4AC8585280FEE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892B25C7B7D0A48DB9A47E0383D514DC /* BlocksKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BlocksKit/BlocksKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BlocksKit;
+				PRODUCT_NAME = BlocksKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D983990189746C179BFEC4ABBAEA29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C76DF3181A3F733F367FD8CD375065B9 /* Pods-GinCameraCaptureManagerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE8EF611A66CC9BC5751E915758279F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892B25C7B7D0A48DB9A47E0383D514DC /* BlocksKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BlocksKit/BlocksKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BlocksKit;
+				PRODUCT_NAME = BlocksKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFE010893B02CFCD82CB2A877BFB5A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4934A5354F4C65BE6697138C429CA286 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DEB27CFB89271DA60177805D4EC0832A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFAA518576984421E5E16279166A50E /* Pods-GinCameraCaptureManagerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2533E56D52359231C87BB48D8B3D6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A47B447A107F655E7097B50A6710FD5 /* Pods-GinCameraCaptureManager.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC2A1896F7C9D9F7FE2DF07D1618AD94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4934A5354F4C65BE6697138C429CA286 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TOCropViewController;
+				PRODUCT_NAME = TOCropViewController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F98CAB80B6DF3FFAA1CF1F124E2BF4A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8309958A3CFA8180084E4D3C48FB73 /* Pods-GinCameraCaptureManagerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184A76CDD22788D29C59EC61D34DF02E /* Build configuration list for PBXNativeTarget "GinhoorFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411477BCD1433A862CECB1BD1C82C9FD /* Debug */,
+				53A3AD04D755E739B5350B0D4B906C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
+				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6033A2127E806DD5C86A515742F7445E /* Debug */,
+				6681B1A324732F8264BB932595DFA69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50490B11C40421593F37077988F48688 /* Build configuration list for PBXNativeTarget "Pods-GinCameraCaptureManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB27CFB89271DA60177805D4EC0832A /* Debug */,
+				F98CAB80B6DF3FFAA1CF1F124E2BF4A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585CA726BC86B549F61A1E6F7C7A925A /* Build configuration list for PBXNativeTarget "TOCropViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2A1896F7C9D9F7FE2DF07D1618AD94 /* Debug */,
+				6A990DB6D67F64692062BB3208B5FC82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB6161BE903938AC2E35E7334E3AF36 /* Build configuration list for PBXNativeTarget "BlocksKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88622BAC3E8DF822F4AC8585280FEE2A /* Debug */,
+				AE8EF611A66CC9BC5751E915758279F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D16F5C0B9BC5678FB80ACA67E1A13FC3 /* Build configuration list for PBXNativeTarget "Pods-GinCameraCaptureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2533E56D52359231C87BB48D8B3D6A2 /* Debug */,
+				1F9F0A8FA1DE4608FBEF07CC4C9FA03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E042D41B7D5C5B6050AF3BDFCE51DCC8 /* Build configuration list for PBXNativeTarget "TOCropViewController-TOCropViewControllerBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEE5082736ED45F284AFC653BD38E73 /* Debug */,
+				BFE010893B02CFCD82CB2A877BFB5A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8BA3E9894B5C8652D1DD7E6CC24B331 /* Build configuration list for PBXNativeTarget "Pods-GinCameraCaptureManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089E7E121FBCCFEE734E06BDFEE2E06C /* Debug */,
+				9D983990189746C179BFEC4ABBAEA29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
