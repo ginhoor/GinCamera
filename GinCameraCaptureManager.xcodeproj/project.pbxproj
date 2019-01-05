@@ -392,6 +392,7 @@
 		00A2503121DF60BF00B77C72 /* CaptureSinglePhoto */ = {
 			isa = PBXGroup;
 			children = (
+				00A2503321DF60BF00B77C72 /* View */,
 				00A250A821E094F000B77C72 /* Resource */,
 				00A2506121DF7C2A00B77C72 /* Model */,
 				00A2505D21DF6B7800B77C72 /* ViewModel */,
@@ -399,7 +400,6 @@
 				00A2503621DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.m */,
 				00A250A521E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.h */,
 				00A250A621E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.m */,
-				00A2503321DF60BF00B77C72 /* View */,
 			);
 			path = CaptureSinglePhoto;
 			sourceTree = "<group>";

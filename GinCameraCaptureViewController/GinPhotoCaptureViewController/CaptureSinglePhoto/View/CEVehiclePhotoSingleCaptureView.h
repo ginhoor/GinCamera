@@ -80,12 +80,10 @@ typedef NS_ENUM(NSUInteger, GinPhotoSingleCaptureStatus) {
  辅助线
  */
 @property (strong, nonatomic) UIImageView *tipsLineImgV;
-
 /**
  拍摄提示器
  */
 @property (strong, nonatomic) GinCaptureHelpTipsView *helpTipsView;
-
 /**
  右侧控制区域
  */

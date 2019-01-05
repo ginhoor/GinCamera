@@ -78,6 +78,8 @@
 
     [self.view setNeedsUpdateConstraints];
     
+    [self loadUrl];
+    
     [self showViewControllerAnimated:0.01f];
 }
 

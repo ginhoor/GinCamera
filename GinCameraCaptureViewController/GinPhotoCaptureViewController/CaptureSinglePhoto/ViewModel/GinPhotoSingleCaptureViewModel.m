@@ -42,7 +42,6 @@
 - (void)setPhoto:(GinCapturePhoto *)photo
 {
     _photo = photo;
-    
     __weak typeof(self) _WeakSelf = self;
     [RACObserve(self.photo, localFilename) subscribeNext:^(NSString *x) {
         if ([x isNotBlank]) {

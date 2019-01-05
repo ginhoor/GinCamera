@@ -13,6 +13,7 @@
 #import <UIColor+Hex.h>
 #import <ReactiveObjC.h>
 #import <NSString+Size.h>
+#import <NSString+GinUnit.h>
 
 #import "CEVehiclePhotoSingleCaptureView.h"
 
@@ -44,7 +45,7 @@
                                  self.backBtn,
                                  self.photoIndexLable,
                                  self.helpTipsView,
-                                 self.photoTitleLable
+//                                 self.photoTitleLable
                                  ];
     
     self.capturedStatusControls = @[self.deletePhotoBtn,
@@ -55,7 +56,7 @@
                                     self.finishBtn,
                                     self.backBtn,
                                     self.photoIndexLable,
-                                    self.photoTitleLable,
+//                                    self.photoTitleLable,
                                     self.switchView,
                                     self.capturedImageView];
     self.editStatusControls = @[self.backBtn,
@@ -364,7 +365,7 @@
             [self.readyStatusControls enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 
                 if (obj == self.helpTipsView
-//                    && ![self.viewModel.photoIndex hasTips] && ![self.viewModel.photoIndex.sampleUrl isNotBlank]
+                    && ![self.viewModel.photoIndex.viewUrl isNotBlank] && ![self.viewModel.photoIndex.sampleUrl isNotBlank]
                     ) {
                     obj.hidden = YES;
                 } else {
@@ -572,6 +573,7 @@
         _photoTitleLable.layer.masksToBounds = YES;
         _photoTitleLable.backgroundColor = [UIColor blackColorWithAlpha:0.5];
         _photoTitleLable.textAlignment = NSTextAlignmentCenter;
+        _photoIndexLable.hidden = YES;
     }
     return _photoTitleLable;
 }

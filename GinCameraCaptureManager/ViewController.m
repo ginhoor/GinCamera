@@ -26,7 +26,6 @@
 
 - (IBAction)video:(id)sender
 {
-
     GinVideoCaptureViewController *vc = [[GinVideoCaptureViewController alloc] init];
     
     vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
@@ -49,7 +48,7 @@
     photoEnum.sampleUrl = @"https://www.baidu.com/img/bd_logo1.png?qua=high&where=super";
     photoEnum.viewUrl = @"https://www.baidu.com";
     
-    GinCapturePhoto *currentPhoto = [[GinCapturePhoto alloc] init];
+    GinCapturePhoto *currentPhoto = [GinCapturePhoto photo:photoEnum];
     
     [self.singleCaptureVC presentSinglePhoto:self photoIndex:photoEnum photo:currentPhoto didSelectPhotoBlock:^(NSString * _Nonnull localPhotoFileName, GinCapturePhoto * _Nonnull photo, GinCapturePhotoEnum * _Nonnull photoIndex) {
         
