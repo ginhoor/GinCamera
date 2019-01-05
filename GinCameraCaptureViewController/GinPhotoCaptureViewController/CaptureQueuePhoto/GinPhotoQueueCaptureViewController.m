@@ -1,9 +1,9 @@
 //
-//  GinPhotoSingleCaptureViewController.m
-//  CommercialVehiclePlatform
+//  GinPhotoQueueCaptureViewController.m
+//  JunhuaShao
 //
-//  Created by JunhuaShao on 2018/6/13.
-//  Copyright © 2018年 JunhuaShao. All rights reserved.
+//  Created by JunhuaShao on 2017/11/2.
+//  Copyright © 2017年 JunhuaShao. All rights reserved.
 //
 
 #import <UIImage+GinUnit.h>
@@ -13,25 +13,24 @@
 #import <NSString+GinUnit.h>
 #import <Gin_Macro.h>
 
-#import "GinPhotoSingleCaptureViewController.h"
+#import "GinPhotoQueueCaptureViewController.h"
 
 #import "GinLandscapeImagePickerController+Router.h"
 #import "GinPhotoCaptureTipsViewController+Router.h"
 #import "GinLandSpaceAlertViewController.h"
 #import "GinPhotoCaptureManager.h"
-#import "CEVehiclePhotoSingleCaptureView.h"
+#import "GinPhotoCaptureView.h"
 
+#import "GinMediaManager.h"
 
-@interface GinPhotoSingleCaptureViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface GinPhotoQueueCaptureViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (strong, nonatomic) CEVehiclePhotoSingleCaptureView *captureView;
-
+@property (strong, nonatomic) GinPhotoCaptureView *captureView;
 @property (strong, nonatomic) GinPhotoCaptureManager *captureManager;
-
 
 @end
 
-@implementation GinPhotoSingleCaptureViewController
+@implementation GinPhotoQueueCaptureViewController
 
 - (BOOL)prefersStatusBarHidden
 {
@@ -44,13 +43,28 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     [self setupViews];
-
+    
     __weak typeof(self) _WeakSelf = self;
     [RACObserve(self.captureManager.photoSettings, flashMode) subscribeNext:^(NSNumber *mode) {
         NSInteger modeEnum = mode.integerValue;
         [_WeakSelf.captureView setFlashModeUI:modeEnum];
     }];
-
+    
+    [RACObserve(self.viewModel, nextType) subscribeNext:^(NSNumber *nextType) {
+        if (nextType.integerValue == GinPhotoQueueCaptureNextTypeCapturePhoto) {
+            [_WeakSelf.captureView.nextBtn setTitle:@"下一张" forState:UIControlStateNormal];
+        } else {
+            [_WeakSelf.captureView.nextBtn setTitle:@"完成" forState:UIControlStateNormal];
+        }
+    }];
+//    [RACObserve(self.viewModel, self.currentPhotoIndex) subscribeNext:^(CEVehiclePhotoItem *index) {
+//
+//        [self.captureView setPhotoIndex:[self.viewModel.photoIndexQueue indexOfObject:index] count:self.viewModel.photoIndexQueue.count];
+//
+//        [self.captureView setupPhotoTitle:index.displayName];
+//
+//    }];
+    
     // 屏幕旋转90度
     self.view.transform = CGAffineTransformMakeRotation(M_PI_2);
 }
@@ -76,7 +90,6 @@
         return;
     }
     
-    
     // 默认不开启原图模式
     self.viewModel.showOriginPhoto = NO;
     self.captureView.switchView.toggleSwitch.on = NO;
@@ -84,9 +97,10 @@
     [self.captureManager resetDeviceConfig];
     [self.captureManager.session startRunning];
     
-    NSString *localFileName = [self.viewModel.photo fetchLocalFilename];
-    NSString *pictureUrl = [self.viewModel.photo fetchPhotoUrl];
-    
+    GinCapturePhoto *photo = [self.viewModel getCurrentPhoto];
+    NSString *localFileName = [photo fetchLocalFilename];
+    NSString *pictureUrl = [photo fetchPhotoUrl];
+
     if ([localFileName isNotBlank] || [pictureUrl isNotBlank]) {
         [self displayPhotoMode];
     } else {
@@ -160,19 +174,19 @@
     
     [self.captureView.nextEditionActionBtn addTarget:self action:@selector(nextEditAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.captureView.previousEditionActionBtn addTarget:self action:@selector(previousEditAction:) forControlEvents:UIControlEventTouchUpInside];
-    
+
     [self.captureView.helpTipsView addTarget:self action:@selector(showHelpTips:) forControlEvents:UIControlEventTouchUpInside];
     [self setupCaptureManager];
 }
 
 - (void)showHelpTips:(id)sender
 {
-    [GinPhotoCaptureTipsViewController presentTips:self viewUrl:self.viewModel.photoIndex.viewUrl];
+    [GinPhotoCaptureTipsViewController presentTips:self viewUrl:self.viewModel.currentPhotoIndex.viewUrl];
 }
 
 - (void)toggleSwitchAction:(UISwitch *)switchView
 {
-    self.viewModel.showOriginPhoto = switchView.on;    
+    self.viewModel.showOriginPhoto = switchView.on;
     [self displayPhotoMode];
 }
 
@@ -195,7 +209,7 @@
 - (void)mosaicsAction:(id)sender
 {
     self.captureView.status = GinPhotoCaptureStatusMosaics;
-    
+
     self.captureView.editView.viewModel.currentActionType = GinEditPhotoActionTypeMosaic;
     
     [self.viewModel updateEditedImageByCurrentCapturedPhoto];
@@ -212,14 +226,31 @@
 }
 
 - (void)backAction:(id)sender
-{    
+{
+    if (self.didStopCapturingBlock) {
+        self.didStopCapturingBlock(self.viewModel.currentPhotoIndex, self.viewModel.nextType == GinPhotoQueueCaptureNextTypeNothing);
+    }
+
     [self dismissViewControllerAnimated];
     [self.viewModel.editViewModel clearAllAction];
 }
 
 - (void)nextStepAction:(id)sender
 {
+//    if (self.viewModel.nextPhotoIndex) {
+    
+    if (self.viewModel.nextPhotoIndex) {
+        self.viewModel.currentPhotoIndex = self.viewModel.nextPhotoIndex;
+    }
+    
     [self capturePhotoMode];
+//    } else {
+//        if ([self.viewModel cycelFindNextPhotoIndex]) {
+//            [self capturePhotoMode];
+//        } else {
+//            [self displayPhotoMode];
+//        }
+//    }
 }
 
 - (void)finishAction:(id)sender
@@ -233,8 +264,9 @@
         self.viewModel.showOriginPhoto = NO;
         self.captureView.switchView.toggleSwitch.on = NO;
         [self.viewModel.editViewModel clearAllAction];
-        
+
         savedImage = [self.viewModel.compressManager compressImage:savedImage];
+        
         [self saveCapturedImage:savedImage isEdited:YES];
     }
 }
@@ -243,18 +275,19 @@
 - (void)capturePhotoAction:(id)sender
 {
     self.captureView.cameraBtn.enabled = NO;
+    __weak typeof(self) _WeakSelf = self;
     [self.captureManager captureImageWithOrientation:AVCaptureVideoOrientationLandscapeRight completion:^(BOOL success, UIImage *image, NSError *error) {
         
         UIImage *savedImage = [self.viewModel.compressManager compressImage:image];
         [self saveCapturedImage:savedImage isEdited:NO];
-        [self.captureManager resetDeviceConfig];
+        [_WeakSelf.captureManager resetDeviceConfig];
     }];
 }
 
 - (void)showPhotoLibrary:(id)sender
 {
     // 跳转到相册页面
-    [self presentViewController:[GinLandscapeImagePickerController VCWithDelegate:self] animated:YES completion:^{}];
+    [self presentViewController:[GinLandscapeImagePickerController VCWithDelegate:self] animated:YES completion:nil];
 }
 
 - (void)retryAction:(id)sender
@@ -267,8 +300,13 @@
     if (self.captureManager.photoSettings.flashMode == AVCaptureFlashModeAuto) {
         self.captureManager.photoSettings.flashMode = AVCaptureFlashModeOff;
     } else {
-        self.captureManager.photoSettings.flashMode++;
+        NSInteger currentFlashMode = self.captureManager.photoSettings.flashMode + 1;
+        
+        if ([[self.captureManager.captureOutput supportedFlashModes] containsObject:@(currentFlashMode)]) {
+            self.captureManager.photoSettings.flashMode = currentFlashMode;
+        }
     }
+    
 }
 
 /**
@@ -278,26 +316,33 @@
 {
     self.captureView.status = GinPhotoCaptureStatusCaptured;
     
-    NSString *localFilename = [self.viewModel.photo fetchLocalFilename];
-    NSString *pictureUrl = [self.viewModel.photo fetchPhotoUrl];
-
-    if (self.viewModel.showOriginPhoto) {
-        localFilename = self.viewModel.photo.localFilename;
-        pictureUrl = self.viewModel.photo.photoUrl;
-    } else {
-        localFilename = [self.viewModel.photo fetchLocalFilename];
-        pictureUrl = [self.viewModel.photo fetchPhotoUrl];
-    }
+    GinCapturePhoto *photo = [self.viewModel getCurrentPhoto];
     
+    NSString *localFilename;
+    NSString *pictureUrl;
+    
+    if (self.viewModel.showOriginPhoto) {
+        localFilename = photo.localFilename;
+        pictureUrl = photo.photoUrl;
+    } else {
+        localFilename = [photo fetchLocalFilename];
+        pictureUrl = [photo fetchPhotoUrl];
+    }
+
     if ([localFilename isNotBlank]) {
         self.captureView.capturedImageView.image = [GinMediaManager getImageByName:localFilename];
     } else if ([pictureUrl isNotBlank]) {
+        __weak typeof(self) _WeakSelf = self;
         [self.captureView.capturedImageView sd_setImageWithURL:[NSURL URLWithString:pictureUrl] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
             if (error) {
-//                self.captureView.capturedImageView.image = [UIImage imageNamed:@"photo_loading_bg"];
+                _WeakSelf.captureView.capturedImageView.image = [UIImage imageNamed:@"photo_loading_bg"];
             }
         }];
     }
+    
+    [self.captureView setPhotoIndex:[self.viewModel.photoIndexQueue indexOfObject:self.viewModel.currentPhotoIndex] count:self.viewModel.photoIndexQueue.count];
+
+    [self.captureView setupPhotoRejectReason:[self.viewModel getCurrentPhoto].remark photoStatusType:GinPhotoAuditStatusEnumTypeAudtingPass];
 }
 
 /**
@@ -306,11 +351,24 @@
 - (void)capturePhotoMode
 {
     self.captureView.status = GinPhotoCaptureStatusReady;
-    self.captureView.cameraBtn.enabled = YES;
     
+    self.captureView.cameraBtn.enabled = YES;
+                   
     //标题
-    [self.captureView setupPhotoTitle:self.viewModel.photoIndex.displayName imgUrl:self.viewModel.photoIndex.sampleUrl rejectReason:self.viewModel.photo.remark photoStatusType:GinPhotoAuditStatusEnumTypeAudtingPass];
-    self.captureView.tipsLineImgV.image = nil;
+    [self.captureView setupPhotoTitle:self.viewModel.currentPhotoIndex.displayName imgUrl:self.viewModel.currentPhotoIndex.sampleUrl];
+    
+    [self.captureView setPhotoIndex:[self.viewModel.photoIndexQueue indexOfObject:self.viewModel.currentPhotoIndex] count:self.viewModel.photoIndexQueue.count];
+
+    [self.captureView setupPhotoRejectReason:[self.viewModel getCurrentPhoto].remark photoStatusType:GinPhotoAuditStatusEnumTypeAudtingPass];
+
+//    //引导线
+//    if (self.viewModel.currentPhotoIndex.guideUrl) {
+//        [self.captureView.tipsLineImgV sd_setImageWithURL:[NSURL URLWithString:self.viewModel.currentPhotoIndex.guideUrl] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//        }];
+//    } else {
+        self.captureView.tipsLineImgV.image = nil;
+//    }
+
 }
 
 /**
@@ -323,46 +381,55 @@
     NSNumber *success = result[@"success"];
     
     if (success.boolValue) {
+        GinCapturePhoto *photo = [self.viewModel getCurrentPhoto];
+        
         if (isEdited) {
-            self.viewModel.photo.editedPhotoUrl = nil;
-            self.viewModel.photo.editedLocalFilename = name;
+            photo.editedPhotoUrl = nil;
+            photo.editedLocalFilename = name;
         } else {
-            self.viewModel.photo.localFilename = name;
-            self.viewModel.photo.photoUrl = nil;
-            self.viewModel.photo.editedPhotoUrl = nil;
-            self.viewModel.photo.editedLocalFilename = nil;
+            photo.localFilename = name;
+            photo.photoUrl = nil;
+            photo.editedPhotoUrl = nil;
+            photo.editedLocalFilename = nil;
         }
-    
-        if (self.didSelectPhotoBlock) {
-            self.didSelectPhotoBlock(name, self.viewModel.photo, self.viewModel.photoIndex);
+        
+        [self.viewModel setCapturedPhoto:photo atIndex:self.viewModel.currentPhotoIndex];
+
+        if (self.didPhotoCapturedBlock) {
+            self.didPhotoCapturedBlock(name, photo, self.viewModel.currentPhotoIndex, [self.viewModel.photoIndexQueue indexOfObject:self.viewModel.currentPhotoIndex]);
         }
+        
         [self displayPhotoMode];
     } else {
         GinLandSpaceAlertViewController *alertController = [GinLandSpaceAlertViewController alertControllerWithTitle:@"提示" message:@"照片保存失败！" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *submit = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+        
+        UIAlertAction *submit = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        
         [alertController addAction:submit];
         
-        [self presentViewController:alertController animated:NO completion:nil];
+        [self presentViewController:alertController animated:NO completion:^{}];
     }
 }
 
 - (void)deletePhotoAction:(id)sender
 {
     GinLandSpaceAlertViewController *alertController = [GinLandSpaceAlertViewController alertControllerWithTitle:@"提示" message:@"是否删除当前照片？" preferredStyle:UIAlertControllerStyleAlert];
-    
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    [alertController addAction:cancel];
     
     UIAlertAction *submit = [UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        [self.viewModel deleteCapturedImage];
-        [self capturePhotoMode];
-        if (self.didDeletePhotoBlock) {
-            self.didDeletePhotoBlock(self.viewModel.photo,self.viewModel.photoIndex);
-        }
+
+        [self.viewModel deleteCapturedImage:self.viewModel.currentPhotoIndex];
+        [self nextStepAction:nil];
     }];
+    
+    
+    [alertController addAction:cancel];
     [alertController addAction:submit];
     
-    [self presentViewController:alertController animated:NO completion:nil];
+    [self presentViewController:alertController animated:NO completion:^{
+    }];
+    
 }
 
 #pragma mark- Delegate & DataSource
@@ -375,9 +442,9 @@
     }
     
     UIImage *savedImage = [self.viewModel.compressManager compressImage:editedImage];
-    
+
     [picker dismissViewControllerAnimated:YES completion:nil];
-    
+
     [self saveCapturedImage:savedImage isEdited:NO];
 }
 
@@ -418,10 +485,10 @@
     self.captureView.canDeletePhotoBlock = canDeletePhotoBlock;
 }
 
-- (CEVehiclePhotoSingleCaptureView *)captureView
+- (GinPhotoCaptureView *)captureView
 {
     if (!_captureView) {
-        _captureView = [[CEVehiclePhotoSingleCaptureView alloc] init];
+        _captureView = [[GinPhotoCaptureView alloc] init];
         _captureView.viewModel = self.viewModel;
         
         __weak typeof(self) _WeakSelf = self;
@@ -429,18 +496,8 @@
             // 设置聚焦
             [_WeakSelf.captureManager focusWithMode:AVCaptureFocusModeAutoFocus exposureMode:AVCaptureExposureModeAutoExpose atPoint:focusPoint];
         };
-        [_captureView.nextBtn setTitle:@"完成" forState:UIControlStateNormal];
-
     }
     return _captureView;
-}
-
-- (GinPhotoSingleCaptureViewModel *)viewModel
-{
-    if (!_viewModel) {
-        _viewModel = [[GinPhotoSingleCaptureViewModel alloc] init];
-    }
-    return _viewModel;
 }
 
 @end

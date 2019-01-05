@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, GinPhotoAuditStatusEnumType) {
  */
 @property (strong, nonatomic) UIImage *localImage;
 /**
- 标识
+ 照片对应的index
  */
 @property (assign, nonatomic) NSInteger photoEnumNum;
 

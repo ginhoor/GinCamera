@@ -1,29 +1,28 @@
 //
-//  CEVehiclePhotoSingleCaptureView.h
-//  CommercialVehiclePlatform
+//  GinPhotoCaptureView.h
+//  JunhuaShao
 //
-//  Created by JunhuaShao on 2018/6/13.
-//  Copyright © 2018年 JunhuaShao. All rights reserved.
+//  Created by JunhuaShao on 2017/11/2.
+//  Copyright © 2017年 JunhuaShao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "GinVerticalLayoutButton.h"
 #import "GinEditPhotoView.h"
-#import "GinPhotoSingleCaptureViewModel.h"
+#import "GinPhotoCaptureViewModel.h"
 #import "GinCapturePhotoLandspaceTipsView.h"
 #import "GinCaptureHelpTipsView.h"
 #import "GinTitleSwitch.h"
-#import "GinCapturePhoto.h"
 #import "GinPhotoCaptureStatusEnum.h"
 
-@interface CEVehiclePhotoSingleCaptureView : UIView
+@interface GinPhotoCaptureView : UIView
 
 @property (assign, nonatomic) CGFloat safeAreaInsetsTop;
 @property (assign, nonatomic) CGFloat safeAreaInsetsBottom;
 
 @property (assign, nonatomic) GinPhotoCaptureStatus status;
-@property (strong, nonatomic) GinPhotoSingleCaptureViewModel *viewModel;
+@property (strong, nonatomic) GinPhotoCaptureViewModel *viewModel;
 
 @property (strong, nonatomic) UILabel *photoIndexLable;
 @property (strong, nonatomic) UILabel *photoTitleLable;
@@ -34,6 +33,7 @@
  图片编辑
  */
 @property (strong, nonatomic) UILabel *statusTitleLable;
+//@property (strong, nonatomic) UIView *imageEditActionBar;
 @property (strong, nonatomic) UIButton *previousEditionActionBtn;
 @property (strong, nonatomic) UIButton *nextEditionActionBtn;
 @property (strong, nonatomic) UIButton *cancelEditActionBtn;
@@ -74,10 +74,12 @@
  辅助线
  */
 @property (strong, nonatomic) UIImageView *tipsLineImgV;
+
 /**
  拍摄提示器
  */
 @property (strong, nonatomic) GinCaptureHelpTipsView *helpTipsView;
+
 /**
  右侧控制区域
  */
@@ -91,7 +93,9 @@
 
 - (void)setFocusCursorWithPoint:(CGPoint)point;
 - (void)setFlashModeUI:(AVCaptureFlashMode)flashMode;
-- (void)setupPhotoTitle:(NSString *)title imgUrl:(NSString *)imgUrl rejectReason:(NSString *)rejectReason photoStatusType:(GinPhotoAuditStatusEnumType)photoStatusType;
+- (void)setPhotoIndex:(NSUInteger)index count:(NSUInteger)count;
 
+- (void)setupPhotoRejectReason:(NSString *)rejectReason photoStatusType:(GinPhotoAuditStatusEnumType)photoStatusType;
+- (void)setupPhotoTitle:(NSString *)title imgUrl:(NSString *)imgUrl;
 
 @end

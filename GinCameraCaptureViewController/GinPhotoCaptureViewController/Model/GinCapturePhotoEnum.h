@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, GinCapturePhotoCategory) {
+    GinCapturePhotoCategoryNormal,
+    GinCapturePhotoCategoryUnlimited,
+};
+
 @interface GinCapturePhotoEnum : NSObject
 
 @property (assign, nonatomic) NSInteger num;
@@ -22,5 +27,7 @@
  提示H5 URL
  */
 @property (strong, nonatomic) NSString *viewUrl;
+
+@property (assign, nonatomic) GinCapturePhotoCategory category;
 
 @end

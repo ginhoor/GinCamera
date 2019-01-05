@@ -1,30 +1,30 @@
 //
-//  CEVehiclePhotoSingleCaptureView.m
-//  CommercialVehiclePlatform
+//  GinPhotoCaptureView.m
+//  JunhuaShao
 //
-//  Created by JunhuaShao on 2018/6/13.
-//  Copyright © 2018年 JunhuaShao. All rights reserved.
+//  Created by JunhuaShao on 2017/11/2.
+//  Copyright © 2017年 JunhuaShao. All rights reserved.
 //
-
 
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
+#import <NSString+GinUnit.h>
 #import <Gin_Macro.h>
+#import <NSString+Size.h>
 #import <UIColor+Hex.h>
 #import <ReactiveObjC.h>
-#import <NSString+Size.h>
-#import <NSString+GinUnit.h>
 
-#import "CEVehiclePhotoSingleCaptureView.h"
+#import "GinPhotoCaptureView.h"
 
-@interface CEVehiclePhotoSingleCaptureView() <UIGestureRecognizerDelegate>
+@interface GinPhotoCaptureView() <UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) NSArray <UIView *> *readyStatusControls;
 @property (strong, nonatomic) NSArray <UIView *> *capturedStatusControls;
 @property (strong, nonatomic) NSArray <UIView *> *editStatusControls;
 
 @end
-@implementation CEVehiclePhotoSingleCaptureView
+
+@implementation GinPhotoCaptureView
 
 - (instancetype)init
 {
@@ -49,7 +49,7 @@
                                  ];
     
     self.capturedStatusControls = @[self.deletePhotoBtn,
-//                                    self.markBtn,
+                                    self.markBtn,
                                     self.mosaicsBtn,
                                     self.retryBtn,
                                     self.nextBtn,
@@ -63,6 +63,7 @@
                                 self.statusTitleLable,
                                 self.finishBtn,
                                 self.cancelEditActionBtn,
+//                                self.imageEditActionBar,
                                 self.nextEditionActionBtn,
                                 self.previousEditionActionBtn,
                                 self.editView];
@@ -72,7 +73,7 @@
     //取景区域
     [self addSubview:self.cameraView];
     [self.cameraView addSubview:self.focusCursorImageView];
-    
+
     //提示区域
     [self addSubview:self.tipsContentView];
     //辅助线
@@ -91,12 +92,14 @@
     [self addSubview:self.photoIndexLable];
     [self addSubview:self.photoTitleLable];
     
+//    [self addSubview:self.imageEditActionBar];
+    
     //左侧控制区域
     [self addSubview:self.leftControlView];
     [self.leftControlView addSubview:self.flashBtn];
     //返回
     [self.leftControlView addSubview:self.statusTitleLable];
-    
+
     [self.leftControlView addSubview:self.backBtn];
     [self.leftControlView addSubview:self.photoLibraryBtn];
     [self.leftControlView addSubview:self.deletePhotoBtn];
@@ -106,7 +109,7 @@
     
     [self.leftControlView addSubview:self.previousEditionActionBtn];
     [self.leftControlView addSubview:self.nextEditionActionBtn];
-    
+
     //右侧控制区域
     [self addSubview:self.rightControlView];
     //取消
@@ -123,12 +126,12 @@
     [self setNeedsUpdateConstraints];
 }
 
-- (void)setViewModel:(GinPhotoSingleCaptureViewModel *)viewModel
+- (void)setViewModel:(GinPhotoCaptureViewModel *)viewModel
 {
     _viewModel = viewModel;
     
     self.editView.viewModel = viewModel.editViewModel;
-    
+
     __weak typeof(self) _WeakSelf = self;
     [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:kCEEditPhotoPreviousOrNextActionNotification object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification * _Nullable x) {
         
@@ -217,10 +220,10 @@
     }];
     
     //提示区域
-    [self.tipsContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.tipsContentView mas_remakeConstraints:^(MASConstraintMaker *make) {        
         make.edges.equalTo(self.cameraView);
     }];
-
+    
     //辅助线
     [self.tipsLineImgV mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.center.offset(0);
@@ -260,6 +263,12 @@
         make.height.offset(20);
     }];
     
+//    [self.imageEditActionBar mas_remakeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.offset(-20);
+//        make.centerX.equalTo(self);
+//        make.size.sizeOffset(CGSizeMake(100, 30));
+//    }];
+    
     [self.previousEditionActionBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.centerX.offset(0);
         make.bottom.equalTo(self.nextEditionActionBtn.mas_top).offset(-15);
@@ -290,7 +299,7 @@
         make.bottom.offset(0);
         make.width.offset(80);
     }];
-
+    
     [self.finishBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(0);
         make.right.offset(0);
@@ -326,22 +335,31 @@
     
 }
 
-- (void)setupPhotoTitle:(NSString *)title imgUrl:(NSString *)imgUrl rejectReason:(NSString *)rejectReason photoStatusType:(GinPhotoAuditStatusEnumType)photoStatusType
+- (void)setPhotoIndex:(NSUInteger)index count:(NSUInteger)count
 {
-    self.helpTipsView.titleLabel.text = title;
-    [self.helpTipsView.tipsImgV sd_setImageWithURL:[NSURL URLWithString:imgUrl]];
-    
+    self.photoIndexLable.text = [NSString stringWithFormat:@"%@／%@", @(index+1), @(count)];
+}
+
+
+- (void)setupPhotoRejectReason:(NSString *)rejectReason photoStatusType:(GinPhotoAuditStatusEnumType)photoStatusType
+{
     self.photoTitleLable.hidden = photoStatusType != GinPhotoAuditStatusEnumTypeRejected;
     
     CGSize size = [rejectReason getStringSizeWithFont:self.photoTitleLable.font height:20];
-
+    
     [self.photoTitleLable mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
         make.top.offset(20);
         make.size.sizeOffset(CGSizeMake(size.width + 8, 20));
     }];
-
+    
     self.photoTitleLable.text = rejectReason;
+}
+
+- (void)setupPhotoTitle:(NSString *)title imgUrl:(NSString *)imgUrl
+{
+    self.helpTipsView.titleLabel.text = title;
+    [self.helpTipsView.tipsImgV sd_setImageWithURL:[NSURL URLWithString:imgUrl]];
 }
 
 - (void)setStatus:(GinPhotoCaptureStatus)status
@@ -353,7 +371,7 @@
             self.cameraView.alpha = 1;
             self.tipsContentView.alpha = 1;
             self.infoContentView.alpha = 0;
-            
+
             [self.editStatusControls enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 obj.hidden = YES;
             }];
@@ -364,9 +382,9 @@
             
             [self.readyStatusControls enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 
-                if (obj == self.helpTipsView
-                    && ![self.viewModel.photoIndex.viewUrl isNotBlank] && ![self.viewModel.photoIndex.sampleUrl isNotBlank]
-                    ) {
+                if (obj == self.helpTipsView &&
+                    ![self.viewModel.currentPhotoIndex.viewUrl isNotBlank] &&
+                    ![self.viewModel.currentPhotoIndex.sampleUrl isNotBlank]) {
                     obj.hidden = YES;
                 } else {
                     obj.hidden = NO;
@@ -380,7 +398,7 @@
             self.cameraView.alpha = 0;
             self.infoContentView.alpha = 1;
             self.tipsContentView.alpha = 0;
-            
+
             [self.editStatusControls enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 obj.hidden = YES;
             }];
@@ -391,20 +409,17 @@
             
             [self.capturedStatusControls enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 
-                GinCapturePhoto *photo = self.viewModel.photo;
-                
-                if (obj == self.nextBtn) {
+                GinCapturePhoto *photo = [self.viewModel getCurrentPhoto];
+                if (obj == self.nextBtn && self.viewModel.nextType == GinPhotoQueueCaptureNextTypeNothing) {
                     obj.hidden = YES;
                 } else if (obj == self.switchView && ![photo hasEditedPhoto]) {
                     obj.hidden = YES;
                 } else if (obj == self.deletePhotoBtn) {
-                    
                     if (self.canDeletePhotoBlock) {
                         obj.hidden = !self.canDeletePhotoBlock();
                     } else {
                         obj.hidden = NO;
                     }
-                    
                 } else {
                     obj.hidden = NO;
                 }
@@ -559,7 +574,6 @@
         _photoIndexLable.textColor = [UIColor whiteColor];
         _photoIndexLable.textAlignment = NSTextAlignmentCenter;
         _photoIndexLable.font = [UIFont systemFontOfSize:14];
-        _photoIndexLable.text = @"1／1";
     }
     return _photoIndexLable;
 }
@@ -573,7 +587,6 @@
         _photoTitleLable.layer.masksToBounds = YES;
         _photoTitleLable.backgroundColor = [UIColor blackColorWithAlpha:0.5];
         _photoTitleLable.textAlignment = NSTextAlignmentCenter;
-        _photoIndexLable.hidden = YES;
     }
     return _photoTitleLable;
 }
@@ -754,11 +767,23 @@
         _statusTitleLable.textColor = [UIColor whiteColor];
         _statusTitleLable.layer.cornerRadius = 4.f;
         _statusTitleLable.layer.masksToBounds = YES;
-        //        _statusTitleLable.backgroundColor = [UIColor blackColorWithAlpha:0.5];
+//        _statusTitleLable.backgroundColor = [UIColor blackColorWithAlpha:0.5];
         _statusTitleLable.textAlignment = NSTextAlignmentCenter;
     }
     return _statusTitleLable;
 }
+
+//- (UIView *)imageEditActionBar
+//{
+//    if (!_imageEditActionBar) {
+//        _imageEditActionBar = [[UIView alloc] init];
+//        _imageEditActionBar.layer.cornerRadius = 4.f;
+//        _imageEditActionBar.layer.masksToBounds = YES;
+//        _imageEditActionBar.backgroundColor = [UIColor blackColorWithAlpha:0.5];
+//        
+//    }
+//    return _imageEditActionBar;
+//}
 
 - (UIButton *)nextEditionActionBtn
 {
