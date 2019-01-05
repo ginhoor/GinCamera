@@ -10,7 +10,6 @@
 		00A24E9D21DEFC4800B77C72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A24E9C21DEFC4800B77C72 /* AppDelegate.m */; };
 		00A24EA021DEFC4800B77C72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A24E9F21DEFC4800B77C72 /* ViewController.m */; };
 		00A24EA321DEFC4800B77C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A24EA121DEFC4800B77C72 /* Main.storyboard */; };
-		00A24EA521DEFC4B00B77C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A24EA421DEFC4B00B77C72 /* Assets.xcassets */; };
 		00A24EA821DEFC4B00B77C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A24EA621DEFC4B00B77C72 /* LaunchScreen.storyboard */; };
 		00A24EAB21DEFC4B00B77C72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A24EAA21DEFC4B00B77C72 /* main.m */; };
 		00A24EB521DEFC4B00B77C72 /* GinCameraCaptureManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A24EB421DEFC4B00B77C72 /* GinCameraCaptureManagerTests.m */; };
@@ -27,7 +26,30 @@
 		00A2502C21DF522300B77C72 /* GinVideoCaptureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2502B21DF522300B77C72 /* GinVideoCaptureItem.m */; };
 		00A2502F21DF582600B77C72 /* GinMediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2502E21DF582600B77C72 /* GinMediaManager.m */; };
 		00A2503721DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2503421DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.m */; };
-		00A2503821DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2503621DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureViewController.m */; };
+		00A2503821DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2503621DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.m */; };
+		00A2503D21DF635C00B77C72 /* GinVerticalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2503C21DF635C00B77C72 /* GinVerticalLayoutButton.m */; };
+		00A2504421DF63CA00B77C72 /* GinEditPhotoMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2503F21DF63CA00B77C72 /* GinEditPhotoMarkView.m */; };
+		00A2504521DF63CA00B77C72 /* GinEditPhotoCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2504221DF63CA00B77C72 /* GinEditPhotoCanvasView.m */; };
+		00A2504621DF63CA00B77C72 /* GinEditPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2504321DF63CA00B77C72 /* GinEditPhotoView.m */; };
+		00A2504B21DF645E00B77C72 /* GinEditPhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2504A21DF645E00B77C72 /* GinEditPhotoViewModel.m */; };
+		00A2505721DF64C900B77C72 /* GinEditPhotoMosaicAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2505121DF64C800B77C72 /* GinEditPhotoMosaicAction.m */; };
+		00A2505821DF64C900B77C72 /* GinEditPhotoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2505421DF64C900B77C72 /* GinEditPhotoAction.m */; };
+		00A2505921DF64C900B77C72 /* GinEditPhotoMarkAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2505521DF64C900B77C72 /* GinEditPhotoMarkAction.m */; };
+		00A2506021DF6B7A00B77C72 /* GinPhotoSingleCaptureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2505E21DF6B7800B77C72 /* GinPhotoSingleCaptureViewModel.m */; };
+		00A2506421DF7C3400B77C72 /* GinCapturePhotoEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2506321DF7C3400B77C72 /* GinCapturePhotoEnum.m */; };
+		00A2506721DF7CBE00B77C72 /* GinCapturePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2506621DF7CBE00B77C72 /* GinCapturePhoto.m */; };
+		00A2506A21DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2506921DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.m */; };
+		00A2506D21E07A3D00B77C72 /* GinCaptureHelpTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2506C21E07A3D00B77C72 /* GinCaptureHelpTipsView.m */; };
+		00A2507021E07AB300B77C72 /* GinTitleSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2506E21E07AB300B77C72 /* GinTitleSwitch.m */; };
+		00A2507821E07B5700B77C72 /* GinLandscapeImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2507221E07B5600B77C72 /* GinLandscapeImagePickerController.m */; };
+		00A2507A21E07B5700B77C72 /* GinPhotoLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2507721E07B5600B77C72 /* GinPhotoLibraryManager.m */; };
+		00A2508021E07BBC00B77C72 /* GinLandscapeImagePickerController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2507F21E07BBC00B77C72 /* GinLandscapeImagePickerController+Router.m */; };
+		00A2508421E07C6800B77C72 /* GinPhotoCaptureTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2508321E07C6700B77C72 /* GinPhotoCaptureTipsViewController.m */; };
+		00A2508721E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2508621E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.m */; };
+		00A2508B21E07EC800B77C72 /* GinLandSpaceAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2508A21E07EC800B77C72 /* GinLandSpaceAlertViewController.m */; };
+		00A2508E21E0836400B77C72 /* GinImageCompressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2508D21E0836400B77C72 /* GinImageCompressManager.m */; };
+		00A250A721E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A250A621E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.m */; };
+		00A2524921E09A1100B77C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A24EA421DEFC4B00B77C72 /* Assets.xcassets */; };
 		01D50A770F4360FD7B817E6C /* libPods-GinCameraCaptureManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F822967DE911A3DA1FD298C8 /* libPods-GinCameraCaptureManagerUITests.a */; };
 		3179F95B264030055C135CCA /* libPods-GinCameraCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12022B5FD75713929DAA6D54 /* libPods-GinCameraCaptureManager.a */; };
 		A0111679F8E3EACFDC1C34F8 /* libPods-GinCameraCaptureManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED87527D79685403B7DCC24 /* libPods-GinCameraCaptureManagerTests.a */; };
@@ -88,10 +110,82 @@
 		00A2502B21DF522300B77C72 /* GinVideoCaptureItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinVideoCaptureItem.m; sourceTree = "<group>"; };
 		00A2502D21DF582600B77C72 /* GinMediaManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GinMediaManager.h; sourceTree = "<group>"; };
 		00A2502E21DF582600B77C72 /* GinMediaManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinMediaManager.m; sourceTree = "<group>"; };
-		00A2503221DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEVehiclePhotoSingleCaptureViewController.h; sourceTree = "<group>"; };
+		00A2503221DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPhotoSingleCaptureViewController.h; sourceTree = "<group>"; };
 		00A2503421DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEVehiclePhotoSingleCaptureView.m; sourceTree = "<group>"; };
 		00A2503521DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEVehiclePhotoSingleCaptureView.h; sourceTree = "<group>"; };
-		00A2503621DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEVehiclePhotoSingleCaptureViewController.m; sourceTree = "<group>"; };
+		00A2503621DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPhotoSingleCaptureViewController.m; sourceTree = "<group>"; };
+		00A2503B21DF635C00B77C72 /* GinVerticalLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinVerticalLayoutButton.h; sourceTree = "<group>"; };
+		00A2503C21DF635C00B77C72 /* GinVerticalLayoutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinVerticalLayoutButton.m; sourceTree = "<group>"; };
+		00A2503E21DF63CA00B77C72 /* GinEditPhotoCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinEditPhotoCanvasView.h; sourceTree = "<group>"; };
+		00A2503F21DF63CA00B77C72 /* GinEditPhotoMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinEditPhotoMarkView.m; sourceTree = "<group>"; };
+		00A2504021DF63CA00B77C72 /* GinEditPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinEditPhotoView.h; sourceTree = "<group>"; };
+		00A2504121DF63CA00B77C72 /* GinEditPhotoMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinEditPhotoMarkView.h; sourceTree = "<group>"; };
+		00A2504221DF63CA00B77C72 /* GinEditPhotoCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinEditPhotoCanvasView.m; sourceTree = "<group>"; };
+		00A2504321DF63CA00B77C72 /* GinEditPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinEditPhotoView.m; sourceTree = "<group>"; };
+		00A2504921DF645E00B77C72 /* GinEditPhotoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinEditPhotoViewModel.h; sourceTree = "<group>"; };
+		00A2504A21DF645E00B77C72 /* GinEditPhotoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinEditPhotoViewModel.m; sourceTree = "<group>"; };
+		00A2505021DF64C800B77C72 /* GinEditPhotoAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinEditPhotoAction.h; sourceTree = "<group>"; };
+		00A2505121DF64C800B77C72 /* GinEditPhotoMosaicAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinEditPhotoMosaicAction.m; sourceTree = "<group>"; };
+		00A2505221DF64C900B77C72 /* GinEditPhotoMarkAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinEditPhotoMarkAction.h; sourceTree = "<group>"; };
+		00A2505321DF64C900B77C72 /* GinEditPhotoMosaicAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinEditPhotoMosaicAction.h; sourceTree = "<group>"; };
+		00A2505421DF64C900B77C72 /* GinEditPhotoAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinEditPhotoAction.m; sourceTree = "<group>"; };
+		00A2505521DF64C900B77C72 /* GinEditPhotoMarkAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinEditPhotoMarkAction.m; sourceTree = "<group>"; };
+		00A2505E21DF6B7800B77C72 /* GinPhotoSingleCaptureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPhotoSingleCaptureViewModel.m; sourceTree = "<group>"; };
+		00A2505F21DF6B7800B77C72 /* GinPhotoSingleCaptureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPhotoSingleCaptureViewModel.h; sourceTree = "<group>"; };
+		00A2506221DF7C3400B77C72 /* GinCapturePhotoEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GinCapturePhotoEnum.h; sourceTree = "<group>"; };
+		00A2506321DF7C3400B77C72 /* GinCapturePhotoEnum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinCapturePhotoEnum.m; sourceTree = "<group>"; };
+		00A2506521DF7CBE00B77C72 /* GinCapturePhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GinCapturePhoto.h; sourceTree = "<group>"; };
+		00A2506621DF7CBE00B77C72 /* GinCapturePhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinCapturePhoto.m; sourceTree = "<group>"; };
+		00A2506821DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GinCapturePhotoLandspaceTipsView.h; sourceTree = "<group>"; };
+		00A2506921DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinCapturePhotoLandspaceTipsView.m; sourceTree = "<group>"; };
+		00A2506B21E07A3C00B77C72 /* GinCaptureHelpTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCaptureHelpTipsView.h; sourceTree = "<group>"; };
+		00A2506C21E07A3D00B77C72 /* GinCaptureHelpTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinCaptureHelpTipsView.m; sourceTree = "<group>"; };
+		00A2506E21E07AB300B77C72 /* GinTitleSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinTitleSwitch.m; sourceTree = "<group>"; };
+		00A2506F21E07AB300B77C72 /* GinTitleSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTitleSwitch.h; sourceTree = "<group>"; };
+		00A2507221E07B5600B77C72 /* GinLandscapeImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLandscapeImagePickerController.m; sourceTree = "<group>"; };
+		00A2507321E07B5600B77C72 /* GinPhotoLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPhotoLibraryManager.h; sourceTree = "<group>"; };
+		00A2507521E07B5600B77C72 /* GinLandscapeImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinLandscapeImagePickerController.h; sourceTree = "<group>"; };
+		00A2507721E07B5600B77C72 /* GinPhotoLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPhotoLibraryManager.m; sourceTree = "<group>"; };
+		00A2507E21E07BBC00B77C72 /* GinLandscapeImagePickerController+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GinLandscapeImagePickerController+Router.h"; sourceTree = "<group>"; };
+		00A2507F21E07BBC00B77C72 /* GinLandscapeImagePickerController+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GinLandscapeImagePickerController+Router.m"; sourceTree = "<group>"; };
+		00A2508221E07C6700B77C72 /* GinPhotoCaptureTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPhotoCaptureTipsViewController.h; sourceTree = "<group>"; };
+		00A2508321E07C6700B77C72 /* GinPhotoCaptureTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPhotoCaptureTipsViewController.m; sourceTree = "<group>"; };
+		00A2508521E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GinPhotoCaptureTipsViewController+Router.h"; sourceTree = "<group>"; };
+		00A2508621E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GinPhotoCaptureTipsViewController+Router.m"; sourceTree = "<group>"; };
+		00A2508921E07EC800B77C72 /* GinLandSpaceAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinLandSpaceAlertViewController.h; sourceTree = "<group>"; };
+		00A2508A21E07EC800B77C72 /* GinLandSpaceAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLandSpaceAlertViewController.m; sourceTree = "<group>"; };
+		00A2508C21E0836400B77C72 /* GinImageCompressManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GinImageCompressManager.h; sourceTree = "<group>"; };
+		00A2508D21E0836400B77C72 /* GinImageCompressManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinImageCompressManager.m; sourceTree = "<group>"; };
+		00A250A521E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GinPhotoSingleCaptureViewController+Router.h"; sourceTree = "<group>"; };
+		00A250A621E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GinPhotoSingleCaptureViewController+Router.m"; sourceTree = "<group>"; };
+		00A250A921E094F000B77C72 /* undo_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo_btn@2x.png"; sourceTree = "<group>"; };
+		00A250AA21E094F000B77C72 /* done_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done_btn@3x.png"; sourceTree = "<group>"; };
+		00A250AB21E094F000B77C72 /* capture_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_btn_normal@2x.png"; sourceTree = "<group>"; };
+		00A250AC21E094F000B77C72 /* delete_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_btn@2x.png"; sourceTree = "<group>"; };
+		00A250AD21E094F000B77C72 /* capture_btn_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capture_btn_disable.png; sourceTree = "<group>"; };
+		00A250AE21E094F000B77C72 /* delete_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_btn@3x.png"; sourceTree = "<group>"; };
+		00A250AF21E094F000B77C72 /* capture_btn_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_btn_normal@3x.png"; sourceTree = "<group>"; };
+		00A250B021E094F000B77C72 /* done_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done_btn@2x.png"; sourceTree = "<group>"; };
+		00A250B121E094F000B77C72 /* undo_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo_btn@3x.png"; sourceTree = "<group>"; };
+		00A250B221E094F000B77C72 /* icon_flash_on_24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_flash_on_24x24@2x.png"; sourceTree = "<group>"; };
+		00A250B321E094F000B77C72 /* icon_close_white_24x24@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_close_white_24x24@3x.png"; sourceTree = "<group>"; };
+		00A250B421E094F000B77C72 /* capture_btn_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_btn_disable@2x.png"; sourceTree = "<group>"; };
+		00A250B521E094F000B77C72 /* capture_btn_disable@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_btn_disable@3x.png"; sourceTree = "<group>"; };
+		00A250B621E094F000B77C72 /* icon_close_white_24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_close_white_24x24@2x.png"; sourceTree = "<group>"; };
+		00A250B721E094F000B77C72 /* icon_flash_on_24x24@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_flash_on_24x24@3x.png"; sourceTree = "<group>"; };
+		00A250B821E094F000B77C72 /* capture_btn_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capture_btn_normal.png; sourceTree = "<group>"; };
+		00A250B921E094F000B77C72 /* undo_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo_btn.png; sourceTree = "<group>"; };
+		00A250BA21E094F000B77C72 /* icon_camera_white_24x24@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_camera_white_24x24@3x.png"; sourceTree = "<group>"; };
+		00A250BB21E094F000B77C72 /* icon_camera_white_24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_camera_white_24x24@2x.png"; sourceTree = "<group>"; };
+		00A250BC21E094F000B77C72 /* delete_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_btn.png; sourceTree = "<group>"; };
+		00A250BD21E094F000B77C72 /* landspace_tips@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landspace_tips@2x.png"; sourceTree = "<group>"; };
+		00A250BE21E094F000B77C72 /* icon_flash_close_24x24@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_flash_close_24x24@3x.png"; sourceTree = "<group>"; };
+		00A250BF21E094F000B77C72 /* done_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = done_btn.png; sourceTree = "<group>"; };
+		00A250C021E094F000B77C72 /* capture_btn_capturing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_btn_capturing@2x.png"; sourceTree = "<group>"; };
+		00A250C121E094F000B77C72 /* capture_btn_capturing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_btn_capturing@3x.png"; sourceTree = "<group>"; };
+		00A250C221E094F000B77C72 /* capture_btn_capturing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capture_btn_capturing.png; sourceTree = "<group>"; };
+		00A250C321E094F000B77C72 /* icon_flash_close_24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_flash_close_24x24@2x.png"; sourceTree = "<group>"; };
+		00A250C421E094F000B77C72 /* landspace_tips@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landspace_tips@3x.png"; sourceTree = "<group>"; };
 		12022B5FD75713929DAA6D54 /* libPods-GinCameraCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GinCameraCaptureManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8725BA80C04F6EA1A6F86E /* Pods-GinCameraCaptureManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GinCameraCaptureManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GinCameraCaptureManagerUITests/Pods-GinCameraCaptureManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DE196B132BEFDF9B25E3E03 /* Pods-GinCameraCaptureManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GinCameraCaptureManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GinCameraCaptureManagerTests/Pods-GinCameraCaptureManagerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +289,8 @@
 			children = (
 				00A2500921DF4F0600B77C72 /* GinAVCaptureManager.h */,
 				00A2500A21DF4F0600B77C72 /* GinAVCaptureManager.m */,
+				00A2508C21E0836400B77C72 /* GinImageCompressManager.h */,
+				00A2508D21E0836400B77C72 /* GinImageCompressManager.m */,
 				00A2500621DF4F0600B77C72 /* SystemCaptureManager */,
 				00A2500B21DF4F0600B77C72 /* PhotoCaptureManager */,
 				00A2500E21DF4F0600B77C72 /* VideoCaptureManager */,
@@ -205,8 +301,8 @@
 		00A2500621DF4F0600B77C72 /* SystemCaptureManager */ = {
 			isa = PBXGroup;
 			children = (
-				00A2500721DF4F0600B77C72 /* GinSystemCaptureManager.m */,
 				00A2500821DF4F0600B77C72 /* GinSystemCaptureManager.h */,
+				00A2500721DF4F0600B77C72 /* GinSystemCaptureManager.m */,
 			);
 			path = SystemCaptureManager;
 			sourceTree = "<group>";
@@ -243,10 +339,10 @@
 		00A2501621DF50B500B77C72 /* GinVideoCaptureViewController */ = {
 			isa = PBXGroup;
 			children = (
-				00A2502821DF521400B77C72 /* Model */,
-				00A2502521DF521300B77C72 /* ViewModel */,
 				00A2501821DF50B500B77C72 /* GinVideoCaptureViewController.h */,
 				00A2501F21DF50B500B77C72 /* GinVideoCaptureViewController.m */,
+				00A2502821DF521400B77C72 /* Model */,
+				00A2502521DF521300B77C72 /* ViewModel */,
 				00A2501A21DF50B500B77C72 /* View */,
 			);
 			path = GinVideoCaptureViewController;
@@ -284,6 +380,10 @@
 		00A2503021DF60BF00B77C72 /* GinPhotoCaptureViewController */ = {
 			isa = PBXGroup;
 			children = (
+				00A2508F21E0884B00B77C72 /* Vendors */,
+				00A2504F21DF64C800B77C72 /* Model */,
+				00A2504821DF644F00B77C72 /* ViewModel */,
+				00A2504721DF643300B77C72 /* View */,
 				00A2503121DF60BF00B77C72 /* CaptureSinglePhoto */,
 			);
 			path = GinPhotoCaptureViewController;
@@ -292,8 +392,13 @@
 		00A2503121DF60BF00B77C72 /* CaptureSinglePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				00A2503221DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureViewController.h */,
-				00A2503621DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureViewController.m */,
+				00A250A821E094F000B77C72 /* Resource */,
+				00A2506121DF7C2A00B77C72 /* Model */,
+				00A2505D21DF6B7800B77C72 /* ViewModel */,
+				00A2503221DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.h */,
+				00A2503621DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.m */,
+				00A250A521E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.h */,
+				00A250A621E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.m */,
 				00A2503321DF60BF00B77C72 /* View */,
 			);
 			path = CaptureSinglePhoto;
@@ -302,11 +407,154 @@
 		00A2503321DF60BF00B77C72 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				00A2503421DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.m */,
 				00A2503521DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.h */,
+				00A2503421DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
+		};
+		00A2504721DF643300B77C72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00A2503E21DF63CA00B77C72 /* GinEditPhotoCanvasView.h */,
+				00A2504221DF63CA00B77C72 /* GinEditPhotoCanvasView.m */,
+				00A2504121DF63CA00B77C72 /* GinEditPhotoMarkView.h */,
+				00A2503F21DF63CA00B77C72 /* GinEditPhotoMarkView.m */,
+				00A2504021DF63CA00B77C72 /* GinEditPhotoView.h */,
+				00A2504321DF63CA00B77C72 /* GinEditPhotoView.m */,
+				00A2503B21DF635C00B77C72 /* GinVerticalLayoutButton.h */,
+				00A2503C21DF635C00B77C72 /* GinVerticalLayoutButton.m */,
+				00A2506821DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.h */,
+				00A2506921DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.m */,
+				00A2506B21E07A3C00B77C72 /* GinCaptureHelpTipsView.h */,
+				00A2506C21E07A3D00B77C72 /* GinCaptureHelpTipsView.m */,
+				00A2506F21E07AB300B77C72 /* GinTitleSwitch.h */,
+				00A2506E21E07AB300B77C72 /* GinTitleSwitch.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00A2504821DF644F00B77C72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00A2504921DF645E00B77C72 /* GinEditPhotoViewModel.h */,
+				00A2504A21DF645E00B77C72 /* GinEditPhotoViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00A2504F21DF64C800B77C72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00A2505021DF64C800B77C72 /* GinEditPhotoAction.h */,
+				00A2505121DF64C800B77C72 /* GinEditPhotoMosaicAction.m */,
+				00A2505221DF64C900B77C72 /* GinEditPhotoMarkAction.h */,
+				00A2505321DF64C900B77C72 /* GinEditPhotoMosaicAction.h */,
+				00A2505421DF64C900B77C72 /* GinEditPhotoAction.m */,
+				00A2505521DF64C900B77C72 /* GinEditPhotoMarkAction.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00A2505D21DF6B7800B77C72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00A2505F21DF6B7800B77C72 /* GinPhotoSingleCaptureViewModel.h */,
+				00A2505E21DF6B7800B77C72 /* GinPhotoSingleCaptureViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00A2506121DF7C2A00B77C72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00A2506221DF7C3400B77C72 /* GinCapturePhotoEnum.h */,
+				00A2506321DF7C3400B77C72 /* GinCapturePhotoEnum.m */,
+				00A2506521DF7CBE00B77C72 /* GinCapturePhoto.h */,
+				00A2506621DF7CBE00B77C72 /* GinCapturePhoto.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00A2507121E07B5600B77C72 /* PhotoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				00A2507521E07B5600B77C72 /* GinLandscapeImagePickerController.h */,
+				00A2507221E07B5600B77C72 /* GinLandscapeImagePickerController.m */,
+				00A2507E21E07BBC00B77C72 /* GinLandscapeImagePickerController+Router.h */,
+				00A2507F21E07BBC00B77C72 /* GinLandscapeImagePickerController+Router.m */,
+				00A2507321E07B5600B77C72 /* GinPhotoLibraryManager.h */,
+				00A2507721E07B5600B77C72 /* GinPhotoLibraryManager.m */,
+			);
+			name = PhotoLibrary;
+			path = GinCameraCaptureViewController/GinPhotoCaptureViewController/Vendors/PhotoLibrary;
+			sourceTree = SOURCE_ROOT;
+		};
+		00A2508121E07C6700B77C72 /* PhotoCaptureTipsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00A2508221E07C6700B77C72 /* GinPhotoCaptureTipsViewController.h */,
+				00A2508321E07C6700B77C72 /* GinPhotoCaptureTipsViewController.m */,
+				00A2508521E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.h */,
+				00A2508621E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.m */,
+			);
+			path = PhotoCaptureTipsViewController;
+			sourceTree = "<group>";
+		};
+		00A2508821E07EC800B77C72 /* LandSpaceAlert */ = {
+			isa = PBXGroup;
+			children = (
+				00A2508921E07EC800B77C72 /* GinLandSpaceAlertViewController.h */,
+				00A2508A21E07EC800B77C72 /* GinLandSpaceAlertViewController.m */,
+			);
+			path = LandSpaceAlert;
+			sourceTree = "<group>";
+		};
+		00A2508F21E0884B00B77C72 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				00A2508821E07EC800B77C72 /* LandSpaceAlert */,
+				00A2507121E07B5600B77C72 /* PhotoLibrary */,
+				00A2508121E07C6700B77C72 /* PhotoCaptureTipsViewController */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		00A250A821E094F000B77C72 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				00A250A921E094F000B77C72 /* undo_btn@2x.png */,
+				00A250AA21E094F000B77C72 /* done_btn@3x.png */,
+				00A250AB21E094F000B77C72 /* capture_btn_normal@2x.png */,
+				00A250AC21E094F000B77C72 /* delete_btn@2x.png */,
+				00A250AD21E094F000B77C72 /* capture_btn_disable.png */,
+				00A250AE21E094F000B77C72 /* delete_btn@3x.png */,
+				00A250AF21E094F000B77C72 /* capture_btn_normal@3x.png */,
+				00A250B021E094F000B77C72 /* done_btn@2x.png */,
+				00A250B121E094F000B77C72 /* undo_btn@3x.png */,
+				00A250B221E094F000B77C72 /* icon_flash_on_24x24@2x.png */,
+				00A250B321E094F000B77C72 /* icon_close_white_24x24@3x.png */,
+				00A250B421E094F000B77C72 /* capture_btn_disable@2x.png */,
+				00A250B521E094F000B77C72 /* capture_btn_disable@3x.png */,
+				00A250B621E094F000B77C72 /* icon_close_white_24x24@2x.png */,
+				00A250B721E094F000B77C72 /* icon_flash_on_24x24@3x.png */,
+				00A250B821E094F000B77C72 /* capture_btn_normal.png */,
+				00A250B921E094F000B77C72 /* undo_btn.png */,
+				00A250BA21E094F000B77C72 /* icon_camera_white_24x24@3x.png */,
+				00A250BB21E094F000B77C72 /* icon_camera_white_24x24@2x.png */,
+				00A250BC21E094F000B77C72 /* delete_btn.png */,
+				00A250BD21E094F000B77C72 /* landspace_tips@2x.png */,
+				00A250BE21E094F000B77C72 /* icon_flash_close_24x24@3x.png */,
+				00A250BF21E094F000B77C72 /* done_btn.png */,
+				00A250C021E094F000B77C72 /* capture_btn_capturing@2x.png */,
+				00A250C121E094F000B77C72 /* capture_btn_capturing@3x.png */,
+				00A250C221E094F000B77C72 /* capture_btn_capturing.png */,
+				00A250C321E094F000B77C72 /* icon_flash_close_24x24@2x.png */,
+				00A250C421E094F000B77C72 /* landspace_tips@3x.png */,
+			);
+			name = Resource;
+			path = GinCameraCaptureViewController/GinVideoCaptureViewController/Resource;
+			sourceTree = SOURCE_ROOT;
 		};
 		514D0C55BBE7D710B40C73CC /* Frameworks */ = {
 			isa = PBXGroup;
@@ -439,9 +687,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A2524921E09A1100B77C72 /* Assets.xcassets in Resources */,
 				00A2500021DF4E6300B77C72 /* GinCamera.podspec in Resources */,
 				00A24EA821DEFC4B00B77C72 /* LaunchScreen.storyboard in Resources */,
-				00A24EA521DEFC4B00B77C72 /* Assets.xcassets in Resources */,
 				00A24EA321DEFC4800B77C72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,18 +793,40 @@
 				00A2502221DF50B500B77C72 /* GinVideoCaptureActionView.m in Sources */,
 				00A24EA021DEFC4800B77C72 /* ViewController.m in Sources */,
 				00A2502321DF50B500B77C72 /* GinVideoCaptureViewController.m in Sources */,
+				00A2507A21E07B5700B77C72 /* GinPhotoLibraryManager.m in Sources */,
 				00A24EAB21DEFC4B00B77C72 /* main.m in Sources */,
+				00A2505721DF64C900B77C72 /* GinEditPhotoMosaicAction.m in Sources */,
 				00A2501221DF4F0600B77C72 /* GinAVCaptureManager.m in Sources */,
 				00A2501121DF4F0600B77C72 /* GinSystemCaptureManager.m in Sources */,
-				00A2503821DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureViewController.m in Sources */,
+				00A2503821DF60BF00B77C72 /* GinPhotoSingleCaptureViewController.m in Sources */,
 				00A2502F21DF582600B77C72 /* GinMediaManager.m in Sources */,
+				00A2508E21E0836400B77C72 /* GinImageCompressManager.m in Sources */,
 				00A2501321DF4F0600B77C72 /* GinPhotoCaptureManager.m in Sources */,
+				00A2506021DF6B7A00B77C72 /* GinPhotoSingleCaptureViewModel.m in Sources */,
 				00A2502121DF50B500B77C72 /* GinVideoCaptureProgressView.m in Sources */,
 				00A2502C21DF522300B77C72 /* GinVideoCaptureItem.m in Sources */,
+				00A2507821E07B5700B77C72 /* GinLandscapeImagePickerController.m in Sources */,
+				00A2508721E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.m in Sources */,
+				00A2507021E07AB300B77C72 /* GinTitleSwitch.m in Sources */,
+				00A2505821DF64C900B77C72 /* GinEditPhotoAction.m in Sources */,
 				00A2502921DF521400B77C72 /* GinVideoCaptureViewModel.m in Sources */,
+				00A2506721DF7CBE00B77C72 /* GinCapturePhoto.m in Sources */,
+				00A250A721E0926800B77C72 /* GinPhotoSingleCaptureViewController+Router.m in Sources */,
+				00A2504421DF63CA00B77C72 /* GinEditPhotoMarkView.m in Sources */,
+				00A2504B21DF645E00B77C72 /* GinEditPhotoViewModel.m in Sources */,
+				00A2508021E07BBC00B77C72 /* GinLandscapeImagePickerController+Router.m in Sources */,
+				00A2506D21E07A3D00B77C72 /* GinCaptureHelpTipsView.m in Sources */,
+				00A2504521DF63CA00B77C72 /* GinEditPhotoCanvasView.m in Sources */,
+				00A2506421DF7C3400B77C72 /* GinCapturePhotoEnum.m in Sources */,
 				00A2503721DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.m in Sources */,
+				00A2505921DF64C900B77C72 /* GinEditPhotoMarkAction.m in Sources */,
+				00A2506A21DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.m in Sources */,
+				00A2508B21E07EC800B77C72 /* GinLandSpaceAlertViewController.m in Sources */,
 				00A2501421DF4F0600B77C72 /* GinVideoCaptureManager.m in Sources */,
 				00A24E9D21DEFC4800B77C72 /* AppDelegate.m in Sources */,
+				00A2508421E07C6800B77C72 /* GinPhotoCaptureTipsViewController.m in Sources */,
+				00A2503D21DF635C00B77C72 /* GinVerticalLayoutButton.m in Sources */,
+				00A2504621DF63CA00B77C72 /* GinEditPhotoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

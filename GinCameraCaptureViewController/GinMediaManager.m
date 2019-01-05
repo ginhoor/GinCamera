@@ -39,6 +39,42 @@
     return flag;
 }
 
++ (NSDictionary *)saveImage:(UIImage *)image
+{
+    NSString *name = [self createFilename];
+    BOOL flag = [self writeToFile:image path:[self filePath:name]];
+    
+    return @{@"name":name, @"success":@(flag)};
+}
+
++ (UIImage *)getImageByName:(NSString *)name
+{
+    if (!name.isNotBlank) {
+        return nil;
+    }
+    UIImage *image = [UIImage imageWithContentsOfFile:[self filePath:name]];
+    return image;
+}
+
++ (BOOL)deleteImageByName:(NSString *)name
+{
+    if (![name isNotBlank]) {
+        return NO;
+    }
+    BOOL flag = NO;
+    NSError *__autoreleasing error = nil;
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    flag = [manager removeItemAtPath:[self filePath:name] error:&error];
+    
+    if (flag == NO && error) {
+        NSLog(@"file delete failed!!! error --> %@",error);
+    } else {
+        NSLog(@"file in path:%@ deleted!",name);
+    }
+    return flag;
+}
+
 + (NSString *)filePath:(NSString *)name
 {
     NSString *tempPath;
@@ -73,6 +109,22 @@
 + (NSString *)createFilename
 {
     return [[NSUUID UUID] UUIDString];
+}
+
+#pragma - Private Method
++ (BOOL)writeToFile:(UIImage *)image path:(NSString *)path
+{
+    BOOL flag = NO;
+    [self createFolder];
+    NSData *data = UIImageJPEGRepresentation(image, 0.3);
+    flag = [data writeToFile:path atomically:YES];
+    
+    if (flag) {
+        NSLog(@"file save in path:%@",path);
+    } else {
+        NSLog(@"file save failed!!!");
+    }
+    return flag;
 }
 
 @end

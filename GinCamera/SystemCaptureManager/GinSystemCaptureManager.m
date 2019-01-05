@@ -16,6 +16,7 @@
 @property (weak, nonatomic) UIViewController *presentedViewController;
 @property (strong, nonatomic) UIImagePickerController *picker;
 
+@property (assign, nonatomic) BOOL compress;
 @property (assign, nonatomic) BOOL imageEditable;
 
 @end
@@ -31,8 +32,8 @@
      imageEditAspectRatio:CGSizeZero
                  compress:YES
         compressImageMaxSize:compressImageMaxSize
-       compressMaxQuality:0.3
-      compressMaxDataSize:500
+       compressMaxQuality:0
+      compressMaxDataSize:0
     didImageCapturedBlock:didImageCapturedBlock];
 }
 
@@ -46,8 +47,8 @@
      imageEditAspectRatio:imageEditAspectRatio
                  compress:YES
         compressImageMaxSize:compressImageMaxSize
-       compressMaxQuality:0.3
-      compressMaxDataSize:500
+       compressMaxQuality:0
+      compressMaxDataSize:0
     didImageCapturedBlock:didImageCapturedBlock];
 }
 
@@ -71,9 +72,9 @@
     
     manager.compress = compress;
     if (compress) {
-        manager.compressImageMaxSize = compressImageMaxSize;
-        manager.compressMaxQuality = compressMaxQuality;
-        manager.compressMaxDataSize = compressMaxDataSize;
+        manager.compressManager.compressImageMaxSize = compressImageMaxSize;
+        manager.compressManager.compressMaxQuality = compressMaxQuality;
+        manager.compressManager.compressMaxDataSize = compressMaxDataSize;
     }
     [manager chooseAction];
 }
@@ -146,25 +147,8 @@
     if(!editedImage) {
         editedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     }
-    UIImage *savedImage = editedImage;
-    if (self.compress) {
-        if (!CGSizeEqualToSize(self.compressImageMaxSize, CGSizeZero)) {
-            CGSize scaleSize = CGSizeZero;
-            if (savedImage.size.width > savedImage.size.height) {
-                if (savedImage.size.width > self.compressImageMaxSize.width) {
-                    scaleSize = CGSizeMake(self.compressImageMaxSize.width, self.compressImageMaxSize.width / savedImage.size.width * savedImage.size.height);
-                }
-            } else {
-                if (savedImage.size.height > self.compressImageMaxSize.height) {
-                    scaleSize = CGSizeMake(self.compressImageMaxSize.height / savedImage.size.height * savedImage.size.width, self.compressImageMaxSize.height);
-                }
-            }
-            if (!CGSizeEqualToSize(scaleSize, CGSizeZero)) {
-                savedImage = [savedImage scaleToSize:scaleSize];
-            }
-        }
-        savedImage = [UIImage imageWithData:[editedImage compressToMaxDataSizeKBytes:self.compressMaxDataSize maxQuality:self.compressMaxQuality]];
-    }
+    
+    UIImage *savedImage = [self.compressManager compressImage:editedImage];
     
     if (self.imageEditable) {
         TOCropViewController *cropViewController = [[TOCropViewController alloc] initWithImage:savedImage];
@@ -214,6 +198,14 @@
         _picker = [[UIImagePickerController alloc] init];
     }
     return _picker;
+}
+
+- (GinImageCompressManager *)compressManager
+{
+    if (!_compressManager) {
+        _compressManager = [[GinImageCompressManager alloc] init];
+    }
+    return _compressManager;
 }
 
 @end

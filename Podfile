@@ -9,11 +9,12 @@ target 'GinCameraCaptureManager' do
 
   # Pods for GinCameraCaptureManager
 
-  pod 'GinhoorFramework', '~> 2.2.13'
+  pod 'GinhoorFramework', '~> 2.2.14'
   pod 'TOCropViewController', '~> 2.4'
   pod 'Masonry', '~> 1.1.0'
   pod 'SDWebImage', '~> 4.2.2'
-  
+  pod 'ReactiveObjC', '~> 3.0.0'
+
   target 'GinCameraCaptureManagerTests' do
     inherit! :search_paths
     # Pods for testing

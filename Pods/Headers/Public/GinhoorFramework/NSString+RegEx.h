@@ -1,0 +1,1 @@
+../../../GinhoorFramework/GinhoorFramework/Category/NSString/NSString+RegEx.h

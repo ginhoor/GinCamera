@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GinAVCaptureManager.h"
+#import "GinImageCompressManager.h"
 
 @interface GinSystemCaptureManager : GinAVCaptureManager
 
@@ -16,20 +17,11 @@
 /**
  是否对图片做压缩处理
  */
-@property (assign, nonatomic) BOOL compress;
+@property (assign, nonatomic, readonly) BOOL compress;
 /**
- 如果size等于CGSizeZero则不会对结果图片进行处理，反之如果图片超过size，则会将图片缩放到指定大小
+ 压缩工具
  */
-@property (assign, nonatomic) CGSize compressImageMaxSize;
-/**
- 图片文件压缩大小（单位：KB）
- */
-@property (assign, nonatomic) CGFloat compressMaxDataSize;
-
-/**
- 图片压缩质量（取值范围0-1）
- */
-@property (assign, nonatomic) CGFloat compressMaxQuality;
+@property (strong, nonatomic) GinImageCompressManager *compressManager;
 
 @property (assign, nonatomic, readonly) BOOL imageEditable;
 /**
