@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
     s.source       = { :git => "https://github.com/ginhoor/GinCamera.git", :tag => s.version.to_s }
 
-    #s.source_files  = "GinhoorFramework/GinhoorFramework.h"
+    #s.source_files  = "GinCamera/Core/*.{h,m}"
     #s.public_header_files = 'GinhoorFramework/GinhoorFramework.h'
 
     # 用来指定外部的静态库
@@ -27,22 +27,25 @@ Pod::Spec.new do |s|
     # s.library   = "libxml2"
     # s.libraries = "iconv", "xml2"
 
+    s.dependency 'GinhoorFramework', '~> 2.2.14'
+
+    s.subspec 'Core' do |ss|
+        ss.source_files = 'GinCamera/Core/*.{h,m}'
+    end
+
     s.subspec 'PhotoCaptureManager' do |ss|
-        ss.dependency 'GinhoorFramework', '~> 2.2.14'
-        ss.source_files = 'GinCamera/Core'
+        ss.dependency 'GinCamera/Core'
         ss.source_files = 'GinCamera/PhotoCaptureManager/*.{h,m}'
     end
 
     s.subspec 'VideoCaptureManager' do |ss|
-        ss.dependency 'GinhoorFramework', '~> 2.2.14'
-        ss.source_files = 'GinCamera/Core'
+        ss.dependency 'GinCamera/Core'
         ss.source_files = 'GinCamera/VideoCaptureManager/*.{h,m}'
     end
 
     s.subspec 'SystemCaptureManager' do |ss|
-        ss.dependency 'GinhoorFramework', '~> 2.2.14'
+        ss.dependency 'GinCamera/Core'
         ss.dependency 'TOCropViewController', '~> 2.4'
-        ss.source_files = 'GinCamera/Core'
         ss.source_files = 'GinCamera/SystemCaptureManager/*.{h,m}'
     end
 

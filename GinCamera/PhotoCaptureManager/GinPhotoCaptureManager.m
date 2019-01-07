@@ -58,7 +58,7 @@
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     [self setupDevice];
     
-    self.photoSettings = [AVCapturePhotoSettings photoSettingsWithFormat:@{AVVideoCodecKey:AVVideoCodecTypeJPEG}];
+    self.photoSettings = [AVCapturePhotoSettings photoSettingsWithFormat:@{AVVideoCodecKey:AVVideoCodecJPEG}];
     // Input
     self.input = [AVCaptureDeviceInput deviceInputWithDevice:self.device error:nil];
     // Output
