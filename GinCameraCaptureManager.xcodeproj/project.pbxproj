@@ -302,10 +302,7 @@
 		00A2500521DF4F0600B77C72 /* GinCamera */ = {
 			isa = PBXGroup;
 			children = (
-				00A2500921DF4F0600B77C72 /* GinAVCaptureManager.h */,
-				00A2500A21DF4F0600B77C72 /* GinAVCaptureManager.m */,
-				00A2508C21E0836400B77C72 /* GinImageCompressManager.h */,
-				00A2508D21E0836400B77C72 /* GinImageCompressManager.m */,
+				00A2525F21E33B4000B77C72 /* Core */,
 				00A2500621DF4F0600B77C72 /* SystemCaptureManager */,
 				00A2500B21DF4F0600B77C72 /* PhotoCaptureManager */,
 				00A2500E21DF4F0600B77C72 /* VideoCaptureManager */,
@@ -595,6 +592,17 @@
 				00A2524F21E0A34C00B77C72 /* GinPhotoCaptureViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00A2525F21E33B4000B77C72 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				00A2500921DF4F0600B77C72 /* GinAVCaptureManager.h */,
+				00A2500A21DF4F0600B77C72 /* GinAVCaptureManager.m */,
+				00A2508C21E0836400B77C72 /* GinImageCompressManager.h */,
+				00A2508D21E0836400B77C72 /* GinImageCompressManager.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		514D0C55BBE7D710B40C73CC /* Frameworks */ = {

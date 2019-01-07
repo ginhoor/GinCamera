@@ -29,20 +29,20 @@ Pod::Spec.new do |s|
 
     s.subspec 'PhotoCaptureManager' do |ss|
         ss.dependency 'GinhoorFramework', '~> 2.2.14'
-        ss.source_files = 'GinCamera/*.{h,m}'
+        ss.source_files = 'GinCamera/Core'
         ss.source_files = 'GinCamera/PhotoCaptureManager/*.{h,m}'
     end
 
     s.subspec 'VideoCaptureManager' do |ss|
         ss.dependency 'GinhoorFramework', '~> 2.2.14'
-        ss.source_files = 'GinCamera/*.{h,m}'
+        ss.source_files = 'GinCamera/Core'
         ss.source_files = 'GinCamera/VideoCaptureManager/*.{h,m}'
     end
 
     s.subspec 'SystemCaptureManager' do |ss|
         ss.dependency 'GinhoorFramework', '~> 2.2.14'
         ss.dependency 'TOCropViewController', '~> 2.4'
-        ss.source_files = 'GinCamera/*.{h,m}'
+        ss.source_files = 'GinCamera/Core'
         ss.source_files = 'GinCamera/SystemCaptureManager/*.{h,m}'
     end
 
