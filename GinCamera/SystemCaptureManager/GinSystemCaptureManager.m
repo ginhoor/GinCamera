@@ -6,9 +6,9 @@
 //  Copyright © 2018年 JunhuaShao. All rights reserved.
 //
 
-#import <UIImage+GinUnit.h>
-#import <UIAlertController+GinUnit.h>
-#import <TOCropViewController.h>
+#import <GinhoorFramework/UIImage+GinUnit.h>
+#import <GinhoorFramework/UIAlertController+GinUnit.h>
+#import <TOCropViewController/TOCropViewController.h>
 #import "GinSystemCaptureManager.h"
 
 @interface GinSystemCaptureManager() <UINavigationControllerDelegate, UIImagePickerControllerDelegate, TOCropViewControllerDelegate>

@@ -6,7 +6,7 @@
 //  Copyright © 2017年 JunhuaShao. All rights reserved.
 //
 
-#import <NSString+GinUnit.h>
+#import <GinhoorFramework/NSString+GinUnit.h>
 #import "GinVideoCaptureManager.h"
 
 #define COUNT_DUR_TIMER_INTERVAL 0.05

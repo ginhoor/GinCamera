@@ -6,7 +6,7 @@
 //  Copyright © 2019 JunhuaShao. All rights reserved.
 //
 
-#import <UIImage+GinUnit.h>
+#import <GinhoorFramework/UIImage+GinUnit.h>
 
 #import "GinImageCompressManager.h"
 

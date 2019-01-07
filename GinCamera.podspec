@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     # 表示需要保留的文件路径
     # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-    s.frameworks = "Foundation", "CoreGraphics", "UIKit"
+    s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AVFoundation"
 
     # s.library   = "libxml2"
     # s.libraries = "iconv", "xml2"

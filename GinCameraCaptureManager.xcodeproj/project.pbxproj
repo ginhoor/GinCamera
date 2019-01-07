@@ -243,6 +243,7 @@
 		00A24E8F21DEFC4800B77C72 = {
 			isa = PBXGroup;
 			children = (
+				00A24FFF21DF4E6300B77C72 /* GinCamera.podspec */,
 				00A24E9A21DEFC4800B77C72 /* GinCameraCaptureManager */,
 				00A24EB321DEFC4B00B77C72 /* GinCameraCaptureManagerTests */,
 				00A24EBE21DEFC4B00B77C72 /* GinCameraCaptureManagerUITests */,
@@ -265,7 +266,6 @@
 		00A24E9A21DEFC4800B77C72 /* GinCameraCaptureManager */ = {
 			isa = PBXGroup;
 			children = (
-				00A24FFF21DF4E6300B77C72 /* GinCamera.podspec */,
 				00A24E9B21DEFC4800B77C72 /* AppDelegate.h */,
 				00A24E9C21DEFC4800B77C72 /* AppDelegate.m */,
 				00A24E9E21DEFC4800B77C72 /* ViewController.h */,

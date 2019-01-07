@@ -6,8 +6,9 @@
 //  Copyright © 2017年 GinhoorHome. All rights reserved.
 //
 
-#import "GinPhotoCaptureManager.h"
 #import <GinhoorFramework/UIImage+GinUnit.h>
+
+#import "GinPhotoCaptureManager.h"
 
 // 照片
 @implementation GinStillImage
