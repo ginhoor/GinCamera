@@ -46,8 +46,6 @@
 @property (assign, nonatomic) NSTimeInterval videoTotalDuration;
 @property (assign, nonatomic) NSTimeInterval videoMinDuration;
 @property (assign, nonatomic) NSTimeInterval videoMaxDuration;
-
-
 /**
  当AVCaptureDevice实例检测到视频主题区域有实质性变化时。
  */

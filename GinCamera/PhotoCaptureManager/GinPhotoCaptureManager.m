@@ -36,6 +36,7 @@
 
 - (void)dealloc
 {
+    
 }
 
 - (instancetype)init
@@ -78,15 +79,14 @@
 
 - (void)setupDevice
 {
-    __weak typeof(self) _WeakSelf = self;
     [self changeDevice:self.device property:^(AVCaptureDevice *device) {
         //  开启自动持续对焦
-        if ([_WeakSelf.device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
-            [_WeakSelf.device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
+        if ([device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
+            [device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
         }
         // 开启自动曝光
-        if ([_WeakSelf.device isExposureModeSupported:AVCaptureExposureModeContinuousAutoExposure]) {
-            [_WeakSelf.device setExposureMode:AVCaptureExposureModeContinuousAutoExposure];
+        if ([device isExposureModeSupported:AVCaptureExposureModeContinuousAutoExposure]) {
+            [device setExposureMode:AVCaptureExposureModeContinuousAutoExposure];
         }
     }];
 }
@@ -162,22 +162,20 @@
          exposureMode:(AVCaptureExposureMode)exposureMode
               atPoint:(CGPoint)point
 {
-    AVCaptureDevice *captureDevice = self.device;
-    
     [self changeDevice:self.device property:^(AVCaptureDevice *device) {
         // 设置聚焦
-        if ([captureDevice isFocusModeSupported:focusMode]) {
-            [captureDevice setFocusMode:focusMode];
+        if ([device isFocusModeSupported:focusMode]) {
+            [device setFocusMode:focusMode];
         }
-        if ([captureDevice isFocusPointOfInterestSupported]) {
-            [captureDevice setFocusPointOfInterest:point];
+        if ([device isFocusPointOfInterestSupported]) {
+            [device setFocusPointOfInterest:point];
         }
         // 设置曝光
-        if ([captureDevice isExposureModeSupported:exposureMode]) {
-            [captureDevice setExposureMode:exposureMode];
+        if ([device isExposureModeSupported:exposureMode]) {
+            [device setExposureMode:exposureMode];
         }
-        if ([captureDevice isExposurePointOfInterestSupported]) {
-            [captureDevice setExposurePointOfInterest:point];
+        if ([device isExposurePointOfInterestSupported]) {
+            [device setExposurePointOfInterest:point];
         }
     }];
 }

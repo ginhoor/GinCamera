@@ -112,8 +112,8 @@
 - (void)addNotificationToCaptureDevice:(AVCaptureDevice *)captureDevice
 {
     // 注意 添加区域改变捕获通知必须设置设备允许捕获
-    [self changeDevice:self.captureDevice property:^(AVCaptureDevice *device) {
-        captureDevice.subjectAreaChangeMonitoringEnabled = YES;
+    [self changeDevice:captureDevice property:^(AVCaptureDevice *device) {
+        device.subjectAreaChangeMonitoringEnabled = YES;
     }];
     
     [[NSNotificationCenter defaultCenter] addObserverForName:AVCaptureDeviceSubjectAreaDidChangeNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {

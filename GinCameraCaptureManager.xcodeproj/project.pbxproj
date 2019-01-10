@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006CCD7E21E7356100C33041 /* GinScanQRCoderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006CCD7A21E7356100C33041 /* GinScanQRCoderController.m */; };
+		006CCD7F21E7356100C33041 /* GinQRCodePickerBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006CCD7C21E7356100C33041 /* GinQRCodePickerBaseController.m */; };
 		00A24E9D21DEFC4800B77C72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A24E9C21DEFC4800B77C72 /* AppDelegate.m */; };
 		00A24EA021DEFC4800B77C72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A24E9F21DEFC4800B77C72 /* ViewController.m */; };
 		00A24EA321DEFC4800B77C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A24EA121DEFC4800B77C72 /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 		00A2525521E0A34D00B77C72 /* GinPhotoQueueCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2525221E0A34D00B77C72 /* GinPhotoQueueCaptureViewController.m */; };
 		00A2525821E0A4F700B77C72 /* GinPhotoCaptureStatusEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2525721E0A4F700B77C72 /* GinPhotoCaptureStatusEnum.m */; };
 		00A2525E21E0AD2A00B77C72 /* GinPhotoQueueCaptureViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2525D21E0AD2A00B77C72 /* GinPhotoQueueCaptureViewController+Router.m */; };
+		00A2526221E356B600B77C72 /* DemoPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2526121E356B600B77C72 /* DemoPhotoCollectionViewController.m */; };
+		00A2526521E3574300B77C72 /* DemoPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2526421E3574300B77C72 /* DemoPhotoCell.m */; };
 		01D50A770F4360FD7B817E6C /* libPods-GinCameraCaptureManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F822967DE911A3DA1FD298C8 /* libPods-GinCameraCaptureManagerUITests.a */; };
 		3179F95B264030055C135CCA /* libPods-GinCameraCaptureManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12022B5FD75713929DAA6D54 /* libPods-GinCameraCaptureManager.a */; };
 		A0111679F8E3EACFDC1C34F8 /* libPods-GinCameraCaptureManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED87527D79685403B7DCC24 /* libPods-GinCameraCaptureManagerTests.a */; };
@@ -78,6 +82,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006CCD7A21E7356100C33041 /* GinScanQRCoderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinScanQRCoderController.m; sourceTree = "<group>"; };
+		006CCD7B21E7356100C33041 /* GinScanQRCoderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinScanQRCoderController.h; sourceTree = "<group>"; };
+		006CCD7C21E7356100C33041 /* GinQRCodePickerBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQRCodePickerBaseController.m; sourceTree = "<group>"; };
+		006CCD7D21E7356100C33041 /* GinQRCodePickerBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinQRCodePickerBaseController.h; sourceTree = "<group>"; };
 		00A24E9821DEFC4800B77C72 /* GinCameraCaptureManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GinCameraCaptureManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A24E9B21DEFC4800B77C72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00A24E9C21DEFC4800B77C72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -201,6 +209,10 @@
 		00A2525721E0A4F700B77C72 /* GinPhotoCaptureStatusEnum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinPhotoCaptureStatusEnum.m; sourceTree = "<group>"; };
 		00A2525C21E0AD2900B77C72 /* GinPhotoQueueCaptureViewController+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GinPhotoQueueCaptureViewController+Router.h"; sourceTree = "<group>"; };
 		00A2525D21E0AD2A00B77C72 /* GinPhotoQueueCaptureViewController+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GinPhotoQueueCaptureViewController+Router.m"; sourceTree = "<group>"; };
+		00A2526021E356B600B77C72 /* DemoPhotoCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		00A2526121E356B600B77C72 /* DemoPhotoCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		00A2526321E3574300B77C72 /* DemoPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoPhotoCell.h; sourceTree = "<group>"; };
+		00A2526421E3574300B77C72 /* DemoPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoPhotoCell.m; sourceTree = "<group>"; };
 		12022B5FD75713929DAA6D54 /* libPods-GinCameraCaptureManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GinCameraCaptureManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8725BA80C04F6EA1A6F86E /* Pods-GinCameraCaptureManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GinCameraCaptureManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GinCameraCaptureManagerUITests/Pods-GinCameraCaptureManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DE196B132BEFDF9B25E3E03 /* Pods-GinCameraCaptureManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GinCameraCaptureManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GinCameraCaptureManagerTests/Pods-GinCameraCaptureManagerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +252,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006CCD7821E7356100C33041 /* GinScanQRCoderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				006CCD7921E7356100C33041 /* GinScanQRCoderController */,
+				006CCD7D21E7356100C33041 /* GinQRCodePickerBaseController.h */,
+				006CCD7C21E7356100C33041 /* GinQRCodePickerBaseController.m */,
+			);
+			path = GinScanQRCoderViewController;
+			sourceTree = "<group>";
+		};
+		006CCD7921E7356100C33041 /* GinScanQRCoderController */ = {
+			isa = PBXGroup;
+			children = (
+				006CCD7B21E7356100C33041 /* GinScanQRCoderController.h */,
+				006CCD7A21E7356100C33041 /* GinScanQRCoderController.m */,
+			);
+			path = GinScanQRCoderController;
+			sourceTree = "<group>";
+		};
 		00A24E8F21DEFC4800B77C72 = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +301,10 @@
 				00A24E9C21DEFC4800B77C72 /* AppDelegate.m */,
 				00A24E9E21DEFC4800B77C72 /* ViewController.h */,
 				00A24E9F21DEFC4800B77C72 /* ViewController.m */,
+				00A2526021E356B600B77C72 /* DemoPhotoCollectionViewController.h */,
+				00A2526121E356B600B77C72 /* DemoPhotoCollectionViewController.m */,
+				00A2526321E3574300B77C72 /* DemoPhotoCell.h */,
+				00A2526421E3574300B77C72 /* DemoPhotoCell.m */,
 				00A2501521DF50B500B77C72 /* GinCameraCaptureViewController */,
 				00A2500521DF4F0600B77C72 /* GinCamera */,
 				00A24EA121DEFC4800B77C72 /* Main.storyboard */,
@@ -340,6 +375,7 @@
 		00A2501521DF50B500B77C72 /* GinCameraCaptureViewController */ = {
 			isa = PBXGroup;
 			children = (
+				006CCD7821E7356100C33041 /* GinScanQRCoderViewController */,
 				00A2501621DF50B500B77C72 /* GinVideoCaptureViewController */,
 				00A2503021DF60BF00B77C72 /* GinPhotoCaptureViewController */,
 				00A2502D21DF582600B77C72 /* GinMediaManager.h */,
@@ -856,6 +892,8 @@
 				00A2525821E0A4F700B77C72 /* GinPhotoCaptureStatusEnum.m in Sources */,
 				00A2502121DF50B500B77C72 /* GinVideoCaptureProgressView.m in Sources */,
 				00A2502C21DF522300B77C72 /* GinVideoCaptureItem.m in Sources */,
+				00A2526521E3574300B77C72 /* DemoPhotoCell.m in Sources */,
+				006CCD7E21E7356100C33041 /* GinScanQRCoderController.m in Sources */,
 				00A2507821E07B5700B77C72 /* GinLandscapeImagePickerController.m in Sources */,
 				00A2508721E07C8400B77C72 /* GinPhotoCaptureTipsViewController+Router.m in Sources */,
 				00A2507021E07AB300B77C72 /* GinTitleSwitch.m in Sources */,
@@ -874,12 +912,14 @@
 				00A2503721DF60BF00B77C72 /* CEVehiclePhotoSingleCaptureView.m in Sources */,
 				00A2505921DF64C900B77C72 /* GinEditPhotoMarkAction.m in Sources */,
 				00A2525321E0A34D00B77C72 /* GinPhotoCaptureView.m in Sources */,
+				006CCD7F21E7356100C33041 /* GinQRCodePickerBaseController.m in Sources */,
 				00A2506A21DF867400B77C72 /* GinCapturePhotoLandspaceTipsView.m in Sources */,
 				00A2508B21E07EC800B77C72 /* GinLandSpaceAlertViewController.m in Sources */,
 				00A2501421DF4F0600B77C72 /* GinVideoCaptureManager.m in Sources */,
 				00A24E9D21DEFC4800B77C72 /* AppDelegate.m in Sources */,
 				00A2508421E07C6800B77C72 /* GinPhotoCaptureTipsViewController.m in Sources */,
 				00A2503D21DF635C00B77C72 /* GinVerticalLayoutButton.m in Sources */,
+				00A2526221E356B600B77C72 /* DemoPhotoCollectionViewController.m in Sources */,
 				00A2504621DF63CA00B77C72 /* GinEditPhotoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
